@@ -35,15 +35,17 @@ _:node1das6kevvx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_fa
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-personal-WKS-WIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-WIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-WIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-WIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-retail-price#this> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -79,7 +81,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -115,15 +117,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-personal-WKS-LIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-LIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-LIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-LIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-retail-price#this> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -156,7 +160,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -189,15 +193,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-personal-WKS-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-personal-WKS-MAC"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-MAC#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-personal-WKS-MAC#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-personal-WKS-MAC%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-retail-price#this> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -230,7 +236,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -263,15 +269,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-development-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-WIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-WIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-WIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-retail-price#this> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -304,7 +312,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -337,15 +345,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-development-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-LIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-LIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-LIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-retail-price#this> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -378,7 +388,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -387,12 +397,12 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-LIN#this> .
 
-<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
-	schema:url <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC+> ;
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC+-special-price%23this> ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-MAC#this> ;
 	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
 	skos:prefLabel "Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
@@ -404,23 +414,25 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	offers:offerNumber "2019-04-virtuoso-83-app-development-SRV-MAC "^^<http://www.w3.org/2001/XMLSchema#string> ;
+	offers:offerNumber "2019-04-virtuoso-83-app-development-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdevelopment> ;
 	schema:name "Software License Offer: Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
 	skos:related _:node1das6kevvx1 ;
-	license:hasBuyService <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-2019-04-virtuoso-83-app-development-SRV-MAC+%2523this%26type%3Dbuy%26mode%3Dv> ;
-	schema:potentialAction <http://data.openlinksw.com/oplweb/offer#https%3A%2F%2Fshop.openlinksw.com%2Fcart.vsp%3Fcommand%3Dadd%26item%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-2019-04-virtuoso-83-app-development-SRV-MAC+%2523this> .
+	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&mode=v> ;
+	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this> .
 
-<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-2019-04-virtuoso-83-app-development-SRV-MAC+%2523this%26type%3Dbuy%26mode%3Dv%2523this%26type%3Dbuy%26mode%3Dv> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-MAC "^^<http://www.w3.org/2001/XMLSchema#string> ;
-	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-development-SRV-MAC "^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-development-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-development-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> schema:mainEntityOfPage <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-2019-04-virtuoso-83-app-development-SRV-MAC+%2523this%26type%3Dbuy%26mode%3Dv%2523this%26type%3Dbuy%26mode%3Dv> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this&type=buy&modev> .
 
-<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC+-special-price%23this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
-	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC+-retail-price%23this> ;
+	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC-retail-price#this> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -431,7 +443,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
-<http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> .
+<http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-83-app-development-SRV-MAC#this> license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
 	oplsof:hasOperatingSystemFamily oplsof:MacOSX ;
@@ -445,21 +457,21 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:name "Software License : Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
 	license:serialNumberBroadcast "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	license:partOf <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ;
+	license:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#this> ;
 	skos:prefLabel "Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems" ;
 	schema:comment " Virtuoso 8.3 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" .
 
-<http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC+-retail-price%23this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://virtuoso.openlinksw.com/offers/> schema:offers <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> ;
-	schema:about <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> .
+<http://virtuoso.openlinksw.com/offers/> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#this> ;
+	schema:about <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#this> .
 
-<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-development-SRV-MAC%23this+> .
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-development-SRV-MAC#this> .
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN> ;
@@ -485,15 +497,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-retail-price#this> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -526,7 +540,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "3499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -559,15 +573,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-retail-price#this> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -600,7 +616,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "3499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -633,15 +649,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-retail-price#this> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -674,7 +692,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "3499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -707,15 +725,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-WIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-WIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-WIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-retail-price#this> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -748,7 +768,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "9999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -781,15 +801,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-LIN#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-LIN#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-LIN%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-retail-price#this> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -822,7 +844,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "9999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
@@ -855,15 +877,17 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this> .
 
-<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v> 
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2019-04-virtuoso-83-app-dev-department-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC#this> schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> .
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-83-app-dev-department-SRV-MAC#this> 
+	schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-83-app-dev-department-SRV-MAC%23this&type=buy&mode=v> .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-retail-price#this> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -896,7 +920,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validThrough "2019-12-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://data.openlinksw.com/oplweb/offer#ww.w3.org%2F2001%2FXMLSchema%23string> ;
+	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "9999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
 
