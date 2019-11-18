@@ -2,10 +2,10 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix offers: <http://www.openlinksw.com/ontology/offers#> .
 @prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
-@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
 @prefix gr: <http://purl.org/goodrelations/v1#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
 @prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
@@ -29,9 +29,9 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGrouppersonal> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Personal License For Windows (Workstation) Operating Systems" .
 
-_:node1d76515mkx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+_:node1d7fijg99x1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
 
-<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN#this> skos:related _:node1d76515mkx1 ;
+<http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN#this> skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-WIN%23this> .
 
@@ -111,7 +111,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-personal-WKS-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGrouppersonal> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Personal License For Linux (Workstation) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-LIN%23this> .
 
@@ -185,7 +185,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-personal-WKS-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGrouppersonal> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Personal License For macOS (Workstation) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-MAC%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-MAC%23this> .
 
@@ -259,7 +259,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-development-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdevelopment> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Personal Application Development License For Windows (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-WIN%23this> .
 
@@ -280,7 +280,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType oplsof:workstationOS ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-development-SRV-WIN#this> .
@@ -333,7 +333,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-development-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdevelopment> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Personal Application Development License For Linux (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-LIN%23this> .
 
@@ -354,7 +354,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType oplsof:workstationOS ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-development-SRV-LIN#this> .
@@ -407,7 +407,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-development-SRV-MAC "^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdevelopment> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Personal Application Development License For macOS (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-2019-04-virtuoso-82-app-development-SRV-MAC+%2523this%26type%3Dbuy%26mode%3Dv> ;
 	schema:potentialAction <http://data.openlinksw.com/oplweb/offer#https%3A%2F%2Fshop.openlinksw.com%2Fcart.vsp%3Fcommand%3Dadd%26item%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-2019-04-virtuoso-82-app-development-SRV-MAC+%2523this> .
 
@@ -428,7 +428,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "5"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType oplsof:workstationOS ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-MAC%23this+> .
@@ -481,7 +481,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperworkgroup> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Workgroup Application Development License For Windows (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN%23this> .
 
@@ -502,7 +502,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN#this> .
@@ -555,7 +555,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperworkgroup> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Workgroup Application Development License For Linux (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN%23this> .
 
@@ -576,7 +576,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN#this> .
@@ -629,7 +629,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperworkgroup> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Workgroup Application Development License For macOS (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC%23this> .
 
@@ -650,7 +650,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "25"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC#this> .
@@ -703,7 +703,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-dev-department-SRV-WIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Department Level Application Development License For Windows (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-WIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-WIN%23this> .
 
@@ -724,7 +724,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "75"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "75"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-WIN#this> .
@@ -777,7 +777,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-dev-department-SRV-LIN"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Department Level Application Development License For Linux (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-LIN%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-LIN%23this> .
 
@@ -798,7 +798,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "75"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "75"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-LIN#this> .
@@ -851,7 +851,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	offers:offerNumber "2019-04-virtuoso-82-app-dev-department-SRV-MAC"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Offers.ttl#OfferGroupappdeveloperdepartment> ;
 	schema:name "Software License Offer: Virtuoso 8.2 Department Level Application Development License For macOS (Server) Operating Systems" ;
-	skos:related _:node1d76515mkx1 ;
+	skos:related _:node1d7fijg99x1 ;
 	license:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-MAC%23this&type=buy&mode=v> ;
 	schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-MAC%23this> .
 
@@ -872,7 +872,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	license:hasSessions "75"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:hasMaximumProcessorCores "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	license:maxNetworkInstance "75"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	oplsof:hasOperatingSystemType <http://www.openlinksw.com/ontology/software#workstationOS+SVR> ;
+	oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-MAC#this> .
