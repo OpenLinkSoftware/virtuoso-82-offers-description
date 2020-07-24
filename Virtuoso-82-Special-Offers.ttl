@@ -15,7 +15,7 @@
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-personal-WKS-WIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Personal License For Windows (Workstation) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Personal License  (expiring, 4 concurrent threads)" ;
 	schema:category "personal" ;
@@ -67,7 +67,7 @@ _:node1d7fijg99x1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_fa
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-WIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Personal License  (expiring, 4 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -98,7 +98,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-personal-WKS-LIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Personal License For Linux (Workstation) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Personal License  (expiring, 4 concurrent threads)" ;
 	schema:category "personal" ;
@@ -144,7 +144,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-LIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Personal License  (expiring, 4 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -172,7 +172,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-personal-WKS-MAC#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
 	skos:prefLabel "Virtuoso 8.2 Personal License For macOS (Workstation) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Personal License  (expiring, 4 concurrent threads)" ;
 	schema:category "personal" ;
@@ -218,7 +218,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-4DB-MAC.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Personal License  (expiring, 4 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -246,7 +246,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-development-SRV-WIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Personal Application Development License For Windows (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
 	schema:category "appdevelopment" ;
@@ -292,7 +292,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-WIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -320,7 +320,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-development-SRV-LIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Personal Application Development License For Linux (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
 	schema:category "appdevelopment" ;
@@ -366,7 +366,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-LIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -394,7 +394,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC+-special-price%23this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Flicense%2FLicense-2019-04-virtuoso-82-app-development-SRV-MAC+%23this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
 	skos:prefLabel "Virtuoso 8.2 Personal Application Development License For macOS (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
 	schema:category "appdevelopment" ;
@@ -440,7 +440,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-5DB-MAC.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 5 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -468,7 +468,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Workgroup Application Development License For Windows (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
 	schema:category "appdeveloperworkgroup" ;
@@ -514,7 +514,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-WIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -542,7 +542,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Workgroup Application Development License For Linux (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
 	schema:category "appdeveloperworkgroup" ;
@@ -588,7 +588,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-LIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Workgroup Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -616,7 +616,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
 	skos:prefLabel "Virtuoso 8.2 Workgroup Application Development License For macOS (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
 	schema:category "appdeveloperworkgroup" ;
@@ -662,7 +662,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-25CON-25DB-MAC.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Personal Application Development License  (expiring, 4 cores, 25 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -690,7 +690,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-department-SRV-WIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Department Level Application Development License For Windows (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
 	schema:category "appdeveloperdepartment" ;
@@ -736,7 +736,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-WIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -764,7 +764,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-department-SRV-LIN#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> ;
 	skos:prefLabel "Virtuoso 8.2 Department Level Application Development License For Linux (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
 	schema:category "appdeveloperdepartment" ;
@@ -810,7 +810,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-LIN.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
@@ -838,7 +838,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-special-price#this> ;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-department-SRV-MAC#this> ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
 	skos:prefLabel "Virtuoso 8.2 Department Level Application Development License For macOS (Server) Operating Systems" ;
 	schema:comment "Software License Offer: Virtuoso 8.2 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
 	schema:category "appdeveloperdepartment" ;
@@ -884,7 +884,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 Enterprise Edition supports many optional functionality Modules; with the exception of the Elastic Cluster Module, the license in this offer enables all current Modules.
 
 Pricing is extremely competitive relative to competing alternatives when performance and capabilities are fully considered.""" ;
-	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-75CON-75DB-MAC.png> ;
 	license:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
 	schema:name "Software License : Virtuoso 8.2 Department Level Application Development License  (expiring, 4 cores, 75 concurrent threads)" ;
 	schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
