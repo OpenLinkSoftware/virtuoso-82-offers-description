@@ -84,7 +84,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
   schema:version "8.0"^^xsd:decimal ;
   oplpro:versionText "8.0"^^xsd:string ;
-  schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
   oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
   schema:name "Virtuoso 8.0" ;
   wdrs:describedby  source:  ;
@@ -118,7 +118,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
 				  dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
 				  schema:version "8.0"^^xsd:decimal ;
 				  oplpro:versionText "8.0"^^xsd:string ;
-				  schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+				  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
 				  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
 				  schema:name "Virtuoso 8.0" ;
 				  wdrs:describedby  source:  ;
@@ -154,7 +154,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
   schema:version "8.1"^^xsd:decimal ;
   oplpro:versionText "8.1"^^xsd:string ;
-  schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
   oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
   schema:name "Virtuoso 8.1" ;
   wdrs:describedby  source:  ;
@@ -190,7 +190,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
   schema:version "8.2"^^xsd:decimal ;
   oplpro:versionText "8.2"^^xsd:string ;
-  schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
   oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
   schema:name "Virtuoso 8.2" ;
   wdrs:describedby  source:  ;
@@ -234,9 +234,9 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
 a schema:WebPage ;
 rdfs:label "Virtuoso 8.2 Docker Container Description Document" ;
 schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this>, <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
-foaf:depiction <http://www.openlinksw.com/images/virtuoso-82-docker-container-1.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-2.png>,
-               <http://www.openlinksw.com/images/virtuoso-82-docker-container-3.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-4.png>,
-			   <http://www.openlinksw.com/images/virtuoso-82-docker-container-5.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-6.png> ;
+foaf:depiction <https://www.openlinksw.com/images/virtuoso-82-docker-container-1.png>, <https://www.openlinksw.com/images/virtuoso-82-docker-container-2.png>,
+               <https://www.openlinksw.com/images/virtuoso-82-docker-container-3.png>, <https://www.openlinksw.com/images/virtuoso-82-docker-container-4.png>,
+			   <https://www.openlinksw.com/images/virtuoso-82-docker-container-5.png>, <https://www.openlinksw.com/images/virtuoso-82-docker-container-6.png> ;
 schema:url <http://hub.docker.com/r/openlink/virtuoso-closedsource-8/> ;
 dcterms:description """
 						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
@@ -266,7 +266,7 @@ is schema:about of <> .
 a schema:WebPage ;
 rdfs:label "Virtuoso 8.2 PAGO Edition Description Document" ;
 schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this>, <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> ;
-foaf:depiction <http://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
+foaf:depiction <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
 schema:url <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
 dcterms:description """
 						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
