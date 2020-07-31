@@ -10,7 +10,7 @@
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-WIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-WIN-special-price#this> ;
@@ -44,7 +44,7 @@ _:node1das6kevvx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_fa
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-retail-price#this> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -80,7 +80,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal License For Windows (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -95,7 +95,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-LIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-LIN-special-price#this> ;
@@ -126,7 +126,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-retail-price#this> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -159,7 +159,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal License For Linux (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -171,7 +171,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-MAC> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-MAC-special-price#this> ;
@@ -202,7 +202,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-personal-WKS-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Special Offer Unit Price: 249.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-retail-price#this> ;
 	schema:price "249.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -235,7 +235,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal License For macOS (Workstation) Operating Systems -- Retail Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -247,7 +247,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-development-SRV-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-development-SRV-WIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-WIN-special-price#this> ;
@@ -278,7 +278,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-retail-price#this> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -311,7 +311,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -323,7 +323,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-development-SRV-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-development-SRV-LIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-LIN-special-price#this> ;
@@ -354,7 +354,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-retail-price#this> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -387,7 +387,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -399,7 +399,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-development-SRV-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-development-SRV-MAC> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC-special-price#this> ;
@@ -430,7 +430,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-development-SRV-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC-retail-price#this> ;
 	schema:price "499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -463,7 +463,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Personal Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -475,7 +475,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-workgroup-SRV-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-workgroup-SRV-WIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN-special-price#this> ;
@@ -506,7 +506,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-retail-price#this> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -539,7 +539,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "3499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -551,7 +551,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-workgroup-SRV-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-workgroup-SRV-LIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN-special-price#this> ;
@@ -582,7 +582,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-retail-price#this> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -615,7 +615,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "3499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -627,7 +627,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-workgroup-SRV-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-workgroup-SRV-MAC> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC-special-price#this> ;
@@ -658,7 +658,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-workgroup-SRV-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 1,749.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-retail-price#this> ;
 	schema:price "1749.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -691,7 +691,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Workgroup Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 3,499.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "3499.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -703,7 +703,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-department-SRV-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-department-SRV-WIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-WIN-special-price#this> ;
@@ -734,7 +734,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-WIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-retail-price#this> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -767,7 +767,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Windows (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "9999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -779,7 +779,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-department-SRV-LIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-department-SRV-LIN> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-LIN-special-price#this> ;
@@ -810,7 +810,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-LIN-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-retail-price#this> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -843,7 +843,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For Linux (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "9999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
@@ -855,7 +855,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-department-SRV-MAC#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-app-dev-department-SRV-MAC> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-MAC-special-price#this> ;
@@ -886,7 +886,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-83-app-dev-department-SRV-MAC-special-price#this> a schema:UnitPriceSpecification , offers:Virtuoso8Pricing , offers:Virtuoso8SpecialUnitPriceSpecification , offers:SpecialUnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Special Offer Unit Price: 4,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-retail-price#this> ;
 	schema:price "4999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
@@ -919,7 +919,7 @@ Pricing is extremely competitive relative to competing alternatives when perform
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-retail-price#this> a offers:Virtuoso8Pricing , offers:RetailPriceSpecification , schema:UnitPriceSpecification ;
 	schema:validFrom "2019-03-28T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
-	schema:validThrough "2020-07-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
 	schema:name "Software License : Virtuoso 8.3 Department Level Application Development License For macOS (Server) Operating Systems -- Retail Offer Unit Price: 9,999.99"^^<http://www.w3.org/2001/XMLSchema#string> ;
 	schema:price "9999.99"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
 	schema:priceCurrency "USD"^^<http://www.w3.org/2001/XMLSchema#string> .
