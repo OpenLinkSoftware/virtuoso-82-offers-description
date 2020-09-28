@@ -1,0 +1,229 @@
+@prefix schema:    <http://schema.org/> .
+@prefix sioc:      <http://rdfs.org/sioc/ns#> .
+@prefix oplweb:    <http://www.openlinksw.com/schemas/oplweb#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix siocs:     <http://rdfs.org/sioc/services#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix prodont:   <http://www.productontology.org/id/> .
+@prefix xhv:       <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplcont:   <http://www.openlinksw.com/ontology/contracts#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix vocab:     <http://open.vocab.org/terms/> .
+@prefix oplfea:    <http://www.openlinksw.com/ontology/features#> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix doap:      <http://usefulinc.com/ns/doap#> .
+@prefix oplvad:    <http://www.openlinksw.com/ontology/vad#> .
+@prefix oplcomp:   <http://www.openlinksw.com/ontology/components#> .
+@prefix :          <#> .
+@prefix sourceDAV: <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Modules.ttl> .
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8Modules.ttl> .
+@prefix comp:      <http://virtuoso.openlinksw.com/data/turtle/utilities/apps-and-services.ttl#> .
+
+source: a schema:CreativeWork ;
+  schema:name """OpenLink Software Virtuoso Modules Document"""^^xsd:string ;
+  schema:comment """Description of OpenLink Software Virtuoso Modules."""^^xsd:string ;
+  schema:datePublished "2018-03-02T12:38:25-00:00"^^xsd:dateTime ;
+  schema:dateCreated "2018-03-01T10:38:25-00:00"^^xsd:dateTime ;
+  schema:dateModified "2019-09-28T13:41:00-05:00"^^xsd:dateTime ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:about <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> ,
+             <http://data.openlinksw.com/oplweb/module/VAL#this> ,
+             <http://data.openlinksw.com/oplweb/module/ABACACLs#this> ,
+             <http://data.openlinksw.com/oplweb/module/Replication#this> ,
+             <http://data.openlinksw.com/oplweb/module/VDB#this> ,
+             <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> ,
+             <http://data.openlinksw.com/oplweb/module/ODS#this> ,
+             <http://data.openlinksw.com/oplweb/component/AddressBook#this> ,
+             <http://data.openlinksw.com/oplweb/component/Bookmarks#this> ,
+             <http://data.openlinksw.com/oplweb/component/Calendar#this> ,
+             <http://data.openlinksw.com/oplweb/component/Discussion#this> ,
+             <http://data.openlinksw.com/oplweb/component/Weblog#this> ,
+             <http://data.openlinksw.com/oplweb/component/FeedManager#this> ,
+             <http://data.openlinksw.com/oplweb/component/Briefcase#this> ,
+             <http://data.openlinksw.com/oplweb/component/Webmail#this> ,
+             <http://data.openlinksw.com/oplweb/component/Wiki#this> .
+
+sourceDAV:
+  a schema:CreativeWork ;
+  schema:name """OpenLink Software Virtuoso Modules Document"""^^xsd:string ;
+  schema:comment """Description of OpenLink Software Virtuoso Modules."""^^xsd:string ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+  cc:attributionName "OpenLink Software" ;
+  cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+  schema:dateCreated "2018-03-01T14:38:25-00:00"^^xsd:dateTime ;
+  schema:dateModified "2019-09-28T13:41:00-05:00"^^xsd:dateTime ;
+  schema:about <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+             <http://data.openlinksw.com/oplweb/module/VAL#this> ,
+             <http://data.openlinksw.com/oplweb/module/ABACACLs#this> ,
+             <http://data.openlinksw.com/oplweb/module/Replication#this> ,
+             <http://data.openlinksw.com/oplweb/module/VDB#this> ,
+             <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> ,
+             <http://data.openlinksw.com/oplweb/module/ODS#this> ,
+             <http://data.openlinksw.com/oplweb/component/AddressBook#this> ,
+             <http://data.openlinksw.com/oplweb/component/Bookmarks#this> ,
+             <http://data.openlinksw.com/oplweb/component/Calendar#this> ,
+             <http://data.openlinksw.com/oplweb/component/Discussion#this> ,
+             <http://data.openlinksw.com/oplweb/component/Weblog#this> ,
+             <http://data.openlinksw.com/oplweb/component/FeedManager#this> ,
+             <http://data.openlinksw.com/oplweb/component/Briefcase#this> ,
+             <http://data.openlinksw.com/oplweb/component/Webmail#this> ,
+             <http://data.openlinksw.com/oplweb/component/Wiki#this> ;
+  owl:sameAs source: .
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso>
+  a schema:CreativeWork ;
+  schema:name "Virtuoso Product Description Document" ;
+  vocab:describes <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  schema:mainEntity <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
+  vocab:describes owl:inverseOf wdrs:describedby .
+  xhv:describes owl:equivalentProperty vocab:describes .
+
+## Virtuoso Modules ##
+
+# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>
+#   a schema:ProductModule , opllic:Module ;
+#   opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-systems-integration-WKSSVR-ANY#this>,
+# 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+# 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+# 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+# 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+#  opllic:hasModuleCode "SPONGER" ;
+#  schema:image <https://s-media-cache-ak0.pinimg.com/originals/32/83/94/328394842d25b3762fa8c518b251b44e.jpg> ;
+#  schema:comment """Virtuoso Module that enables generation of RDF based Linked Data views over data sources exposed via Web Services (SOAP or RESTful) and/or 
+#                    SOA (Service Oriented Architecture) Services."""^^xsd:string ;
+#  schema:description """Virtuoso Sponger"""^^xsd:string ;
+#  schema:name "VirtuosoSpongerModule"^^xsd:string ;
+#  skos:altLabel "Sponger Middleware Module" ;
+#  skos:prefLabel "Linked Data Middleware Module"^^xsd:string ;
+#>  wdrs:describedby source: .
+  
+ <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>
+     a schema:ProductModule , opllic:Module ;
+     opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+   					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+   					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+   					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+    opllic:hasModuleCode "COLUMNSTORE" ;
+    # schema:image <https://s-media-cache-ak0.pinimg.com/originals/32/83/94/328394842d25b3762fa8c518b251b44e.jpg> ;	
+    schema:comment  """License for Virtuoso 8.x Column Storage Module that enables Column Storage functionality """^^xsd:string ;
+    schema:description  """License for Virtuoso 8.x Column Storate Module that enables Column Storage functionality within scope of encompassing Virtuoso License. """^^xsd:string ;
+    schema:name "Virtuoso 8.x Column Storage"^^xsd:string ;
+    skos:altLabel "Virtuoso 8.x Column Storage Module"^^xsd:string ;
+    wdrs:describedby source: .
+	
+
+<http://data.openlinksw.com/oplweb/module/VAL#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+  opllic:hasModuleCode "VAL" ;
+  schema:description """VAL"""^^xsd:string ;
+  schema:name "VAL Module"^^xsd:string ;
+  skos:prefLabel "Virtuoso Authentication Layer"^^xsd:string ;
+  schema:comment """An extensible Virtualized Authentication Layer that provides Single-Sign-On (SSO) functionality across a variety of Identifier and Authentication Protocol combinations. Identifier support includes: NetIDs, WebIDs, and Webfinger IDs. Authentication protocol support includes: TLS, WebID-TLS, NetID-TLS, OAuth, OpenID, and Persona."""^^xsd:string ;
+  wdrs:describedby source: .
+# xhv:related <{OpenLinkGlossaryURIFor}WebID>, <{OpenLinkGlossaryURIFor}NetID>, <{OpenLinkGlossaryURIFor}WebID>, <{OpenLinkGlossaryURIFor}Oauth>, <{OpenLinkGlossaryURIFor}OpenID> .
+
+<http://data.openlinksw.com/oplweb/module/ABACACLs#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+  opllic:hasModuleCode "ABAC" ;
+  schema:comment """Virtuoso Module that provides Attribute Based Access Control (ABAC) functionality as a basis for fine-grained data access controls and policies."""^^xsd:string ;
+  schema:description """ABAC ACLs"""^^xsd:string ;
+  schema:name "ABAC Module" ;
+  skos:prefLabel "Attribute Based Access Controls Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/module/Replication#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+  opllic:hasModuleCode "REPL" ;
+  schema:comment """Virtuoso Module that provides High Availability data replication (various topologies) services across SQL Tables and/or RDF relational property graphs"""^^xsd:string ;
+  schema:description """Virtuoso Replication."""^^xsd:string ;
+  schema:name "Replication Module"^^xsd:string ;
+  skos:prefLabel "Replication Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/module/VDB#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+  opllic:hasModuleCode "VDB" ;
+  schema:comment """Virtuoso Module that provides data virtualization across SQL relational data sources. This is also the module the enables generation of RDF based Linked Data Views (Materialized or Transient) over ODBC or JDBC accessible SQL data sources."""^^xsd:string ;
+  schema:description """VDB"""^^xsd:string ;
+  schema:name "VDB Module"^^xsd:string ;
+  skos:prefLabel "Virtual Database Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>
+  a schema:ProductModule , opllic:Module ;
+  opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+ 					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+  opllic:hasModuleCode "BI" ;
+  schema:comment """Virtuoso Module that provides additional performance enhancements aimed at Big Data oriented Business Intelligence Analytics."""^^xsd:string ;
+  schema:description """Virtuoso Business Analytics."""^^xsd:string ;
+  schema:name "Business Analytics Module"^^xsd:string ;
+  skos:prefLabel "Business Analytics Module"^^xsd:string ;
+  wdrs:describedby source: .
+
+
+ <http://data.openlinksw.com/oplweb/module/SPIN#this> 
+ a schema:ProductModule, opllic:Module  ;
+ opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+ opllic:hasModuleCode "SPIN" ;
+ schema:comment "Virtuoso Module that provides Custom Reasoning & Inference Rules functionality as a basis for dynamic generation of entity relationship types (relations)."^^xsd:string ;
+ schema:description "Custom Reasoning & Inference Rules"^^xsd:string ;
+ schema:name "Custom Reasoning & Inference  Module" ;
+ skos:prefLabel "Custom Reasoning & Inference Rules Module"^^xsd:strting ;
+ wdrs:desribedby source:  . 
+
+<http://data.openlinksw.com/oplweb/module/SHACL#this> 
+ a schema:ProductModule, opllic:Module  ;
+ opllic:isModuleOf <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-personal-WKS-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ,
+					<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+ opllic:hasModuleCode "SHACL" ;
+ schema:comment "Virtuoso Module that provides SHACL Data Structure (SHAPE) Validation functionality."^^xsd:string ;
+ schema:description "SHACL Shapes Validation"^^xsd:string ;
+ schema:name "SHACL Module" ;
+ skos:prefLabel "SHACL Data Shaples Validation Module"^^xsd:strting ;
+ wdrs:desribedby source:  . 
+
+## Virtuoso Modules End ##
+
