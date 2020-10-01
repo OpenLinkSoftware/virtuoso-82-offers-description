@@ -23,7 +23,7 @@
     offers:Virtuoso8Offer ;
     schema:category "appdeveloperdevelopment"^^xsd:string ;
 	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
-	offers:isMemberOf :OfferGroupEarlyStage ;
+	#offers:isMemberOf :OfferGroupEarlyStage ;
     schema:name "Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
     rdfs:label "Personal";
 	skos:prefLabel "Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
@@ -67,7 +67,7 @@ schema:priceCurrency "USD"^^xsd:string .
     offers:Virtuoso8Offer ;
     schema:category "appdeveloperproject" ;
 	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-16CORE.png> ;
-	offers:isMemberOf :OfferGroupLateStage ;
+	#offers:isMemberOf :OfferGroupLateStage ;
     schema:name "Software License Offer: Virtuoso 8.x Project Development License for any Workstation-class Operating System"^^xsd:string ;
     rdfs:label 'Project';
 	skos:prefLabel "Software License Offer: Virtuoso 8.x Project Development License for any Workstation-class Operating System"^^xsd:string ;
@@ -109,7 +109,7 @@ schema:priceCurrency "USD"^^xsd:string .
     offers:Virtuoso8Offer ;
     schema:category "appdeveloperworkgroup" ;
 	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
-	offers:isMemberOf :OfferGroupInitialDeployment;
+	#offers:isMemberOf :OfferGroupInitialDeployment;
     schema:name """Software License Offer: Virtuoso 8.x Workgroup Development License 
 				for any Workstation-class or Server-class Operating System
 				"""^^xsd:string ;
