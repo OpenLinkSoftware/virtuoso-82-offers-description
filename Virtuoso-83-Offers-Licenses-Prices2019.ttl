@@ -60,6 +60,45 @@ schema:name """Software License Offer: Virtuoso 8.x Application Development Lice
 schema:price "499.99"^^xsd:decimal ;
 schema:priceCurrency "USD"^^xsd:string .
 
+<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> a
+    opllic:ExpiringLicense,
+    opllic:ProductLicense,
+    opllic:Virtuoso8License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+    schema:name "Virtuoso 8.x License: 2018-03-virtuoso-8-early-stage-combo-WKS-ANY 8 cores"^^xsd:string;
+	skos:prefLabel "Virtuoso 8.x License: 2018-03-virtuoso-8-early-stage-combo-WKS-ANY"^^xsd:string ;
+    schema:comment """
+					Virtuoso 8.x Early-stage-combo-WKS-ANY-Development License (non-expiring, 8 cores, 5 threads) for 
+					deployment on any OS (Workstation) 
+				   """^^xsd:string ;
+    schema:description """
+					   Workstation-class Virtuoso 8.x Early-Stage-Combo Development License for installation (transferable) 
+					   on one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, 
+					   the Column Store, Custom Reasoning & Inference Rules, Advanced Module, and will utilize a maximum of 
+					   eight (8) processor cores, for one (1) year. 
+					   """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>;
+    opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
+	opllic:hasSessions "5"^^xsd:integer ;
+	opllic:maxNetworkInstance "1"^^xsd:integer ;
+	opllic:serialNumberBroadcast "1"^^xsd:integer ;
+	opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    wdrs:describedby source: .
+
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this> a
     schema:Offer,
@@ -102,6 +141,47 @@ schema:priceCurrency "USD"^^xsd:string .
                 For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 749.99"""^^xsd:string ;
     schema:price "499.99"^^xsd:decimal ;
     schema:priceCurrency "USD"^^xsd:string .
+
+	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> a
+    opllic:ExpiringLicense,
+    opllic:ProductLicense,
+    opllic:Virtuoso8License , schema:Product ;
+	oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-16CORE.png> ;
+    schema:name "Virtuoso 8.x License: 2018-03-virtuoso-8-app-developer-project-WKS-ANY 16 cores"^^xsd:string;
+    skos:prefLabel "Virtuoso 8.x License: 2018-03-virtuoso-8-app-developer-project-WKS-ANY"^^xsd:string;
+    schema:comment """
+					Virtuoso 8.x Application Development Progject License (non-expiring, 16 cores, 5 threads) 
+					for deployment on any OS (Workstation)
+					"""^^xsd:string ;
+    schema:description """
+						Workstation-class Virtuoso 8.x Application Development Progject License for installation (transferable) 
+						on one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, 
+						the Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, 
+						Virtual Database, Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize a 
+						maximum of sixteen (16) processor cores, for one (1) year. 
+					   """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>;
+    opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
+	opllic:hasSessions "5"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+	opllic:serialNumberBroadcast "1"^^xsd:integer ;
+	opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    # opllic:productLicenseOf  <http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-late-stage-WKS-ANY#this> ;	
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    wdrs:describedby source: .
 
 	<http://data.openlinksw.com/oplweb/offer/Offer-2020-20-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> a
     schema:Offer,
@@ -147,6 +227,46 @@ schema:priceCurrency "USD"^^xsd:string .
                 For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 749.99"""^^xsd:string ;
     schema:price "1249.99"^^xsd:decimal ;
     schema:priceCurrency "USD"^^xsd:string .
+
+	<http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> a
+    opllic:ExpiringLicense,
+    opllic:ProductLicense,
+    opllic:Virtuoso8License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
+    schema:name "Virtuoso 8.x License: 2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+	skos:prefLabel "Virtuoso 8.x License: 2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+    schema:comment """
+				   Virtuoso 8.x Initial-Deployment-WKSSVR-ANY License (non-expiring, 16 cores, 10 threads) 
+				   for deployment on any OS (Server or Workstation) 
+				   """^^xsd:string ;
+    schema:description """
+						Server-class Virtuoso 8.x Initial-Deployment License for installation (transferable) on one (1) host 
+						running any supported Workstation- or Server-class OS. Enables ten (10) Client Service Threads, the 
+						Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, 
+						Virtual Database, Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize 
+						a maximum of sixteen (16) processor cores, for one (1) year. 
+					  """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>;
+    opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
+	opllic:hasSessions "10"^^xsd:integer ;
+    opllic:maxNetworkInstance "1"^^xsd:integer ;
+	opllic:serialNumberBroadcast "1"^^xsd:integer ;
+	opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    wdrs:describedby source: .
 
 
 	
