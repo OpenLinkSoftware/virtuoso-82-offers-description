@@ -80,14 +80,15 @@ schema:priceCurrency "USD"^^xsd:string .
 					   eight (8) processor cores, for one (1) year. 
 					   """^^xsd:string ;
     schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
-    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
 	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
 							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
 							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
 							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
 							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
 							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
-							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>;
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
     opllic:hasMaximumProcessorCores "8"^^xsd:integer ;
 	opllic:hasSessions "5"^^xsd:integer ;
 	opllic:maxNetworkInstance "1"^^xsd:integer ;
@@ -163,14 +164,15 @@ schema:priceCurrency "USD"^^xsd:string .
 						maximum of sixteen (16) processor cores, for one (1) year. 
 					   """^^xsd:string ;
     schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
-    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
 	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
 							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
 							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
 							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
 							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
 							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
-							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>;
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
     opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
 	opllic:hasSessions "5"^^xsd:integer ;
     opllic:maxNetworkInstance "1"^^xsd:integer ;
@@ -249,14 +251,15 @@ schema:priceCurrency "USD"^^xsd:string .
 						a maximum of sixteen (16) processor cores, for one (1) year. 
 					  """^^xsd:string ;
     schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
-    opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
 	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
 							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
 							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
 							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
 							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
 							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
-							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>;
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
     opllic:hasMaximumProcessorCores "16"^^xsd:integer ;
 	opllic:hasSessions "10"^^xsd:integer ;
     opllic:maxNetworkInstance "1"^^xsd:integer ;
