@@ -6,7 +6,9 @@
 @prefix license: <http://www.openlinksw.com/ontology/licenses#> .
 @prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix oplic: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix opllic: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
+# @prefix opllic: <http://www.openlinksw.com/ontology/licenses#> .
 @prefix source: <#>.
 @prefix : <#>.
 
@@ -53,7 +55,7 @@
     schema:businessFunction gr:Sell ;
     wdrs:describedby source: ;
     schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v> ;
-    oplic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v> ;
+    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v> ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this>;
     skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
 
@@ -138,7 +140,7 @@ schema:priceCurrency "USD"^^xsd:string .
     wdrs:describedby source: ;
     schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this>;
-    oplic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
+    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
     skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
     
     <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>
@@ -225,7 +227,7 @@ schema:priceCurrency "USD"^^xsd:string .
     wdrs:describedby source: ;
     schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2018-03-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this&type=buy&mode=v> ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-20-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this>;
-    oplic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
+    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
     skos:related <http://data.openlinksw.com/oplweb/product/Virtuoso#this> .
     
     <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>
