@@ -1,0 +1,371 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix offers: <http://www.openlinksw.com/ontology/offers#> .
+@prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplic: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
+@prefix source: <#>.
+@prefix : <#>.
+
+## Associating a Company with its Offers
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
+														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
+														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this>;
+										   schema:about <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
+														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
+														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this>, 
+														<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-retail-price#this>,
+														<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>,
+														<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-retail-price#this>,
+														<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this>,
+														<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>,
+														<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this>.	
+
+
+## Associating Virtuoso Pricing Page with Offers
+<http://virtuoso.openlinksw.com/pricing/> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
+														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
+														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> .
+
+## License Duration for Licenses to be associated with offers in this doc
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#annual> 
+oplic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this>,
+					<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>,
+					<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this>.
+
+## Personal Offer
+<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this> a
+    schema:Offer,
+    offers:Virtuoso8Offer,	
+    offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY>;
+    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T16:59:59+00:00"^^xsd:dateTime ;
+	schema:price "499.00"^^xsd:decimal ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-special-price#this>;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+	schema:category "appdeveloperdevelopment"^^xsd:string ;
+	gr:businessFunction gr:Sell ;
+	schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#OfferGroupEarlyStage> ;
+    schema:name "Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
+    rdfs:label "Personal";
+	skos:prefLabel "Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
+	offers:offerNumber "2020-10-virtuoso-8-app-developer-development-WKS-ANY"^^xsd:string ;
+    
+	schema:comment """Software License Offer: Virtuoso 8.x Application Development License (non-expiring, 8 cores, 5 threads) 
+					  for deployment on any Workstation-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """Workstation-class Virtuoso 8.x Application Development License for installation on one (1) host running a
+					   Workstation-class Operating System. Enables five (5) Client Service Threads and the Column Store, Linked Data Middleware, 
+					   Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, Virutalized Authentication, and 
+					   Attribute-based Access Controls Modules; will utilize a maximum of eight (8) logical processors; and is transferable across 
+					   hosts running supported operating systems, for one (1) year.
+					   """^^xsd:string ;
+    gr:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v> ;
+    oplic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this>;
+	skos:related _:node1das6kevvx1 .
+
+_:node1das6kevvx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v>
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2020-10-virtuoso-8-app-developer-development-WKS-ANY"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2020-10-virtuoso-8-app-developer-development-WKS-ANY"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+
+
+## Personal Offer Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-special-price#this>
+a schema:UnitPriceSpecification , 
+offers:Virtuoso8Pricing ,  
+offers:SpecialUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Software License Offer: Virtuoso 8.x Application Development License 
+             For Any (Linux, Windows, macOS) Operating Systems -- Special Offer Unit Price: 499.99"""^^xsd:string ;
+schema:price "499.00"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string ;
+offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-retail-price#this>.
+
+
+
+## Personal Offer Retail Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-retail-price#this>
+a schema:UnitPriceSpecification , 
+offers:Virtuoso8Pricing ,  
+offers:RetailUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Software License Offer: Virtuoso 8.x Application Development License 
+             For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 999.99"""^^xsd:string ;
+schema:price "999.99"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string .
+
+## License for Personal Offer
+<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this> a
+    oplic:ExpiringLicense,
+    oplic:ProductLicense,
+    oplic:Virtuoso8License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+    schema:name "Virtuoso 8.x License: 2020-10-virtuoso-8-early-stage-combo-WKS-ANY 8 cores"^^xsd:string;
+	skos:prefLabel "Virtuoso 8.x License: 2020-10-virtuoso-8-early-stage-combo-WKS-ANY"^^xsd:string ;
+    schema:comment """
+					Virtuoso 8.x Early-stage-combo-WKS-ANY-Development License (non-expiring, 8 cores, 5 threads) for 
+					deployment on any OS (Workstation) 
+				   """^^xsd:string ;
+    schema:description """
+					   Workstation-class Virtuoso 8.x Early-Stage-Combo Development License for installation (transferable) 
+					   on one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, 
+					   the Column Store, Custom Reasoning & Inference Rules, Advanced Module, and will utilize a maximum of 
+					   eight (8) processor cores, for one (1) year. 
+					   """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+	oplic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+    oplic:hasMaximumProcessorCores "8"^^xsd:integer ;
+	oplic:hasSessions "5"^^xsd:integer ;
+	oplic:maxNetworkInstance "1"^^xsd:integer ;
+	oplic:serialNumberBroadcast "1"^^xsd:integer ;
+	oplic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+	## note, oplic:PartOf owl:inverseOf schema:itemOffered. It is mandatory for the offers listing control query re shop
+    oplic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
+    oplic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    wdrs:describedby source: .
+
+## Project Offer
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this> a
+    schema:Offer,
+    offers:Virtuoso8Offer,	
+    offers:VirtuosoSpecialOffer ;
+    schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY>;
+    schema:category "appdeveloperproject" ;
+    schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-16CORE.png> ;
+    offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#OfferGroupLateStage> ;
+    schema:name "Software License Offer: Virtuoso 8.x Project Development License for any Workstation-class Operating System"^^xsd:string ;
+    rdfs:label 'Project';
+    skos:prefLabel "Software License Offer: Virtuoso 8.x Project Development License for any Workstation-class Operating System"^^xsd:string ;
+    offers:offerNumber "2020-10-virtuoso-8-app-developer-project-WKS-ANY"^^xsd:string ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this> ;
+    schema:price "749.00"^^xsd:decimal ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-special-price#this>;
+    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
+    schema:comment """Software License Offer: Virtuoso 8.x Project Development License (non-expiring, 16 cores, 5 threads) 
+				   for deployment on any Workstation-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """Workstation-class Virtuoso 8.x Project Development License for installation on one (1) host running 
+					   a Workstation-class Operating System. Enables five (5) Client Service Threads and the Column Store, 
+					   Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, 
+					   Virutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of sixteen (16) 
+					   logical processors; and is transferable across hosts running supported operating systems, for one (1) year.
+					   """^^xsd:string ;
+    gr:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this>;
+    oplic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ;
+    skos:related _:node1das6kevvx1 .
+    
+	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v>
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: 2020-10-virtuoso-8-app-developer-project-WKS-ANY"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	schema:name "HTML Document Generated via BuyAction for  listing of Offer: 2020-10-virtuoso-8-app-developer-project-WKS-ANY"^^<http://www.w3.org/2001/XMLSchema#string> .
+	
+	## Pricing Specification for Project Offer
+
+	## Retail 
+    <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>
+    a schema:UnitPriceSpecification , offers:Virtuoso8Pricing ,  
+    offers:Virtuoso8RetailUnitPriceSpecification;
+	wdrs:describedby source: ;
+    schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
+    schema:name """Software License Offer: Virtuoso 8.x Application Development License 
+                For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 1,466.99"""^^xsd:string ;
+    schema:price "1498.00"^^xsd:decimal ;
+    schema:priceCurrency "USD"^^xsd:string .
+
+    ## Special
+	<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-special-price#this>
+	a schema:UnitPriceSpecification , 
+	offers:Virtuoso8Pricing ,  
+	offers:Virtuoso8SpecialUnitPriceSpecification,
+	offers:SpecialUnitPriceSpecification;
+	wdrs:describedby source: ;
+	schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+	schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
+	schema:name """Software License Offer: Virtuoso 8.x Application Development License 
+                For Any (Linux, Windows, macOS) Operating Systems -- Special Offer Unit Price: 799.00"""^^xsd:string ;
+	schema:price "749.00"^^xsd:decimal ;
+	schema:priceCurrency "USD"^^xsd:string ;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>.
+
+## License for Project Offer
+	<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this> a
+    oplic:ExpiringLicense,
+    oplic:ProductLicense,
+    oplic:Virtuoso8License , schema:Product ;
+	oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-16CORE.png> ;
+    schema:name "Virtuoso 8.x License: 2020-10-virtuoso-8-app-developer-project-WKS-ANY 16 cores"^^xsd:string;
+    skos:prefLabel "Virtuoso 8.x License: 2020-10-virtuoso-8-app-developer-project-WKS-ANY"^^xsd:string;
+    schema:comment """
+					Virtuoso 8.x Application Development Progject License (non-expiring, 16 cores, 5 threads) 
+					for deployment on any OS (Workstation)
+					"""^^xsd:string ;
+    schema:description """
+						Workstation-class Virtuoso 8.x Application Development Progject License for installation (transferable) 
+						on one (1) host running any supported Workstation-class OS. Enables five (5) Client Service Threads, 
+						the Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, 
+						Virtual Database, Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize a 
+						maximum of sixteen (16) processor cores, for one (1) year. 
+					   """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+	oplic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+    oplic:hasMaximumProcessorCores "16"^^xsd:integer ;
+	oplic:hasSessions "5"^^xsd:integer ;
+    oplic:maxNetworkInstance "1"^^xsd:integer ;
+	oplic:serialNumberBroadcast "1"^^xsd:integer ;
+	oplic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    oplic:partOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    # oplic:productLicenseOf  <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-late-stage-WKS-ANY#this> ;	
+    oplic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    wdrs:describedby source: .
+
+## Workgroup Offer
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> a
+    schema:Offer,
+    offers:Virtuoso8Offer,	
+    offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY>;
+    schema:category "appdeveloperworkgroup" ;
+	schema:image <https://www.openlinksw.com/DAV/oplweb3/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#OfferGroupInitialDeployment>;
+    schema:name """Software License Offer: Virtuoso 8.x Workgroup Development License 
+				for any Workstation-class or Server-class Operating System
+				"""^^xsd:string ;
+    rdfs:label "Workgroup";
+	skos:prefLabel "Software License Offer: Virtuoso 8.x Workgroup Development License for any Workstation-class or Server-class Operating System"^^xsd:string ;
+	offers:offerNumber "2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY"^^xsd:string ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ;
+	schema:price "999.00"^^xsd:decimal ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-special-price#this>;
+    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T16:59:59+00:00"^^xsd:dateTime ;
+	schema:comment """Software License Offer: Virtuoso 8.x Workgroup Development License (non-expiring, 16 cores, 10 threads) 
+					  for deployment on any Workstation- or Server-class Operating System. 
+				   """^^xsd:string ;
+    schema:description """
+						Workstation- or Server-class Virtuoso 8.x Workgroup Development License for installation 
+						on one (1) host running a Workstation- or Server-class Operating System. Enables ten (10) Client Service Threads, 
+						the Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, Virtual Database, 
+						Virutalized Authentication, and Attribute-based Access Controls Modules; will utilize a maximum of sixteen 
+						(16) logical processors; and is transferable across hosts running supported operating systems, for one (1) year.
+					  """^^xsd:string ;
+    gr:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this>;
+    oplic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this&type=buy&mode=v> ;
+	skos:related _:node1das6kevvx1 .
+    
+	<http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this&type=buy&mode=v>
+	schema:description "HTML Document Generated via BuyAction for REST-ful listing of Offer: Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY"^^<http://www.w3.org/2001/XMLSchema#string> ;
+	schema:name "HTML Document Generated via BuyAction for  listing of Offer: Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+## Price Specification for Workgroup Offer
+    <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-retail-price#this>
+    a schema:UnitPriceSpecification , offers:Virtuoso8Pricing ,  
+    offers:Virtuoso8RetailUnitPriceSpecification;
+    schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
+    schema:name """Software License Offer: Virtuoso 8.x Application Development License 
+                For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 1,998.99"""^^xsd:string ;
+    schema:price "1998.99"^^xsd:decimal ;
+    schema:priceCurrency "USD"^^xsd:string .
+
+    <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-special-price#this>
+    a schema:UnitPriceSpecification , offers:Virtuoso8Pricing ,  
+    offers:Virtuoso8SpecialUnitPriceSpecification;
+    schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
+    schema:name """Software License Offer: Virtuoso 8.x Application Development License 
+                For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 999.99"""^^xsd:string ;
+    schema:price "999.00"^^xsd:decimal ;
+    schema:priceCurrency "USD"^^xsd:string;
+	offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-retail-price#this>.
+
+## License for Workgroup Offer
+    <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this> a
+    oplic:ExpiringLicense,
+    oplic:ProductLicense,
+    oplic:Virtuoso8License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-10CON-16CORE.png> ;
+    schema:name "Virtuoso 8.x License: 2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+	skos:prefLabel "Virtuoso 8.x License: 2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY "^^xsd:string ;
+    schema:comment """
+				   Virtuoso 8.x Initial-Deployment-WKSSVR-ANY License (non-expiring, 16 cores, 10 threads) 
+				   for deployment on any OS (Server or Workstation) 
+				   """^^xsd:string ;
+    schema:description """
+						Server-class Virtuoso 8.x Initial-Deployment License for installation (transferable) on one (1) host 
+						running any supported Workstation- or Server-class OS. Enables ten (10) Client Service Threads, the 
+						Column Store, Linked Data Middleware, Business Analytics, Replication, Custom Reasoning & Inference Rules, 
+						Virtual Database, Virutalized Authentication, and Attribute-based Access Controls Modules, and will utilize 
+						a maximum of sixteen (16) processor cores, for one (1) year. 
+					  """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+	oplic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+    oplic:hasMaximumProcessorCores "16"^^xsd:integer ;
+    oplic:hasSessions "10"^^xsd:integer ;
+    oplic:maxNetworkInstance "1"^^xsd:integer ;
+	oplic:serialNumberBroadcast "1"^^xsd:integer ;
+	oplic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    oplic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ;
+    oplic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:serverWorkstationOS ;
+    wdrs:describedby source: .
