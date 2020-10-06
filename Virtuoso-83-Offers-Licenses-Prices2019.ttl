@@ -33,8 +33,8 @@ oplic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2018-03-vi
     offers:Virtuoso8BasicOffer,
     offers:Virtuoso8Offer ;	
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY>;
-    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    schema:validThrough "2020-10-31T16:59:59+00:00"^^xsd:dateTime ;
+    schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T23:59:59Z"^^xsd:dateTime ;
 	schema:price "499.00"^^xsd:decimal ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-special-price#this>;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
@@ -151,8 +151,8 @@ schema:priceCurrency "USD"^^xsd:string .
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-app-developer-project-WKS-ANY#this> ;
 	schema:price "749.00"^^xsd:decimal ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-special-price#this>;
-    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    schema:validThrough "2020-10-01T16:59:59+00:00"^^xsd:dateTime ;
+    schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T16:59:59Z"^^xsd:dateTime ;
 	schema:comment """Software License Offer: Virtuoso 8.x Project Development License (non-expiring, 16 cores, 5 threads) 
 				   for deployment on any Workstation-class Operating System. 
 				   """^^xsd:string ;
@@ -257,8 +257,8 @@ schema:priceCurrency "USD"^^xsd:string .
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2018-03-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ;
 	schema:price "999.00"^^xsd:decimal ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-special-price#this>;
-    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    schema:validThrough "2020-10-31T16:59:59+00:00"^^xsd:dateTime ;
+    schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2020-10-31T16:59:59Z"^^xsd:dateTime ;
 	schema:comment """Software License Offer: Virtuoso 8.x Workgroup Development License (non-expiring, 16 cores, 10 threads) 
 					  for deployment on any Workstation- or Server-class Operating System. 
 				   """^^xsd:string ;
