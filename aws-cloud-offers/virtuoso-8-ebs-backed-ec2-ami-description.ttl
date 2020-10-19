@@ -50,10 +50,10 @@ source:
     schema:dateCreated "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
     schema:datePublished "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
     schema:dateModified "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
-    schema:about        <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#> , # BYOL 8.3
-                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0d348ef43a2b61e6f#this> , # 8.3 PAGO
-                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> , # 8.2 PAGO
-                        <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#> ; # PAGO
+    schema:about        <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#> , # 8.3 RHEL BYOL
+                        <https://aws.amazon.com/marketplace/pp/B08K97YRGK#> , # 8.3.3319 Ubuntu PAGO
+                        <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> , # 8.3.3319 Ubuntu PAGO
+                        <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#> ; # 8.3 and 8.3 RHEL PAGO
     schema:mentions     dbpedia:Amazon_Web_Services ,
                         dbpedia:Amazon_Elastic_Compute_Cloud ;
     skos:related        dbpedia:Cloud_computing ;
