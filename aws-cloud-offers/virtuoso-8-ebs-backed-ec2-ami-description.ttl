@@ -69,7 +69,7 @@ source:
     rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic PAGO Marketplace Page"@en ;
     schema:mainEntity   <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0900704f0d2f8df12#this> ; # 8.3.3319 PAGO
     foaf:depiction      <http://www.openlinksw.com/DAV/oplweb3/images/virtuoso-83-3319-pago-ami-aws-marketplace.png> ;
-    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    foaf:logo           <http://www.openlinksw.com/DAV/oplweb3/images/OPL-VIRT-216px.png> ;
     schema:url          <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
     dcterms:description """One-click installation edition of a preconfigured Virtuoso Multi-Model RDBMS instance.
                            This particular deployment is available on a Pay-As-You-Go (PAGO) subscription model basis
@@ -136,7 +136,7 @@ source:
                         <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0d348ef43a2b61e6f#this> , # 8.3 PAGO
                         <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> ; # 8.2 PAGO
     foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
-    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    foaf:logo           <http://www.openlinksw.com/DAV/oplweb3/images/OPL-VIRT-216px.png> ;
     schema:url          <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
     dcterms:description """One-click installation edition of a preconfigured Virtuoso Multi-Model RDBMS instance.
                            This particular deployment is available on a Pay-As-You-Go (PAGO) subscription model basis
@@ -240,7 +240,7 @@ source:
     rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) 8.3.3319 BYOL AMI for Ubuntu 18.04 Bionic Marketplace Listing"@en ;
     schema:mainEntity   <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0ee6dac2acedd5ed0#this> ;
     foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
-    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    foaf:logo           <http://www.openlinksw.com/DAV/oplweb3/images/OPL-VIRT-216px.png> ;
     schema:url          <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG/> ;
     dcterms:description """One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance.
                            This particular deployment is available on a Pay-As-You-Go (BYOL) subscription model basis
@@ -305,7 +305,7 @@ source:
     rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) 8.3 for RHEL 7.1 BYOL AMI  Marketplace Listing"@en ;
     schema:mainEntity   <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0c39dc72cda79a561#this> ;
     foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
-    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    foaf:logo           <http://www.openlinksw.com/DAV/oplweb3/images/OPL-VIRT-216px.png> ;
     schema:url          <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG/> ;
     dcterms:description """One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance.
                            This particular deployment is available on a Pay-As-You-Go (BYOL) subscription model basis
