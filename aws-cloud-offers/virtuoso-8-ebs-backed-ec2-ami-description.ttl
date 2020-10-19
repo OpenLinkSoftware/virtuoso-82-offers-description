@@ -1,0 +1,399 @@
+@prefix oplsoft:    <http://www.openlinksw.com/ontology/software#> .
+@prefix oplprod:    <http://www.openlinksw.com/ontology/products#> .
+@prefix gr:         <http://purl.org/goodrelations/v1#> .
+@prefix opllic:     <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplfeat:    <http://www.openlinksw.com/ontology/features#> .
+@prefix oplbens:    <http://www.openlinksw.com/ontology/benefits#> .
+@prefix oplinstall: <http://www.openlinksw.com/ontology/installers#> .
+@prefix oplcomp:    <http://www.openlinksw.com/ontology/components#> .
+
+@prefix schema:   <http://schema.org/> .
+@prefix sioc:     <http://rdfs.org/sioc/ns#> .
+@prefix xhv:      <http://www.w3.org/1999/xhtml/vocab#> .
+@prefix cc:       <http://creativecommons.org/ns#> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix wdrs:     <http://www.w3.org/2007/05/powder-s#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplprod:  <http://www.openlinksw.com/ontology/products#> .
+@prefix oplami:   <http://www.openlinksw.com/ontology/oplami#> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/notes/virtuoso-8-ebs-backed-ec2-ami-description.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/notes/virtuoso-8-ebs-backed-ec2-ami-description.ttl> .
+
+sourceDAV:
+   a schema:CreativeWork ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:dateCreated "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
+   schema:datePublished "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
+   schema:name "OpenLink Virtuoso 8.x Amazon AMIs Related Information Document" ;
+   schema:comment """This document is a launch point for discovering routes to various information sources associated with the Virtuoso 8.x Amazon virtual Machine Instances (AMIs)."""^^xsd:string ;
+   owl:sameAs source: .
+
+## Document Metadata
+
+source:
+    a                   foaf:Document,
+                        schema:WebPage ;
+    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) AMI Description Document"@en ;
+    rdfs:comment        """This document describes the Virtuoso EBS-backed Amazon Machine Images (AMIs)
+                           which are deployed via Amazon Web Services based Elastic Computing Cloud -- on 
+                           an hourly or annual subscription basis, or on a Bring-Your-Own-License basis."""@en ;
+    schema:dateCreated "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
+    schema:datePublished "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
+    schema:dateModified "2020-10-19T20:00:00-05:00"^^xsd:dateTime ;
+    schema:about        <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#> , # BYOL 8.3
+                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0d348ef43a2b61e6f#this> , # 8.3 PAGO
+                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> , # 8.2 PAGO
+                        <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#> ; # PAGO
+    schema:mentions     dbpedia:Amazon_Web_Services ,
+                        dbpedia:Amazon_Elastic_Compute_Cloud ;
+    skos:related        dbpedia:Cloud_computing ;
+    dcterms:creator     <http://www.openlinksw.com/dataspace/organization/openlink#this> .
+
+
+## Virtuoso Universal Server (Commercial Cloud Edition) PAGO & BYOL AMI - Amazon Marketplace Virtual Machine Descriptions
+
+## Virtuoso 8.3.3319 Ubuntu 18.04 Bionic PAGO AMI Listing Page Description
+
+<https://aws.amazon.com/marketplace/pp/B08KTPPY8V#>
+    a                   schema:WebPage ;
+    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic PAGO Marketplace Page"@en ;
+    schema:mainEntity   <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0900704f0d2f8df12#this> ; # 8.3.3319 PAGO
+    foaf:depiction      <http://www.openlinksw.com/DAV/oplweb3/images/virtuoso-83-3319-pago-ami-aws-marketplace.png> ;
+    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    schema:url          <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
+    dcterms:description """One-click installation edition of a preconfigured Virtuoso Multi-Model RDBMS instance.
+                           This particular deployment is available on a Pay-As-You-Go (PAGO) subscription model basis
+                           via the Amazon Web Services (AWS) Cloud's marketplace."""@en ;
+    rdfs:comment        """Following AMI instantiation and initial Virtuoso DBMS server startup, you have a fully
+                           configured instance ready for personal, enterprise, or service-specific use.""";
+    skos:related        <http://dbpedia.org/resource/Category:Cloud_platforms>,
+                        <http://dbpedia.org/resource/Amazon_Web_Services>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL>;
+    schema:isPartOf     <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    wdrs:describedby    <> ;
+    is schema:about of  <> .
+
+## Virtuoso 8.3.3319 Ubuntu 18.04 Bionic PAGO AMI Description
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0900704f0d2f8df12#this>
+    a                           oplami:AmazonEC2EBSBackedAMI ,
+                                oplami:CloudHostedVirtualMachine ;
+    skos:prefLabel              "Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic PAGO AMI"@en ;
+    rdfs:label                  "Virtuoso Universal Server (Cloud Edition) for Ubuntu 18.04 Bionic PAGO AMI"@en ;
+    schema:mainEntityOfPage     <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ,
+                                <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
+    foaf:depiction              <http://www.openlinksw.com/DAV/oplweb3/images/virtuoso-83-3319-pago-ami-init.png> ;
+    dcterms:description         """This particular cloud edition of the Virtuoso Multi-Model DBMS and Data Virtualization Platform 
+                                   includes an unlimited license with CPU Affinity pegged to the host AMI Instance Type. Meaning, costs 
+                                   increase on a CPU Affinity basis for an unrestricted number of users (or connections)."""@en ;
+    dcterms:identifier           "Virtuoso-ami-0900704f0d2f8df12" ;
+    oplami:ec2AMI-ID             "ami-0900704f0d2f8df12" ;
+    oplami:ec2OwnerID            "545314153384" ;
+    oplami:ec2Status             "available" ;
+    oplami:ec2StateReason        "-" ;
+    oplami:ec2Platform           "Other Linux" ;
+    oplami:ec2Architecture       "x86_64" ;
+    oplami:ec2ImageType          "machine" ;
+    oplami:ec2VirtualizationType "hvm" ;
+    oplami:ec2RootDeviceName     "/dev/sda1" ;
+    oplami:hasBlockDevices       "/dev/sda1=snap-09890a8a91bef979e:120:true:gp2" ;
+    oplami:hasRootDeviceType     "ebs" ;
+    oplami:hasProductCodes       "marketplace: 3iplms73etrdhxdepv72l6ywj" ;
+    oplami:hasAMIName            "Virtuoso-8.3.3319-PAGO-2020-10-07 for Ubuntu 18.04 Bionic" ;
+    is foaf:topic of             <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
+    dcterms:isPartOf             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    skos:related                 <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                                 <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ;
+    schema:isPartOf     		 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+## Virtuoso 8.3 RHEL PAGO AMI Listing Page Description
+
+<https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>
+    a                   schema:WebPage ;
+    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) PAGO AMI for RHEL 7.1 Marketplace Listing"@en ;
+    schema:about        <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
+                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0d348ef43a2b61e6f#this> , # 8.3 PAGO
+                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> ; # 8.2 PAGO
+    foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
+    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    schema:url          <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
+    dcterms:description """One-click installation edition of a preconfigured Virtuoso Multi-Model RDBMS instance.
+                           This particular deployment is available on a Pay-As-You-Go (PAGO) subscription model basis
+                           via the Amazon Web Services (AWS) Cloud's marketplace."""@en ;
+    rdfs:comment        """Following AMI instantiation and initial Virtuoso DBMS server startup, you have a fully
+                           configured instance ready for personal, enterprise, or service-specific use.""";
+    skos:related        <http://dbpedia.org/resource/Category:Cloud_platforms>,
+                        <http://dbpedia.org/resource/Amazon_Web_Services>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData>,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL>;
+    schema:isPartOf     <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    wdrs:describedby    <> ;
+    is schema:about of  <> .
+
+## Virtuoso 8.3 PAGO AMI Description
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0d348ef43a2b61e6f#this>
+    a                           oplami:AmazonEC2EBSBackedAMI ,
+                                oplami:CloudHostedVirtualMachine ;
+    skos:prefLabel              "Virtuoso Universal Server (Commercial Cloud Edition) PAGO for RHEL 7.1"@en ;
+    rdfs:label                  "Virtuoso Universal Server (Commercial Cloud Edition) PAGO for RHEL 7.1"@en ;
+    schema:mainEntityOfPage     <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#> ,
+                                <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
+    foaf:depiction              <https://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
+    dcterms:description         """This AMI contains a pre-configured instance of a Virtuoso 8.3 Multi-Model RDBMS
+                                   that includes a license enabling 10 DB Sessions and CPU Affinity scoped to 8 Logical Processors."""@en ;
+    dcterms:identifier           "Virtuoso-ami-0d348ef43a2b61e6f" ;
+    oplami:ec2AMI-ID             "ami-0d348ef43a2b61e6f" ;
+    oplami:ec2OwnerID            "545314153384" ;
+    oplami:ec2Status             "available" ;
+    oplami:ec2StateReason        "-" ;
+    oplami:ec2Platform           "Other Linux" ;
+    oplami:ec2Architecture       "x86_64" ;
+    oplami:ec2ImageType          "machine" ;
+    oplami:ec2VirtualizationType "hvm" ;
+    oplami:ec2RootDeviceName     "/dev/sda1" ;
+    oplami:hasBlockDevices       "/dev/sda1=snap-008f624ca28ff2a3f:120:true:gp2, /dev/sdf=snap-01e5e186db9e34b79:240:true:gp2" ;
+    oplami:hasRootDeviceType     "ebs" ;
+    oplami:hasProductCodes       "marketplace: arw3vsijrf4mai6o0alwf5aut" ;
+    oplami:hasAMIName            "Virtuoso-83-PAGO-2019-05-12" ;
+    is foaf:topic of             <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
+    dcterms:isPartOf             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    skos:related                 <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                                 <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ;
+    schema:isPartOf     		 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+
+## Virtuoso 8.2 PAGO AMI Description
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this>
+    a                           oplami:AmazonEC2EBSBackedAMI ,
+                                oplami:CloudHostedVirtualMachine ;
+    skos:prefLabel              "Virtuoso Universal Server (Commercial Cloud Edition) PAGO AMI 8.2.0-ami-2"@en ;
+    rdfs:label                  "Virtuoso Universal Server (Commercial Cloud Edition) PAGO AMI 8.2.0-ami-2"@en ;
+    schema:mainEntityOfPage     <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#> ,
+                                <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
+    foaf:depiction              <https://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
+    dcterms:description         """This AMI contains a pre-configured instance of a Virtuoso 8.2 Multi-Model RDBMS
+                                   that includes a license enabling 10 DB Sessions and CPU Affinity scoped to 8 Logical Processors."""@en ;
+    dcterms:identifier           "Virtuoso-ami-0175c4a749cf1741f" ;
+    oplami:ec2AMI-ID             "ami-0175c4a749cf1741f" ;
+    oplami:ec2OwnerID            "545314153384" ;
+    oplami:ec2Status             "available" ;
+    oplami:ec2StateReason        "-" ;
+    oplami:ec2Platform           "Other Linux" ;
+    oplami:ec2Architecture       "x86_64" ;
+    oplami:ec2ImageType          "machine" ;
+    oplami:ec2VirtualizationType "hvm" ;
+    oplami:ec2RootDeviceName     "/dev/sda1" ;
+    oplami:hasBlockDevices       "/dev/sda1=snap-008f624ca28ff2a3f:120:true:gp2, /dev/sdf=snap-01e5e186db9e34b79:240:true:gp2" ;
+    oplami:hasRootDeviceType     "ebs" ;
+    oplami:hasProductCodes       "marketplace: arw3vsijrf4mai6o0alwf5aut" ;
+    oplami:hasAMIName            "Virtuoso-82-PAGO-2018-10-26" ;
+    is foaf:topic of             <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
+    dcterms:isPartOf             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    skos:related                 <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                                 <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ,
+                                 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+	schema:isPartOf     		 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+## Virtuoso Universal Server (Commercial Cloud Edition) 8.3.3319 BYOL AMI Amazon Marketplace Page Description
+
+<https://aws.amazon.com/marketplace/pp/B08K97YRGK#>
+    a                   schema:WebPage ;
+    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) 8.3.3319 BYOL AMI for Ubuntu 18.04 Bionic Marketplace Listing"@en ;
+    schema:mainEntity   <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0ee6dac2acedd5ed0#this> ;
+    foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
+    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    schema:url          <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG/> ;
+    dcterms:description """One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance.
+                           This particular deployment is available on a Pay-As-You-Go (BYOL) subscription model basis
+                           via the Amazon Web Services (AWS) Cloud's marketplace."""@en ;
+    rdfs:comment        """Following AMI instantiation and initial Virtuoso DBMS server startup, you have a fully
+                           configured instance ready for personal, enterprise, or service-specific use."""@en ;
+    skos:related        <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                        <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ;
+	schema:isPartOf     <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    wdrs:describedby    <> ;
+    is schema:about of  <> .
+
+## Virtuoso 8.3.3319 BYOL AMI Description
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0ee6dac2acedd5ed0#this>
+    a                            oplami:AmazonEC2EBSBackedAMI ,
+                                 oplami:CloudHostedVirtualMachine ;
+    skos:prefLabel               "Virtuoso Universal Server (Commercial Cloud Edition) 8.3.3319 BYOL AMI for Ubuntu 18.04 Bionic"@en ;
+    rdfs:label                   "Virtuoso Universal Server (Commercial Cloud Edition) 8.3.3319 BYOL AMI for Ubuntu 18.04 Bionic"@en ;
+    schema:mainEntityOfPage      <https://aws.amazon.com/marketplace/pp/B08K97YRGK#> ,
+                                 <http://vos.openlinksw.com/owiki/wiki/VOS/VirtEBSBackedBYOLAMI> ;
+    foaf:depiction               <https://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
+    dcterms:description          """This AMI contains a pre-configured instance of a Virtuoso 8.3 Multi-Model RDBMS that requires 
+                                    a Virtuoso License purchased from our online shop (http://virtuoso.openlinksw.com/pricing) or via 
+                                    your Account Manager. """@en ;
+    dcterms:identifier           "Virtuoso-ami-0ee6dac2acedd5ed0" ;
+    oplami:ec2AMI-ID             "ami-0ee6dac2acedd5ed0" ;
+    oplami:ec2OwnerID            "545314153384" ;
+    oplami:ec2Status             "available" ;
+    oplami:ec2StateReason        "-" ;
+    oplami:ec2Platform           "Other Linux" ;
+    oplami:ec2Architecture       "x86_64" ;
+    oplami:ec2ImageType          "machine" ;
+    oplami:ec2VirtualizationType "hvm" ;
+    oplami:ec2RootDeviceName     "/dev/sda1" ;
+    oplami:hasBlockDevices       "/dev/sda1=snap-0361892b5d1ff0630:120:true:gp2" ;
+    oplami:hasRootDeviceType     "ebs" ;
+    oplami:hasProductCodes       "marketplace: 3iplms73etrdhxdepv72l6ywj" ;
+    oplami:hasAMIName            "Virtuoso 8.3.3319 BYOL for Ubuntu 18.04" ;
+    is foaf:topic of             <http://vos.openlinksw.com/owiki/wiki/VOS/VirtEBSBackedBYOLAMI> ;
+    dcterms:isPartOf             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    skos:related                 <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                                 <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ;
+	schema:isPartOf     		 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+## Virtuoso Universal Server (Commercial Cloud Edition) 8.3 RHEL 7.1 BYOL AMI Amazon Marketplace Page Description
+
+<https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#>
+    a                   schema:WebPage ;
+    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) 8.3 for RHEL 7.1 BYOL AMI  Marketplace Listing"@en ;
+    schema:mainEntity   <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0c39dc72cda79a561#this> ;
+    foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
+    foaf:logo           <https://www.openlinksw.com/DAV/oplweb3/images/PoweredByVirtuoso.png> ;
+    schema:url          <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG/> ;
+    dcterms:description """One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance.
+                           This particular deployment is available on a Pay-As-You-Go (BYOL) subscription model basis
+                           via the Amazon Web Services (AWS) Cloud's marketplace."""@en ;
+    rdfs:comment        """Following AMI instantiation and initial Virtuoso DBMS server startup, you have a fully
+                           configured instance ready for personal, enterprise, or service-specific use."""@en ;
+    skos:related        <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                        <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                        <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ;
+	schema:isPartOf     <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    wdrs:describedby    <> ;
+    is schema:about of  <> .
+
+## Virtuoso 8.3 BYOL AMI Description
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0c39dc72cda79a561#this>
+    a                            oplami:AmazonEC2EBSBackedAMI ,
+                                 oplami:CloudHostedVirtualMachine ;
+    skos:prefLabel               "Virtuoso Universal Server (Commercial Cloud Edition) 8.3 for RHEL 7.1 BYOL AMI 8.3.0-ami-1"@en ;
+    rdfs:label                   "Virtuoso Universal Server (Commercial Cloud Edition) 8.3 for RHEL 7.1 BYOL AMI 8.3.0-ami-1"@en ;
+    schema:mainEntityOfPage      <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#> ,
+                                 <http://vos.openlinksw.com/owiki/wiki/VOS/VirtEBSBackedBYOLAMI> ;
+    foaf:depiction               <https://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
+    dcterms:description          """This AMI contains a pre-configured instance of a Virtuoso 8.3 Multi-Model RDBMS."""@en ;
+    dcterms:identifier           "Virtuoso-ami-0c39dc72cda79a561" ;
+    oplami:ec2AMI-ID             "ami-0c39dc72cda79a561" ;
+    oplami:ec2OwnerID            "545314153384" ;
+    oplami:ec2Status             "available" ;
+    oplami:ec2StateReason        "-" ;
+    oplami:ec2Platform           "Other Linux" ;
+    oplami:ec2Architecture       "x86_64" ;
+    oplami:ec2ImageType          "machine" ;
+    oplami:ec2VirtualizationType "hvm" ;
+    oplami:ec2RootDeviceName     "/dev/sda1" ;
+    oplami:hasBlockDevices       "/dev/sda1=snap-0e2a0d1e3ac64c173:120:true:gp2, /dev/sdf=snap-0155f78bd3430bcfc:240:true:gp2" ;
+    oplami:hasRootDeviceType     "ebs" ;
+    oplami:hasProductCodes       "marketplace: arw3vsijrf4mai6o0alwf5aut" ;
+    oplami:hasAMIName            "Virtuoso-83-BYOL-2019-05-12" ;
+    is foaf:topic of             <http://vos.openlinksw.com/owiki/wiki/VOS/VirtEBSBackedBYOLAMI> ;
+    dcterms:isPartOf             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    skos:related                 <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                                 <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ;
+	schema:isPartOf     		 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+## Virtuoso 8.2 BYOL AMI Description
+
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-02d19573d65a31e02#this>
+    a                            oplami:AmazonEC2EBSBackedAMI ,
+                                 oplami:CloudHostedVirtualMachine ;
+    skos:prefLabel               "Virtuoso Universal Server (Commercial Cloud Edition) BYOL AMI 8.2.0-ami-1"@en ;
+    rdfs:label                   "Virtuoso Universal Server (Commercial Cloud Edition) BYOL AMI 8.2.0-ami-1"@en ;
+    schema:mainEntityOfPage      <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#> ,
+                                 <http://vos.openlinksw.com/owiki/wiki/VOS/VirtEBSBackedBYOLAMI> ;
+    foaf:depiction               <https://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
+    dcterms:description          """This AMI contains a pre-configured instance of a Virtuoso 8.2 Multi-Model RDBMS."""@en ;
+    dcterms:identifier           "Virtuoso-ami-02d19573d65a31e02" ;
+    oplami:ec2AMI-ID             "ami-02d19573d65a31e02" ;
+    oplami:ec2OwnerID            "545314153384" ;
+    oplami:ec2Status             "available" ;
+    oplami:ec2StateReason        "-" ;
+    oplami:ec2Platform           "Other Linux" ;
+    oplami:ec2Architecture       "x86_64" ;
+    oplami:ec2ImageType          "machine" ;
+    oplami:ec2VirtualizationType "hvm" ;
+    oplami:ec2RootDeviceName     "/dev/sda1" ;
+    oplami:hasBlockDevices       "/dev/sda1=snap-0e2a0d1e3ac64c173:120:true:gp2, /dev/sdf=snap-0155f78bd3430bcfc:240:true:gp2" ;
+    oplami:hasRootDeviceType     "ebs" ;
+    oplami:hasProductCodes       "marketplace: arw3vsijrf4mai6o0alwf5aut" ;
+    oplami:hasAMIName            "Virtuoso-82-BYOL-2018-10-26" ;
+    is foaf:topic of             <http://vos.openlinksw.com/owiki/wiki/VOS/VirtEBSBackedBYOLAMI> ;
+    dcterms:isPartOf             <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ;
+    skos:related                 <http://dbpedia.org/resource/Category:Cloud_platforms> ,
+                                 <http://dbpedia.org/resource/Amazon_Web_Services> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LODCloud> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#SemanticWeb> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#RDF> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#LinkedData> ,
+                                 <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#NoSQL> ;
+    schema:isPartOf     		 <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
