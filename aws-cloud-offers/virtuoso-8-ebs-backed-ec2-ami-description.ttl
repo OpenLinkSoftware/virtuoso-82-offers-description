@@ -131,18 +131,25 @@ source:
 
 <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>
     a                   schema:WebPage ;
-    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) PAGO AMI for RHEL 7.1 Marketplace Listing"@en ;
+    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) 8.3.3319 PAGO AMI for RHEL 7.1 Marketplace Listing"@en ;
+    skos:prefLabel      "Virtuoso 8.3.3319 (PAGO Edition) for RedHat Linux 7.x"@en ;
     schema:about        <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ,
-                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0d348ef43a2b61e6f#this> , # 8.3 PAGO
+                        <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0fdd82310735949c1#this> , # 8.3 PAGO
                         <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> ; # 8.2 PAGO
     foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
     foaf:logo           <http://www.openlinksw.com/DAV/oplweb3/images/OPL-VIRT-216px.png> ;
     schema:url          <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
-    dcterms:description """One-click installation edition of a preconfigured Virtuoso Multi-Model RDBMS instance.
-                           This particular deployment is available on a Pay-As-You-Go (PAGO) subscription model basis
-                           via the Amazon Web Services (AWS) Cloud's marketplace."""@en ;
-    rdfs:comment        """Following AMI instantiation and initial Virtuoso DBMS server startup, you have a fully
-                           configured instance ready for personal, enterprise, or service-specific use.""";
+    rdfs:comment        """Pre-configured Virtuoso Multi-Model DBMS (Commercial Edition) that provides immediate access to a modern, 
+                           high-performance, and secure platform for knowledge graphs, database management, and data integration."""@en ;
+    dcterms:description """Cloud Hosted Pay-As-You-Go edition of our High-Performance, Scalable, Secure, Platform for Data Access, Integration, 
+                           Virtualization, and Native Data Management (Relational Tables and RDF-compliant Entity Relationship Graphs).
+                           
+                           This particular cloud edition includes:
+                            [1] an unlimited database connections license with CPU Affinity pegged to the host AMI Instance Type;
+                            [2] ability integrate data across external HTTP, ODBC, or JDBC accessible Data Sources;
+                            [3] support for SQL and/or SPARQL for Data Definition and Manipulation operations;
+                            [4] easy Knowledge-Graph creation and deployment that leverages Linked Data principles;
+                            [5] online backup an restore that leverages cloud storage. """@en;
     skos:related        <http://dbpedia.org/resource/Category:Cloud_platforms>,
                         <http://dbpedia.org/resource/Amazon_Web_Services>,
                         <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia>,
@@ -155,9 +162,9 @@ source:
     wdrs:describedby    <> ;
     is schema:about of  <> .
 
-## Virtuoso 8.3 PAGO AMI Description
+## Virtuoso 8.3.3319 PAGO for RHEL 7.1 AMI Description
 
-<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0d348ef43a2b61e6f#this>
+<http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0fdd82310735949c1#this>
     a                           oplami:AmazonEC2EBSBackedAMI ,
                                 oplami:CloudHostedVirtualMachine ;
     skos:prefLabel              "Virtuoso Universal Server (Commercial Cloud Edition) PAGO for RHEL 7.1"@en ;
@@ -165,10 +172,9 @@ source:
     schema:mainEntityOfPage     <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#> ,
                                 <http://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VirtPayAsYouGoEBSBackedAMI> ;
     foaf:depiction              <https://www.openlinksw.com/DAV/www2.openlinksw.com/images/virtuoso-82-pago-ami-init.png> ;
-    dcterms:description         """This AMI contains a pre-configured instance of a Virtuoso 8.3 Multi-Model RDBMS
-                                   that includes a license enabling 10 DB Sessions and CPU Affinity scoped to 8 Logical Processors."""@en ;
-    dcterms:identifier           "Virtuoso-ami-0d348ef43a2b61e6f" ;
-    oplami:ec2AMI-ID             "ami-0d348ef43a2b61e6f" ;
+    dcterms:description         """This AMI contains a pre-configured instance of a Virtuoso 8.3.3319 Multi-Model RDBMS."""@en ;
+    dcterms:identifier           "Virtuoso-ami-0fdd82310735949c1" ;
+    oplami:ec2AMI-ID             "ami-0fdd82310735949c1" ;
     oplami:ec2OwnerID            "545314153384" ;
     oplami:ec2Status             "available" ;
     oplami:ec2StateReason        "-" ;
@@ -259,7 +265,7 @@ source:
     wdrs:describedby    <> ;
     is schema:about of  <> .
 
-## Virtuoso 8.3.3319 BYOL AMI Description
+## Virtuoso 8.3.3319 BYOL AMI for Ubuntu 18.04 Bionic Description
 
 <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0ee6dac2acedd5ed0#this>
     a                            oplami:AmazonEC2EBSBackedAMI ,
@@ -302,16 +308,23 @@ source:
 
 <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#>
     a                   schema:WebPage ;
-    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) 8.3 for RHEL 7.1 BYOL AMI  Marketplace Listing"@en ;
+    rdfs:label          "Virtuoso Universal Server (Commercial Cloud Edition) 8.3.3319 for RHEL 7.1 BYOL AMI  Marketplace Listing"@en ;
     schema:mainEntity   <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0c39dc72cda79a561#this> ;
     foaf:depiction      <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
     foaf:logo           <http://www.openlinksw.com/DAV/oplweb3/images/OPL-VIRT-216px.png> ;
     schema:url          <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG/> ;
-    dcterms:description """One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance.
-                           This particular deployment is available on a Pay-As-You-Go (BYOL) subscription model basis
-                           via the Amazon Web Services (AWS) Cloud's marketplace."""@en ;
-    rdfs:comment        """Following AMI instantiation and initial Virtuoso DBMS server startup, you have a fully
-                           configured instance ready for personal, enterprise, or service-specific use."""@en ;
+    rdfs:comment        """Pre-configured Virtuoso Multi-Model DBMS (Commercial Edition) that provides immediate access to a modern, 
+                           high-performance, and secure platform for knowledge graphs, database management, and data integration."""@en ;
+    dcterms:description """Cloud Hosted Bring-Your-Own-License edition of our High-Performance, Scalable, Secure, Platform for Data Access, Integration, 
+                           Virtualization, and Native Data Management (Relational Tables and RDF-compliant Entity Relationship Graphs).
+                           
+                           This particular cloud edition includes:
+                            [1] ability integrate data across external HTTP, ODBC, or JDBC accessible Data Sources;
+                            [2] support for SQL and/or SPARQL for Data Definition and Manipulation operations;
+                            [3] easy Knowledge-Graph creation and deployment that leverages Linked Data principles;
+                            [4] online backup an restore that leverages cloud storage;
+                            [5] use of a Virtuoso License purchased online or via an Account Manager for this platform. 
+                            """@en;
     skos:related        <http://dbpedia.org/resource/Category:Cloud_platforms> ,
                         <http://dbpedia.org/resource/Amazon_Web_Services> ,
                         <http://www.openlinksw.com/data/turtle/general/GlossaryOfTerms.ttl#DBpedia> ,
