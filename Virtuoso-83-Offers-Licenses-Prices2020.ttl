@@ -12,31 +12,33 @@
 @prefix : <#>.
 
 ## Associating a Company with its Offers
-<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
-														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
-														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this>;
-										   schema:about <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
-														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
-														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this>, 
-														<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-retail-price#this>,
-														<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>,
-														<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-retail-price#this>,
-														<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this>,
-														<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>,
-														<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this>.	
+<http://www.openlinksw.com/dataspace/organization/openlink#this> 
+schema:offers  <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
+	       <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
+	       <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this>;
+schema:creator <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
+	       <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
+	       <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this>, 
+	       <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-retail-price#this>,
+	       <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this>,
+	       <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-retail-price#this>,
+	       <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this>,
+	       <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>,
+	       <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this>.	
 
 
 ## Associating Virtuoso Pricing Page with Offers
-<http://virtuoso.openlinksw.com/pricing/> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
-														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
-														<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> .
+<http://virtuoso.openlinksw.com/pricing/> 
+schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this>, 
+	      <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>, 
+	      <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> .
 
 ## License Duration for Licenses to be associated with offers in this doc
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> 
 oplic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this>,
-					<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>,
-					<http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this>.
+		   <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this>,
+		   <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this>.
 
 ## Personal Offer
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this> a
