@@ -18,6 +18,7 @@
 @prefix oplres:      <http://www.openlinksw.com/ontology/restrictions#> .
 @prefix duration:    <http://data.openlinksw.com/oplweb/duration#> .
 @prefix oplofr:      <http://www.openlinksw.com/ontology/offers#> . 
+@prefix gr:          <http://purl.org/goodrelations/v1#> . 
 @prefix :            <#> .
 @prefix source:      <http://virtuoso.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl> .
 @prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/lod-connectivity/LODLicenses.ttl> .
@@ -152,7 +153,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
 
 ## Price Specification for Offer
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-LOD-personal-client-access-30-day-sql#this>
-   a schema:UnitPriceSpecification, oplofr:Virtuoso7Pricing , oplofr:Virtuoso7RetailUnitPriceSpecification , oplofr:RetailUnitPriceSpecification ;
+   a schema:UnitPriceSpecification, oplofr:Virtuoso8Pricing , oplofr:Virtuoso8RetailUnitPriceSpecification , oplofr:RetailUnitPriceSpecification ;
    wdrs:describedby source: ;
    oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-Evaluation-30#this> ;
    schema:priceCurrency "USD"^^xsd:string;
@@ -229,7 +230,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
 ## Price Specification for Offer
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-LOD-Subscription-90#this>
-   a schema:UnitPriceSpecification, oplofr:Virtuoso7Pricing , oplofr:Virtuoso7RetailUnitPriceSpecification , oplofr:RetailUnitPriceSpecification ;
+   a schema:UnitPriceSpecification, oplofr:Virtuoso8Pricing , oplofr:Virtuoso8RetailUnitPriceSpecification , oplofr:RetailUnitPriceSpecification ;
    wdrs:describedby source: ;
    oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-12-LOD-Subscription-90#this> ;
    schema:priceCurrency "USD"^^xsd:string;
@@ -318,7 +319,7 @@ duration:Duration-2020-10-LOD-Subscription-365
 ## Price Specification 
 <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-LOD-Subscription-365#this>
       wdrs:describedby source: ;
-      a schema:UnitPriceSpecification, oplofr:Virtuoso7Pricing , oplofr:Virtuoso7RetailUnitPriceSpecification , oplofr:RetailUnitPriceSpecification ;
+      a schema:UnitPriceSpecification, oplofr:Virtuoso8Pricing , oplofr:Virtuoso8RetailUnitPriceSpecification , oplofr:RetailUnitPriceSpecification ;
       oplofr:priceSpecificationOf <http://data.openlinksw.com/oplweb/license/License-2020-10-LOD-Subscription-365#this>;
       schema:priceCurrency "USD"^^xsd:string ;
       # schema:price "19.99"^^xsd:decimal ;
