@@ -1,0 +1,379 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix offers: <http://www.openlinksw.com/ontology/offers#> .
+@prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix opllic:      <http://www.openlinksw.com/ontology/licenses#> .
+@prefix duration:    <http://data.openlinksw.com/oplweb/duration#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
+@prefix xhv: <http://www.w3.org/1999/xhtml/vocab#> . 
+@prefix cc: <http://creativecommons.org/ns#> . 
+@prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-AWS-Offers-Licenses-Prices.ttl> .
+@prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-Offers-Licenses-Prices.ttl> .
+@prefix :            <#> .
+
+source: a schema:CreativeWork ;
+   schema:name "Virtuoso Offers for the Amazon AWS Cloud "^^xsd:string ;
+   schema:comment """This document describes Virtuoso Offers for the Amazon AWS Cloud. """^^xsd:string ;
+   schema:author <http://www.openlinksw.com/#this>  ;
+   xhv:license <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName "OpenLink Software" ;
+   cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:datePublished "2020-10-22T11:41:00-05:00"^^xsd:dateTime ;
+   schema:dateCreated "2020-10-22T11:41:00-05:00"^^xsd:dateTime ;
+   schema:dateModified "2020-10-22T11:41:00-05:00"^^xsd:dateTime;
+   # sioc:has_container <.> ;
+   # sioc:sibling <LODOffersPrices.ttl> ,
+   #             <LODOffers.ttl> ,
+   #             <LODProducts.ttl> ,
+   #             <LODProductsReleases.ttl> ;
+   # xhv:alternate <https://virtuoso.openlinksw.com/offers/offers.vsp?dbms=http%3A%2F%2Fwww.openlinksw.com%2Fontology%2Fsoftware%23WorldWideWeb> ;
+   # skos:related <http://virtuoso.openlinksw.com/data/turtle/virtuoso7/2020/Virtuoso7Licenses.ttl> ;
+   schema:about <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-Project-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Cloud-Project-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Cloud-Project-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Cloud-Project-PAGO-Ubuntu-Bionic#this>.
+
+## Associating a Company with its Offers
+<http://www.openlinksw.com/dataspace/organization/openlink#this> 
+schema:offers   <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-Project-PAGO-Ubuntu-Bionic#this>;
+schema:creator  <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-Project-PAGO-Ubuntu-Bionic#this>. 
+
+
+
+## Associating Virtuoso Pricing Page with Offers
+<http://virtuoso.openlinksw.com/pricing/> 
+schema:offers   <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>,
+                <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-Project-PAGO-Ubuntu-Bionic#this>. 
+
+## Virtuoso Product Family Association
+_:node1das6kevvx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> .
+
+## AWS Cloud FREE Evaluation Offer ##
+<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this> a
+    schema:Offer,
+    offers:Virtuoso8Offer,	
+    offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic>;
+    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2020-12-31T16:59:59+00:00"^^xsd:dateTime ;
+	schema:price "00.00"^^xsd:decimal ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this> ;
+	schema:category "virtuoso-aws-cloud-pago-ami-instance"^^xsd:string ;
+	gr:businessFunction gr:Sell ;
+	# schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#OfferGroupEarlyStage> ;
+    schema:name "Amazon AWS Virtual Machine Instance Type Offer: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic"^^xsd:string ;
+    rdfs:label "Free Evaluation";
+	skos:prefLabel "Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud"^^xsd:string ;
+	offers:offerNumber "Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic"^^xsd:string ;
+    
+	schema:comment """Free Evaluation Offer of Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic. 
+				   """^^xsd:string ;
+    schema:description """A 15 Day Free Evaluation that applies to any Amazon AWS Cloud Instance Type supported by Virtuoso. This includes a an unrestricted license
+                          for Concurrent Database Connections (users) and CPU Affinity (i.e. Physical and Virtual CPUs applied to multi-threaded operations). 
+					   """^^xsd:string ;
+    gr:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
+                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
+    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic%23this>;
+	skos:related _:node1das6kevvx1 .
+
+
+## Evaluation Offer Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>
+a schema:UnitPriceSpecification, offers:Virtuoso8Pricing, offers:SpecialUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Evaluation Special Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
+schema:price "00.00"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string ;
+offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this> .
+
+
+
+## Evaluation Offer Retail Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>
+a schema:UnitPriceSpecification , offers:Virtuoso8Pricing ,  offers:RetailUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Evaluation Retail Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
+schema:price "00.00"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string ;
+offers:hasSpecialPriceSpecification <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this> .
+
+## License for Evaluation Offer
+ <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this> a
+    opllic:ExpiringLicense,
+    opllic:ProductLicense,
+    opllic:Virtuoso8License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+	# schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+    schema:name "Virtuoso 8.x Evaluation License: 22020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic"^^xsd:string;
+	skos:prefLabel "Virtuoso 8.x Evaluation License: 22020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic"^^xsd:string ;
+    schema:comment """
+					   15 Day Unrestricted License applied to both Concurrent Database Connections (Users) and CPU Affinity.
+				   """^^xsd:string ;
+    schema:description """
+					   15 Day Unrestricted License applied to both Concurrent Database Connections (Users) and CPU Affinity.
+					   """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+	opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+    opllic:hasMaximumProcessorCores "256"^^xsd:integer ;
+	opllic:hasSessions "1000"^^xsd:integer ;
+	opllic:maxNetworkInstance "1"^^xsd:integer ;
+	opllic:serialNumberBroadcast "1"^^xsd:integer ;
+	opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#15Day> ;
+	## note, opllic:PartOf owl:inverseOf schema:itemOffered. It is mandatory for the offers listing control query re shop
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    wdrs:describedby source: .
+
+## Evaluaton License Duration
+
+duration:Duration-2020-10-EVAL-AWS-AMI-15
+   a opllic:LicenseDuration ;
+   schema:name """15 Day Duration """^^xsd:string ;
+   wdrs:describedby source: ;
+   opllic:isDurationOf <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic#this>;
+   opllic:durationDays "15"^^xsd:integer .
+
+
+## AWS Cloud Personal Offer ##
+<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this> a
+    schema:Offer,
+    offers:Virtuoso8Offer,	
+    offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic>;
+    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2020-12-31T16:59:59+00:00"^^xsd:dateTime ;
+	schema:price "00.00"^^xsd:decimal ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>;
+	schema:category "virtuoso-aws-cloud-pago-ami-instance"^^xsd:string ;
+	gr:businessFunction gr:Sell ;
+	# schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#OfferGroupEarlyStage> ;
+    schema:name "Amazon AWS Virtual Machine Instance Type Offer: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic"^^xsd:string ;
+    rdfs:label "Personal Usage";
+	skos:prefLabel "Personal Usage Offer: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud"^^xsd:string ;
+	offers:offerNumber "Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic"^^xsd:string ;
+	schema:comment """Personal Usage Offer of Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic. 
+				   """^^xsd:string ;
+    schema:description """Personal Usage Offer that applies to any Amazon AWS Cloud Instance Type supported by Virtuoso. This includes a an unrestricted license
+                          for Concurrent Database Connections (users) and CPU Affinity (i.e. Physical and Virtual CPUs applied to multi-threaded operations) pricing scoped
+                          to your choice of Virtual Machine Instance Type. 
+					   """^^xsd:string ;
+    gr:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
+                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
+    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic%23this>;
+	skos:related _:node1das6kevvx1 .
+
+
+## Personal Offer Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>
+a schema:UnitPriceSpecification, offers:Virtuoso8Pricing, offers:SpecialUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Personal Special Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
+schema:price "991.00"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string ;
+offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this> .
+
+## Personal Offer Retail Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>
+a schema:UnitPriceSpecification, offers:Virtuoso8Pricing, offers:RetailUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Personal Retail Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
+schema:price "1524.24"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string ;
+offers:hasSpecialPriceSpecification <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this> .
+
+## License for Personal Offer
+ <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this> a
+    opllic:ExpiringLicense,
+    opllic:ProductLicense,
+    opllic:Virtuoso8License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+    schema:name "Virtuoso 8.x Pay-As-You-Go (PAGO) License: 2020-10-AWS-Personal-PAGO-Ubuntu-Bionic"^^xsd:string;
+	skos:prefLabel "Virtuoso 8.x Pay-As-You-Go (PAGO) License: 2020-10-AWS-Personal-PAGO-Ubuntu-Bionic"^^xsd:string ;
+    schema:comment """
+					Virtuoso 8.x Pay-As-You-Go (PAGO) License for Amazon AWS Cloud (non-expiring, 2 CPU Affinity, unlimited Database Connections/Threads) for 
+					relevant Instance Type.
+				   """^^xsd:string ;
+    schema:description """
+					   Virtuoso 8.x Pay-As-You-Go (PAGO) Personal Usage oriented License for use with relevant Amazon Machine Instance Type for 
+					   on one (1) Virtual Machine running Ubuntu. Enables unlimited Client Connections/Threads, 
+					   the Column Store, Custom Reasoning & Inference Rules, Advanced Module, and will utilize a maximum of 
+					   two (2) processor cores, for the subscription duration. 
+					   """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+	opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+    opllic:hasMaximumProcessorCores "2"^^xsd:integer ;
+	opllic:hasSessions "1000"^^xsd:integer ;
+	opllic:maxNetworkInstance "1"^^xsd:integer ;
+	opllic:serialNumberBroadcast "1"^^xsd:integer ;
+	opllic:hasDuration duration:Duration-Cloud-Computing ;
+	## note, opllic:PartOf owl:inverseOf schema:itemOffered. It is mandatory for the offers listing control query re shop
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    wdrs:describedby source: .
+
+## Cloud Computing License Duration
+duration:Duration-Cloud-Computing
+   a opllic:LicenseDuration ;
+   schema:name """Cloud Computing Virtual Machine License Duration (Unrestricted)"""^^xsd:string ;
+   wdrs:describedby source: ;
+   opllic:isDurationOf <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>;
+   opllic:durationDays "0"^^xsd:integer .
+
+## AWS Cloud Project Offer ##
+
+<http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> a
+    schema:Offer,
+    offers:Virtuoso8Offer,	
+    offers:VirtuosoSpecialOffer ;
+	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic>;
+    schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    schema:validThrough "2020-12-31T16:59:59+00:00"^^xsd:dateTime ;
+	schema:price "00.00"^^xsd:decimal ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this>;
+	schema:itemOffered <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this>;
+	schema:category "virtuoso-aws-cloud-pago-ami-instance"^^xsd:string ;
+	gr:businessFunction gr:Sell ;
+	# schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+	offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#OfferGroupEarlyStage> ;
+    schema:name "Pay-As-You-GO Amazon AWS Virtual Machine Instance Type Offer: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic"^^xsd:string ;
+    rdfs:label "Developer";
+	skos:prefLabel "Development Project: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud"^^xsd:string ;
+	offers:offerNumber "Offer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic"^^xsd:string ;
+	schema:comment """Development Project: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic. 
+				   """^^xsd:string ;
+    schema:description """Development Project oriented offer that applies to any Amazon AWS Cloud Instance Type supported by Virtuoso. This includes a an unrestricted license
+                          for Concurrent Database Connections (users) and CPU Affinity (i.e. Physical and Virtual CPUs applied to multi-threaded operations) pricing scoped
+                          to your choice of Virtual Machine Instance Type. 
+					   """^^xsd:string ;
+    gr:businessFunction gr:Sell ;
+    wdrs:describedby source: ;
+    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
+                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
+    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic%23this>;
+	skos:related _:node1das6kevvx1 .
+
+
+## Project Offer Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this>
+a schema:UnitPriceSpecification, offers:Virtuoso8Pricing, offers:SpecialUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Pay-As-You-GO Project Special Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
+schema:price "991.00"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string ;
+offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> .
+
+## Project Offer Retail Special Price Specification 
+<http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this>
+a schema:UnitPriceSpecification, offers:Virtuoso8Pricing, offers:RetailUnitPriceSpecification;
+wdrs:describedby source: ;
+schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
+schema:name """Pay-As-You-GO Project Retail Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
+schema:price "1524.24"^^xsd:decimal ;
+schema:priceCurrency "USD"^^xsd:string ;
+offers:hasSpecialPriceSpecification <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> .
+
+## License for Project Offer
+ <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> a
+    opllic:ExpiringLicense,
+    opllic:ProductLicense,
+    opllic:Virtuoso8License , schema:Product ;
+    oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
+    # schema:image <http://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+	# schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-5CON-8CORE.png> ;
+    schema:name "Virtuoso 8.x Pay-As-You-Go (PAGO) License: 2020-10-virtuoso-8-early-stage-combo-WKS-ANY 8 cores"^^xsd:string;
+	skos:prefLabel "Virtuoso 8.x Pay-As-You-Go (PAGO) License: 2020-10-virtuoso-8-early-stage-combo-WKS-ANY"^^xsd:string ;
+    schema:comment """
+					Virtuoso 8.x Pay-As-You-Go (PAGO) for Amazon AWS Cloud (non-expiring, 4 CPU Affinity, unlimited Database Connections/Threads) for 
+					relevant Instance Type.
+				   """^^xsd:string ;
+    schema:description """
+					   Virtuoso 8.x Pay-As-You-Go (PAGO) Personal Usage oriented License for use with relevant Amazon Machine Instance Type for 
+					   on one (1) Virtual Machine running Ubuntu. Enables unlimited Client Connections/Threads, 
+					   the Column Store, Custom Reasoning & Inference Rules, Advanced Module, and will utilize a maximum of 
+					   four (4) processor cores, for the subscription duration. 
+					   """^^xsd:string ;
+    schema:model <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+	opllic:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+	 						# <http://data.openlinksw.com/oplweb/module/VirtuosoSponger#this>, 
+							<http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+							<http://data.openlinksw.com/oplweb/module/Replication#this>, 
+							<http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+							<http://data.openlinksw.com/oplweb/module/VDB#this>, 
+							<http://data.openlinksw.com/oplweb/module/VAL#this>, 
+							<http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+							<http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+    opllic:hasMaximumProcessorCores "4"^^xsd:integer ;
+	opllic:hasSessions "1000"^^xsd:integer ;
+	opllic:maxNetworkInstance "1"^^xsd:integer ;
+	opllic:serialNumberBroadcast "1"^^xsd:integer ;
+	opllic:hasDuration duration:Duration-Cloud-Computing ;
+	## note, opllic:PartOf owl:inverseOf schema:itemOffered. It is mandatory for the offers listing control query re shop
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasOperatingSystemType oplsof:workstationOS ;
+    wdrs:describedby source: .
+
+
+
