@@ -179,7 +179,7 @@ duration:Duration-2020-10-EVAL-AWS-AMI-15
     schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
     schema:validThrough "2020-12-31T16:59:59+00:00"^^xsd:dateTime ;
 	schema:price "00.00"^^xsd:decimal ;
-	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic#this>;
 	schema:category "virtuoso-aws-cloud-pago-ami-instance"^^xsd:string ;
 	gr:businessFunction gr:Sell ;
@@ -285,8 +285,8 @@ duration:Duration-Cloud-Computing
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic>;
     schema:validFrom "2020-10-01T00:00:00+00:00"^^xsd:dateTime ;
     schema:validThrough "2020-12-31T16:59:59+00:00"^^xsd:dateTime ;
-	schema:price "00.00"^^xsd:decimal ;
-	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this>;
+	schema:price "1982.00"^^xsd:decimal ;
+	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this>;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/offer/License-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this>;
 	schema:category "virtuoso-aws-cloud-pago-ami-instance"^^xsd:string ;
 	gr:businessFunction gr:Sell ;
@@ -318,7 +318,7 @@ wdrs:describedby source: ;
 schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
 schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
 schema:name """Pay-As-You-GO Project Special Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
-schema:price "991.00"^^xsd:decimal ;
+schema:price "1982.00"^^xsd:decimal ;
 schema:priceCurrency "USD"^^xsd:string ;
 offers:hasRetailPriceSpecification <http://data.openlinksw.com/oplweb/offer/Retail-Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> .
 
@@ -329,7 +329,7 @@ wdrs:describedby source: ;
 schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
 schema:validThrough "2020-12-31T23:59:59Z"^^xsd:dateTime ;
 schema:name """Pay-As-You-GO Project Retail Offer Price Specification: Virtuoso Universal Server (Commercial Cloud Edition) for Ubuntu 18.04 Bionic on the Amazon AWS Cloud."""^^xsd:string ;
-schema:price "1524.24"^^xsd:decimal ;
+schema:price "3048.48"^^xsd:decimal ;
 schema:priceCurrency "USD"^^xsd:string ;
 offers:hasSpecialPriceSpecification <http://data.openlinksw.com/oplweb/offer/Special-Price-Specification-2020-10-AWS-Project-PAGO-Ubuntu-Bionic#this> .
 
