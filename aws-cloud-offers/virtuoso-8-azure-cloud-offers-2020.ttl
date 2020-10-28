@@ -92,10 +92,9 @@ _:node1das6kevvx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_fa
 					   """^^xsd:string ;
     gr:businessFunction gr:Sell ;
     wdrs:describedby source: ;
-    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Cloud-30-Day-Evaluation-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
-                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
-    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Cloud-30-Day-Evaluation-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Cloud-30-Day-Evaluation-PAGO-Ubuntu-Bionic%23this>;
+    schema:mainEntityOfPage <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=Overview> ;
+    opllic:hasBuyService <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=Overview> ;
+    # schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Cloud-30-Day-Evaluation-PAGO-Ubuntu-Bionic%23this>;
 	skos:related _:node1das6kevvx1 .
 
 
@@ -197,10 +196,9 @@ duration:Duration-2020-10-EVAL-Azure-AMI-30
 					   """^^xsd:string ;
     gr:businessFunction gr:Sell ;
     wdrs:describedby source: ;
-    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Personal-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
-                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
-    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Personal-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Personal-PAGO-Ubuntu-Bionic%23this>;
+    schema:mainEntityOfPage <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=Overview> ;
+    opllic:hasBuyService <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=Overview> ;
+    # schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Personal-PAGO-Ubuntu-Bionic%23this>;
 	skos:related _:node1das6kevvx1 .
 
 
@@ -304,10 +302,9 @@ duration:Duration-Cloud-Computing
 					   """^^xsd:string ;
     gr:businessFunction gr:Sell ;
     wdrs:describedby source: ;
-    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Project-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
-                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
-    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Project-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Project-PAGO-Ubuntu-Bionic%23this>;
+    schema:mainEntityOfPage <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=Overview> ;
+    opllic:hasBuyService <https://azuremarketplace.microsoft.com/en-us/marketplace/apps/openlinkswcom-pago.openlink-virtuoso-azure-byol-offer-20201017?tab=Overview> ;
+    # schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-Azure-Project-PAGO-Ubuntu-Bionic%23this>;
 	skos:related _:node1das6kevvx1 .
 
 

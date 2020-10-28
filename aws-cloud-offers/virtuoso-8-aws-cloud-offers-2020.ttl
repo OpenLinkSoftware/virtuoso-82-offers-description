@@ -92,10 +92,9 @@ _:node1das6kevvx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_fa
 					   """^^xsd:string ;
     gr:businessFunction gr:Sell ;
     wdrs:describedby source: ;
-    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
-                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
-    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Cloud-15-Day-Evaluation-PAGO-Ubuntu-Bionic%23this>;
+    schema:mainEntityOfPage <https://aws.amazon.com/marketplace/pp/B08KTPPY8V>;
+    opllic:hasBuyService <https://aws.amazon.com/marketplace/pp/B08KTPPY8V?ref_=srh_res_product_title> ;
+    schema:potentialAction <https://aws.amazon.com/marketplace/server/procurement?productId=af02fc40-74ed-4f8c-9c38-e4229c456267>;
 	skos:related _:node1das6kevvx1 .
 
 
@@ -197,10 +196,9 @@ duration:Duration-2020-10-EVAL-AWS-AMI-15
 					   """^^xsd:string ;
     gr:businessFunction gr:Sell ;
     wdrs:describedby source: ;
-    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
-                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
-    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Personal-PAGO-Ubuntu-Bionic%23this>;
+    schema:mainEntityOfPage <https://aws.amazon.com/marketplace/pp/B08KTPPY8V>;
+    opllic:hasBuyService <https://aws.amazon.com/marketplace/pp/B08KTPPY8V?ref_=srh_res_product_title> ;
+    schema:potentialAction <https://aws.amazon.com/marketplace/server/procurement?productId=af02fc40-74ed-4f8c-9c38-e4229c456267>;
 	skos:related _:node1das6kevvx1 .
 
 
@@ -304,10 +302,9 @@ duration:Duration-Cloud-Computing
 					   """^^xsd:string ;
     gr:businessFunction gr:Sell ;
     wdrs:describedby source: ;
-    schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v>,
-                            <https://aws.amazon.com/marketplace/pp/B08KTPPY8V#> ;
-    opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic%23this&type=buy&mode=v> ;
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-AWS-Project-PAGO-Ubuntu-Bionic%23this>;
+    schema:mainEntityOfPage <https://aws.amazon.com/marketplace/pp/B08KTPPY8V>;
+    opllic:hasBuyService <https://aws.amazon.com/marketplace/pp/B08KTPPY8V?ref_=srh_res_product_title> ;
+    schema:potentialAction <https://aws.amazon.com/marketplace/server/procurement?productId=af02fc40-74ed-4f8c-9c38-e4229c456267>;
 	skos:related _:node1das6kevvx1 .
 
 
