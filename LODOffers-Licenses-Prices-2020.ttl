@@ -359,7 +359,7 @@ oplres:Any-LODCloud-Connect-Restriction-basic
    			LOD Cloud Connectivity. """^^xsd:string ;
    opllic:hasMaxResultRowsLimit "500"^^xsd:integer ;
    opllic:hasRateLimit "100"^^xsd:integer ;
-   opllic:hasServer :uriburner-server ;
+   opllic:hasServer oplres:uriburner-server ;
    opllic:hasSparqlAccessMode oplacl:Sponge ;
    opllic:hasAclRestriction oplres:res1, oplres:res2 ;
    wdrs:describedby source: ;
