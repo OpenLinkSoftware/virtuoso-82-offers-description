@@ -30,7 +30,7 @@ sourceDAV:
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:datePublished "2020-10-09T11:38:25-00:00"^^xsd:dateTime ;
    schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
-   schema:dateModified "2020-11-12T11:41:00-05:00"^^xsd:dateTime;
+   schema:dateModified "2020-11-16T11:41:00-05:00"^^xsd:dateTime;
    schema:name "OpenLink LOD Cloud Products Licenses Related Information Document " ;
    schema:comment """This document is a launch point for discovering routes to various information sources associated with OpenLink LOD Cloud Products Licenses. """^^xsd:string ;
    owl:sameAs source: .
@@ -47,7 +47,7 @@ source: a schema:CreativeWork ;
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:datePublished "2020-10-09T11:38:25-00:00"^^xsd:dateTime ;
    schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
-   schema:dateModified "2020-11-12T11:41:00-05:00"^^xsd:dateTime;
+   schema:dateModified "2020-11-16T11:41:00-05:00"^^xsd:dateTime;
    # sioc:has_container <.> ;
    # sioc:sibling <LODOffersPrices.ttl> ,
    #             <LODOffers.ttl> ,
@@ -93,8 +93,8 @@ source: a schema:CreativeWork ;
 			100 requests per second, and result sets are limited to 500 rows. """^^xsd:string ;
       schema:description """30 Day License for a Single Network Client covering Virtuoso Data Access Driver connectivity for the World Wide Web as just another SQL accessible Relational Data Source """^^xsd:string ;
       wdrs:describedby source: ;
-      schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
-      opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+      opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-30-day-sql%23this&type=buy&mode=v> ;
+      schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-30-day-sql%23this> ;
       schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-30-day-sql%23this&type=buy&mode=v> ;
       schema:businessFunction gr:Sell ;
       schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2020-10-LOD-Evaluation-30#this> ;
@@ -181,8 +181,8 @@ duration:Duration-2020-10-LOD-Evaluation-30
 			100 requests per second, and result sets are limited to 500 rows. """^^xsd:string ;
       schema:description """90 Day License for a Single Network Client covering Virtuoso Data Access Driver connectivity for the World Wide Web as just another SQL accessible Relational Data Source """^^xsd:string ;
       wdrs:describedby source: ;
-      schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
-      opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+      opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-90-day-sql%23this&type=buy&mode=v> ;
+      schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-90-day-sql%23this> ;
       schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-90-day-sql%23this&type=buy&mode=v> ;
       schema:businessFunction gr:Sell ;
       schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2020-10-LOD-Subscription-90#this>  ;
@@ -262,8 +262,8 @@ duration:Duration-2020-10-LOD-Evaluation-30
 			100 requests per second, and result sets are limited to 500 rows. """^^xsd:string ;
       schema:description """365 Day License for a Single Network Client covering Virtuoso Data Access Driver connectivity for the World Wide Web as just another SQL accessible Relational Data Source """^^xsd:string ;
       wdrs:describedby source: ;
-      schema:potentialAction <https://shop.openlinksw.com/cart.vsp#this> ;
-      opllic:hasBuyService <https://shop.openlinksw.com/cart#this> ;
+      opllic:hasBuyService <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-365-day-sql%23this&type=buy&mode=v> ;
+      schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-365-day-sql%23this>;
       schema:mainEntityOfPage <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-LOD-personal-client-access-365-day-sql%23this&type=buy&mode=v> ;
       schema:businessFunction gr:Sell ;
       schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2020-10-LOD-Subscription-365#this> ;
