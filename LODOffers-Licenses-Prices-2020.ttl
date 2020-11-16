@@ -141,7 +141,7 @@ source: a schema:CreativeWork ;
   opllic:hasClientConnectionRestriction oplres:Any-LODCloud-Connect-Restriction-basic ;
   opllic:hasClientApplicationRestriction oplres:Data-Access-Client-Application-Restriction-Any ;
   opllic:partOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-Evaluation-30#this> ;
-  opllic:hasDuration :Duration-2020-10-LOD-Evaluation-30 .
+  opllic:hasDuration duration:Duration-2020-10-LOD-Evaluation-30 .
 
 ## License Duration
 duration:Duration-2020-10-LOD-Evaluation-30
@@ -305,7 +305,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
    schema:relatedLink <http://data.openlinksw.com/oplweb/license/License-2020-10-LOD-Subscription-30#this>, 
                       <http://data.openlinksw.com/oplweb/license/License-2020-10-LOD-Subscription-90#this>  ;
    opllic:hasLicenseCode "ANY-LODCloud-Connect" ;
-   opllic:hasClientConnectionRestriction :Any-LODCloud-Connect-Restriction-basic ;
+   opllic:hasClientConnectionRestriction oplres:Any-LODCloud-Connect-Restriction-basic ;
    opllic:hasLicenseFileName "AnyClient-LODCloud-Subscribe-90.p12" ;
    oplsof:hasClientOperatingSystemFamilyRestriction  oplsof:OSFamilyAny ;
    oplsof:hasClientOperatingSystemTypeRestriction  oplsof:serverWorkstationOS ;
@@ -372,7 +372,7 @@ oplres:Any-LODCloud-Connect-Restriction-basic
    opllic:hasSparqlAccessMode oplacl:Sponge ;
    opllic:hasAclRestriction oplres:res1, oplres:res2 ;
    wdrs:describedby source: ;
-   opllic:hasAclRule :rule1 .
+   opllic:hasAclRule oplres:rule1 .
 
 ## ACLs that enforce Restrictions
 
