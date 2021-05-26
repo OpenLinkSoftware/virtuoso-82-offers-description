@@ -18,7 +18,7 @@
 @prefix benefit:  <http://www.openlinksw.com/ontology/benefits#> .
 @prefix dbpedia:  <http://dbpedia.org/resource/> .
 @prefix oplpro:  <http://www.openlinksw.com/ontology/products#> .
-@prefix oplami: <http://www.openlinksw.com/ontology/oplami#> 
+@prefix oplami: <http://www.openlinksw.com/ontology/oplami#> .
 @prefix :        <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8ProductsReleases.ttl#> .
 @prefix source:      <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8ProductsReleases.ttl> .
 @prefix sourceDAV:   <http://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2017/Virtuoso8ProductsReleases.ttl> .
@@ -31,7 +31,7 @@
     cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
     schema:datePublished "2017-10-02T12:38:25-00:00"^^xsd:dateTime ;
     schema:dateCreated "2017-09-26T12:38:25-00:00"^^xsd:dateTime ;
-    schema:dateModified "2018-11-13T18:21:00-05:00"^^xsd:dateTime;
+    schema:dateModified "2021-05-26T17:18:00-05:00"^^xsd:dateTime;
     schema:name "Virtuoso 8.x Releases Related Information Document " ;
     schema:comment  """This document is a launch point for discovering routes to various information sources associated with Virtuoso 8.x Releases.  """;
     owl:sameAs source: .
@@ -45,33 +45,25 @@ source: a schema:CreativeWork ;
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:datePublished "2017-10-02T12:38:25-00:00"^^xsd:dateTime ;
    schema:dateCreated "2017-09-26T12:38:25-00:00"^^xsd:dateTime ;
-   schema:dateModified "2018-10-18T17:41:00-05:00"^^xsd:dateTime;
+   schema:dateModified "2021-05-26T17:18:00-05:00"^^xsd:dateTime;
    schema:about  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80#this>,
    	 			 <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease81x#this>,
 				 <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this>,
 				 <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-02d19573d65a31e02#this>,
 				 <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#>,
 				 <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this>,
-				 <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>, <https://hub.docker.com/r/openlink/virtuoso-closedsource-8#> ;
-				 ;
-   sioc:has_container <.> ;
-   sioc:sibling <Virtuoso8Products.ttl> ,
-                <Virtuoso8OffersPrices.ttl> ,
-                <Virtuoso8Offers.ttl> ,
-                <Virtuoso8Modules.ttl> ,
-                <Virtuoso8Licenses.ttl> ;
+				 <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>, <https://hub.docker.com/r/openlink/virtuoso-closedsource-8#>,
+				 <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#this> ;
    xhv:alternate <http://virtuoso.openlinksw.com/offers/> ;
    skos:related  <http://uda.openlinksw.com/data/turtle/multi-tier/2016/UDAMTProductsReleases.ttl> ,
                  <http://uda.openlinksw.com/data/turtle/single-tier/2016/UDASTProductsReleases.ttl> .
 
-<http://virtuoso.openlinksw.com/offers/> xhv:alternate source: .
-<.> sioc:container_of source: .
-
 
 <http://data.openlinksw.com/oplweb/product/Virtuoso#this> 
 oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease80#this>,
-   	 			 <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease81x#this>,
-				 <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+   	 			   <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease81x#this>,
+				   <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this>,
+				   <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#this> .
 
 ## Virtuoso Release 8.0
 
@@ -84,7 +76,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
   schema:version "8.0"^^xsd:decimal ;
   oplpro:versionText "8.0"^^xsd:string ;
-  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  schema:image <https://www.openlinksw.com/images/webby_structured_data_packets_v9.png> ;
   oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
   schema:name "Virtuoso 8.0" ;
   wdrs:describedby  source:  ;
@@ -109,39 +101,39 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
 				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-initial-deployment-WKSSVR-ANY#this>,
 				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-late-stage-combo-WKS-ANY#this>  .
   
-				<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this>
-				  a oplpro:ProductRelease  ,
-				    schema:CreativeWork ,
-				    schema:SoftwareApplication ,
-				    <http://purl.org/dc/dcmitype/Software>  ;
-				  oplpro:isReleaseOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
-				  dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
-				  schema:version "8.0"^^xsd:decimal ;
-				  oplpro:versionText "8.0"^^xsd:string ;
-				  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
-				  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
-				  schema:name "Virtuoso 8.0" ;
-				  wdrs:describedby  source:  ;
-				  schema:comment  """Latest edition (8.x) of the Virtuoso Multi-Model Data Server for Data Access, Integration, and Management 
-				  					 (Relational Tables and Entity Relation/Property Graphs).  
-								  """^^xsd:string ;
-				  schema:description   """This major upgrade delivers key innovations aimed at the natural fusion of artificial intelligence with data diversity, 
-				  						  with particular focus on Digital Transformation to leverage Data Analytics, Data Virtualization, Data Flow, and Sophisticated 
-										  Data Security .
-									   """^^xsd:string ;
-				  schema:mainEntityOfPage <http://virtuoso.openlinksw.com/> ;
-				  foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
-				  oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this>,
-				                    <http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#this>,
-				                    <http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#this> ;
-				  schema:author <http://www.openlinksw.com/#this> ;
-				  oplpro:upgradeOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
-				  opllic:hasProductLicense	
-				  				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-ANY#this>,			
-								<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-early-stage-combo-WKS-ANY#this>,
-								<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-ANY#this>,
-								<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-initial-deployment-WKSSVR-ANY#this>,
-								<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-late-stage-combo-WKS-ANY#this>  .
+<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this>
+  a oplpro:ProductRelease  ,
+    schema:CreativeWork ,
+    schema:SoftwareApplication ,
+    <http://purl.org/dc/dcmitype/Software>  ;
+  oplpro:isReleaseOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+  schema:version "8.0"^^xsd:decimal ;
+  oplpro:versionText "8.0"^^xsd:string ;
+  schema:image <https://www.openlinksw.com/images/webby_structured_data_packets_v9.png> ;
+  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  schema:name "Virtuoso 8.0" ;
+  wdrs:describedby  source:  ;
+  schema:comment  """Latest edition (8.x) of the Virtuoso Multi-Model Data Server for Data Access, Integration, and Management 
+  					 (Relational Tables and Entity Relation/Property Graphs).  
+				  """^^xsd:string ;
+  schema:description   """This major upgrade delivers key innovations aimed at the natural fusion of artificial intelligence with data diversity, 
+  						  with particular focus on Digital Transformation to leverage Data Analytics, Data Virtualization, Data Flow, and Sophisticated 
+						  Data Security .
+					   """^^xsd:string ;
+  schema:mainEntityOfPage <http://virtuoso.openlinksw.com/> ;
+  foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
+  oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this>,
+                    <http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#this>,
+                    <http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#this> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  oplpro:upgradeOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease72x#this> ;
+  opllic:hasProductLicense	
+  				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-ANY#this>,			
+				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-early-stage-combo-WKS-ANY#this>,
+				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-ANY#this>,
+				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-initial-deployment-WKSSVR-ANY#this>,
+				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-late-stage-combo-WKS-ANY#this>  .
 
 ## Virtouso Release 8.1
 
@@ -154,7 +146,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
   schema:version "8.1"^^xsd:decimal ;
   oplpro:versionText "8.1"^^xsd:string ;
-  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  schema:image <https://www.openlinksw.com/images/webby_structured_data_packets_v9.png> ;
   oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
   schema:name "Virtuoso 8.1" ;
   wdrs:describedby  source:  ;
@@ -190,7 +182,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
   schema:version "8.2"^^xsd:decimal ;
   oplpro:versionText "8.2"^^xsd:string ;
-  schema:image <https://media-cache-ak0.pinimg.com/originals/52/de/1b/52de1b4e67a10efe19bc11eed1d52682.jpg> ;
+  schema:image <https://www.openlinksw.com/images/webby_structured_data_packets_v9.png> ;
   oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
   schema:name "Virtuoso 8.2" ;
   wdrs:describedby  source:  ;
@@ -202,7 +194,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
 						  Data Security .
 					   """^^xsd:string ;
   schema:mainEntityOfPage <http://virtuoso.openlinksw.com/>, <https://aws.amazon.com/marketplace/pp/B011VMCZ8K#>,
-  						  <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#>, <https://hub.docker.com/r/openlink/virtuoso-closedsource-8#>,
+  						  <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG#>, <https://hub.docker.com/r/openlink/virtuoso-closedsource-8#>
 						   ;
   foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
   oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_feature/MultipleCSVAttachment#this>,
@@ -213,19 +205,7 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
   opllic:hasProductLicense	
   				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-LIN#this>,			
 				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-MAC#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-WIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-LIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-MAC#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-development-WKS-WIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-LIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-MAC#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-project-WKS-WIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-LIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-MAC#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-app-developer-workgroup-WKSSVR-WIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-LIN#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-MAC#this>,
-				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-systems-integration-WKSSVR-WIN#this> .
+				<http://data.openlinksw.com/oplweb/license/License-2018-11-virtuoso-82-personal-WKS-WIN#this> .
 								
 
 ## Docker Container Page Description
@@ -234,9 +214,9 @@ oplpro:hasRelease  <http://data.openlinksw.com/oplweb/product_release/VirtuosoRe
 a schema:WebPage ;
 rdfs:label "Virtuoso 8.2 Docker Container Description Document" ;
 schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this>, <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> ;
-foaf:depiction <https://www.openlinksw.com/images/virtuoso-82-docker-container-1.png>, <https://www.openlinksw.com/images/virtuoso-82-docker-container-2.png>,
-               <https://www.openlinksw.com/images/virtuoso-82-docker-container-3.png>, <https://www.openlinksw.com/images/virtuoso-82-docker-container-4.png>,
-			   <https://www.openlinksw.com/images/virtuoso-82-docker-container-5.png>, <https://www.openlinksw.com/images/virtuoso-82-docker-container-6.png> ;
+foaf:depiction <http://www.openlinksw.com/images/virtuoso-82-docker-container-1.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-2.png>,
+               <http://www.openlinksw.com/images/virtuoso-82-docker-container-3.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-4.png>,
+			   <http://www.openlinksw.com/images/virtuoso-82-docker-container-5.png>, <http://www.openlinksw.com/images/virtuoso-82-docker-container-6.png> ;
 schema:url <http://hub.docker.com/r/openlink/virtuoso-closedsource-8/> ;
 dcterms:description """
 						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
@@ -266,7 +246,7 @@ is schema:about of <> .
 a schema:WebPage ;
 rdfs:label "Virtuoso 8.2 PAGO Edition Description Document" ;
 schema:about <http://data.openlinksw.com/oplweb/product/Virtuoso#this>, <http://data.openlinksw.com/oplweb/product/Virtuoso-ami-0175c4a749cf1741f#this> ;
-foaf:depiction <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
+foaf:depiction <http://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marketplace.png> ;
 schema:url <https://aws.amazon.com/marketplace/pp/B011VMCZ8K/> ;
 dcterms:description """
 						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
@@ -338,7 +318,7 @@ foaf:depiction <https://www.openlinksw.com/images/virtuoso-82-pago-ami-aws-marke
 schema:url <https://aws.amazon.com/marketplace/pp/B00ZWMSNOG/> ;
 dcterms:description """
 						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
-						deployment is available on a Pay-As-You-Go (BYOL) subscription model basis via the Amazon Web Services (AWS) 
+						deployment is available on a Bring-Your-Own-License (BYOL) subscription model basis via the Amazon Web Services (AWS) 
 						Cloud's marketplace. 
 			 		""" ;
 rdfs:comment  """
@@ -406,9 +386,9 @@ skos:related <http://dbpedia.org/resource/Category:Cloud_platforms>,
 a oplfea:ProductFeature ;
 # owl:sameAs <http://virtuoso.openlinksw.com/news/virtuoso-8-press-release/#CustomInferenceRules> ;
 schema:name "Custom Inference Rules"^^xsd:string ;
-benefit:hasBenefit benefit:CognitiveAgility ;
+benefit:hasBenefit benefit:CognitiveAgility, benefit:MarketLeadershipOptimizationBenefit ;
 schema:description """
-					System that uses rules to inform Dynamic manifestations of new Entity Relationships. For instance, custom reasoning and
+					Use of rules to inform dynamic manifestations of new Entity Relationships. For instance, custom reasoning and
 					inference rules remove the tedium associated with  manually logging the state transitions of an entity across states such as:
 					suspects, prospects, leads, or customer. The same applies to the transient state of individual access to sensitive data. 
 					"""^^xsd:string ;
@@ -424,7 +404,7 @@ a oplfea:ProductFeature ;
 # owl:sameAs <http://virtuoso.openlinksw.com/news/virtuoso-8-press-release/#AttributeBasedAccessControls> ;
 schema:name "Attribute-based Access Controls"^^xsd:string ;
 skos:altLabel "ABAC";
-benefit:hasBenefit benefit:CognitiveAgility ;
+benefit:hasBenefit benefit:CognitiveAgility, benefit:MarketLeadershipOptimizationBenefit ;
 schema:description """
 					Using the attributes of the complete range of actors (humans, machines, software applications etc.) to construct a Semantic
 					Web of Linked Data that's used to provide the flexibility required to handle the mercurial nature of privacy and security in
@@ -444,7 +424,7 @@ skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_com
 a oplfea:ProductFeature ;
 # owl:sameAs <http://virtuoso.openlinksw.com/news/virtuoso-8-press-release/#EnhancedRelationMapping> ;
 schema:name "Enhanced Relational Mapping"^^xsd:string ;
-benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this>, benefit:MarketLeadershipOptimizationBenefit ;
 schema:description """
 				   Ability to derive relations (entity relationship types) in a variety of forms. For instance, using mapping rules (via standards
 				   such as W3C's R2RML) to inform transformation of relations represented as Tables in a SQL RDBMS into fine-grained RDF
@@ -459,7 +439,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPASQL#this>, 
-			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> .		
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .		
 
 ## 8.2 Features
 
@@ -470,7 +450,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 a oplfea:ProductFeature ;
 # owl:sameAs <http://virtuoso.openlinksw.com/news/virtuoso-8-press-release/#EnhancedRelationMapping> ;
 schema:name "Enhanced GeoSpatial Operations via SQL/MM access via GeoSPARQL"^^xsd:string ;
-benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this>, benefit:MarketLeadershipOptimizationBenefit ;
 schema:description """Providing GeoSPARQL Query Language support as a tool for performing GeopSpatial operations that builds on existing
 					  support of SQL/MM. Net effect, a natural interaction interface for developers and end-users oriented towards knowledge
 					  graph interaction and contruction (that manifests as a semantic web of linked data) using the SPARQL and/or SQL.
@@ -481,7 +461,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPASQL#this>, 
-			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> .	
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>.	
 
 # OpenID Connect Support
 
@@ -501,7 +481,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPASQL#this>, 
-			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> .	
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .	
 
 # Multiple CSV File Mapping to Tabular Relations
 					
@@ -509,7 +489,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 a oplfea:ProductFeature ;
 # owl:sameAs <http://virtuoso.openlinksw.com/news/virtuoso-8-press-release/#EnhancedRelationMapping> ;
 schema:name "Multiple CSV File Mapping to Tabular Relations"^^xsd:string ;
-benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this> ;
+benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this>, benefit:MarketLeadershipOptimizationBenefit ;
 schema:description """Multiple CSV Documents with identical column structured mapped to a single Tabular Relation (Table) which can be
 	 				  further mapped to RDF Views as part of a knowlege graph consrtuction and ehnancement endeavor that supports interactions
 					  via SQL and/or SPARQL client apps and services. 
@@ -520,7 +500,7 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/SPASQL#this>, 
-			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> .	
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .	
 			 			 
 ## Inverse Relations
 
@@ -548,6 +528,38 @@ skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 
 # Benefits Descriptions 
 
+## Market Leadership Discripline Optimization (MLDO)
+
+benefit:MarketLeadershipOptimizationBenefit
+a benefit:CompanyBenefit, benefit:GeneralManagementBenefit ;
+schema:name "MarketLeadershipOptimizationBenefit"; 
+skos:prefLabel "Market Leadership Optimization Benefit" ;
+schema:image <https://cdn2.slidemodel.com/wp-content/uploads/6857-01-value-discipline-model-2.jpg> ;
+schema:description """
+					Aids market ledership establishment and maintenance 
+					by calibratiing disciplines such as Product Innovation, 
+					Operational Excellence, and Customer Intimacy.
+					"""^^xsd:string ;
+benefit:isBenefitOf <http://data.openlinksw.com/oplweb/product_feature/MultipleCSVAttachment#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/OpenIDConnectSupport#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/EnhanceGeoSpatialOperations#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#this>,			 
+					<http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/DataJunctionBox#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/WebServicestoRDFLinkedData#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/RDFbasedLinkedDataDeployment#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/ContentNegotiationSupportincludingRDFhandling#this> ;
+skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_computing,
+ 			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>, 
+		  	 <http://data.openlinksw.com/oplweb/glossary-term/DigitalTransformation#this>,
+		  	 <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDiscipline#this>,
+		  	 <http://data.openlinksw.com/oplweb/glossary-term/MarketLeadershipDisciplineOptimization#this>  .
+												 
+## Cognitive Agility
+
 benefit:CognitiveAgility
 a benefit:CompanyBenefit, benefit:TechnicalManagementBenefit ;
 schema:name "Cognitive Agility"; 
@@ -562,7 +574,7 @@ skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_com
  			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
 			 <http://spinrdf.org/#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
-			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this>, [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1> ] ,
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>, [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1> ] ,
                                                  [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfRecord&distinct=1>] ,
                                                  [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfEngagement&distinct=1>] .
 												 
@@ -580,10 +592,73 @@ skos:related dbpedia:Rule_of_inference, dbpedia:Cognition, dbpedia:Cognitive_com
  			 <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
 			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
 			 <http://spinrdf.org/#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>,
-			 <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this>, [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1> ] ,
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this>, [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfIntelligence&distinct=1> ] ,
                                                  [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfRecord&distinct=1>] ,
                                                  [ schema:mainEntityOfPage <http://linkeddata.uriburner.com/describe/?url=http%3A%2F%2Fkingsley.idehen.net%2FDAV%2Fhome%2Fkidehen%2FPublic%2FLinked%2520Data%2520Documents%2FNanotations%2Frandom-bigdata-semantic-web-notes.ttl%23SystemOfEngagement&distinct=1>] .
 
+
+## Virtuoso Release 8.3
+
+<http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#this>
+  a oplpro:ProductRelease  ,
+    schema:CreativeWork ,
+    schema:SoftwareApplication ,
+    <http://purl.org/dc/dcmitype/Software>  ;
+  oplpro:isReleaseOf <http://data.openlinksw.com/oplweb/product/Virtuoso#this> ;
+  dcterms:isVersionOf <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+  schema:version "8.3"^^xsd:decimal ;
+  oplpro:versionText "8.3"^^xsd:string ;
+  schema:image <https://www.openlinksw.com/images/webby_structured_data_packets_v9.png> ;
+  oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>;
+  schema:name "Virtuoso 8.3" ;
+  wdrs:describedby  source:  ;
+  schema:comment  """Latest edition (8.3) of the Virtuoso Multi-Model Data Server for Data Access, Integration, and Management 
+  					 (Relational Tables and Entity Relation/Property Graphs).  
+				  """^^xsd:string ;
+  schema:description   """This major upgrade delivers key innovations aimed at the simplified exposure of unique functionality for developing 
+                          and deploying Knowledgebases and Systems-Of-Intelligence that manifest as Knowledge Graphs woven together using hyperlinks
+						  that function as Super Keys. This capability extends to existing Systems-Of-Record and filesystem hosted documents such as
+						  CSV files and is fully exploitable using existing HTTP, ODBC, JDBC, ADO.NET, and OLE-DB compliant tools.
+					   """^^xsd:string ;
+  schema:mainEntityOfPage <http://virtuoso.openlinksw.com/> ;
+  foaf:weblog <http://virtuoso.openlinksw.com/blog> ;
+  oplfea:hasFeature <http://data.openlinksw.com/oplweb/product_feature/AttributeBasedAccessControls#this>,
+                    <http://data.openlinksw.com/oplweb/product_feature/CustomInferenceRules#this>,
+                    <http://data.openlinksw.com/oplweb/product_feature/EnhancedRelationMapping#this>,
+					<http://data.openlinksw.com/oplweb/product_feature/MultipleCSVBulkLoading#this> ;
+  schema:author <http://www.openlinksw.com/#this> ;
+  oplpro:upgradeOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease82x#this> .
+
+  
+
+## Features & Benefits ##
+
+
+## 8.3 Features
+
+# Multiple CSV File Mapping to Tabular Relations
+					
+<http://data.openlinksw.com/oplweb/product_feature/MultipleCSVBulkLoading#this>
+a oplfea:ProductFeature ;
+# owl:sameAs <http://virtuoso.openlinksw.com/news/virtuoso-8-press-release/#EnhancedRelationMapping> ;
+schema:name "Multiple CSV File Bulk Loading and Mapping to Tabular Relations"^^xsd:string ;
+benefit:hasBenefit <http://data.openlinksw.com/oplweb/product_benefit/StandardsCompliance#this>, benefit:MarketLeadershipOptimizationBenefit ;
+schema:description """Multiple CSV Documents with identical column structured loaded in bulk from a common directory and then mapped to a single Tabular
+	 				  Relation (Table) which can be further mapped to RDF Views as part of a knowlege graph consrtuction and ehnancement endeavor that supports
+					  interactions via SQL and/or SPARQL client apps and services that support HTTP, ODBC, JDBC, ADO.NET, or OLE-DB. 
+				   """^^xsd:string ;
+skos:related <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, 
+			 <https://www.w3.org/TR/r2rml/#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SQL#this>,
+			 <http://data.openlinksw.com/oplweb/glossary-term/SPASQL#this>, 
+			 <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .	
+			 			 
+## Inverse Relations
+
+<http://data.openlinksw.com/oplweb/product_feature/MultipleCSVBulkLoading#this> oplfea:isFeatureOf <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease83x#this> . 
+ 
 
 ## Related Blog Posts ##
 
@@ -628,7 +703,7 @@ schema:description """
 					Writing, Spreadsheet, and other productivity tools and services into Semantic Web of Linked Data exploration launch points. 
 		   		   """^^xsd:string ;
 schema:mainEntity <http://virtuoso.openlinksw.com/#this> ;
-schema:about dbpedia:Virtuoso_Universal_Server, dbpedia:Cognition, dbpedia:Cognitive_computing, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>, <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>, <http://data.openlinksw.com/oplweb/glossary-term/VDBMS#this> .
+schema:about dbpedia:Virtuoso_Universal_Server, dbpedia:Cognition, dbpedia:Cognitive_computing, <http://data.openlinksw.com/oplweb/glossary-term/SemanticWeb#this>, <http://data.openlinksw.com/oplweb/glossary-term/LinkedData#this>, <http://data.openlinksw.com/oplweb/glossary-term/ODBC#this>, <http://data.openlinksw.com/oplweb/glossary-term/JDBC#this>, <http://data.openlinksw.com/oplweb/glossary-term/DataVirtualization#this> .
 
 
 
