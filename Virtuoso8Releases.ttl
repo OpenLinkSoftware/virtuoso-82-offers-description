@@ -220,7 +220,7 @@ foaf:depiction <http://www.openlinksw.com/images/virtuoso-82-docker-container-1.
 schema:url <http://hub.docker.com/r/openlink/virtuoso-closedsource-8/> ;
 dcterms:description """
 						One-click installation edition of a preconfigured Virtuoso 8.2 Multi-Model RDBMS instance. This particular 
-						deployment requires a commercial license for fully functionality, by default it will operate if free-evaluation mode.
+						deployment requires an Evaluation or Non-Expiring license for full functionality, by default it will operate in Limited Demo mode.
 			 		""" ;
 rdfs:comment  """
 				Following container instantiation, you can use docker container commands to start, monitor, and stop a Virtuoso instance 
