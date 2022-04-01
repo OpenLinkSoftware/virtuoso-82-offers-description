@@ -30,7 +30,7 @@ sourceDAV:
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:datePublished "2020-10-09T11:38:25-00:00"^^xsd:dateTime ;
    schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
-   schema:dateModified "2020-11-16T11:41:00-05:00"^^xsd:dateTime;
+   schema:dateModified "2021-12-31T11:31:59-05:00"^^xsd:dateTime;
    schema:name "OpenLink LOD Cloud Products Licenses Related Information Document " ;
    schema:comment """This document is a launch point for discovering routes to various information sources associated with OpenLink LOD Cloud Products Licenses. """^^xsd:string ;
    owl:sameAs source: .
@@ -47,7 +47,7 @@ source: a schema:CreativeWork ;
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:datePublished "2020-10-09T11:38:25-00:00"^^xsd:dateTime ;
    schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
-   schema:dateModified "2020-11-16T11:41:00-05:00"^^xsd:dateTime;
+   schema:dateModified "2021-12-31T11:31:59-05:00"^^xsd:dateTime;
    # sioc:has_container <.> ;
    # sioc:sibling <LODOffersPrices.ttl> ,
    #             <LODOffers.ttl> ,
@@ -101,7 +101,7 @@ source: a schema:CreativeWork ;
       schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-LOD-personal-client-access-30-day-sql#this> ;
       skos:related <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
       schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
-      schema:validThrough "2020-12-31T23:59:59+00:00"^^xsd:dateTime ;
+      schema:validThrough "2022-12-31T23:59:59+00:00"^^xsd:dateTime ;
       oplofr:isMemberOf :OfferGroupClientConnectivity .
 
 ## Licenses 
@@ -162,7 +162,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
    schema:name """Virtuoso Data Access Driver for the World Wide Web RDBMS -- Free 15 Day Evaluation License -- Unit Price: 0.00"""^^xsd:string ;
    schema:comment """The price of the 15 Day Evaluation License for the Virtuoso Data Access Driver for the World Wide Web RDBMS is zero."""^^xsd:string ;
    schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
-   schema:validThrough "2020-12-31T23:59:59+00:00"^^xsd:dateTime .
+   schema:validThrough "2022-12-31T23:59:59+00:00"^^xsd:dateTime .
 
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
       <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-personal-client-access-30-day-sql#this> .
@@ -189,7 +189,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
       schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-LOD-Subscription-90#this>  ;
       skos:related <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
       schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
-      schema:validThrough "2020-12-31T23:59:59+00:00"^^xsd:dateTime ;
+      schema:validThrough "2022-12-31T23:59:59+00:00"^^xsd:dateTime ;
       oplofr:isMemberOf :OfferGroupClientConnectivity .
 
 ## 90 Day Client Connectivity for LOD Cloud License via SQL
@@ -200,7 +200,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
     oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
     oplsof:hasOperatingSystemType oplsof:AnyOS ;
     opllic:serialNumberBroadcast "1"^^xsd:integer ;
-    # schema:image <https://s-media-cache-ak0.pinimg.com/originals/ac/f3/0f/acf30f15248f0044396fdc00a4c91c02.jpg> ;
+    schema:image <https://s-media-cache-ak0.pinimg.com/originals/ac/f3/0f/acf30f15248f0044396fdc00a4c91c02.jpg> ;
     schema:name "LOD Connectivity via URIBurner Service: 2020-12-LOD-Subscription-90" ;
     skos:prefLabel "LOD Connectivity via URIBurner Service: 90 Day Subscription Interval"^^xsd:string ;
     opllic:hasServiceProvider <http://linkeddata.uriburner.com#this> ;
@@ -242,7 +242,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
    schema:name """Virtuoso Data Access Driver for the World Wide Web RDBMS -- 90 Day License -- Unit Price: 0.00"""^^xsd:string ;
    schema:comment """The price of the 90 Day Evaluation License for the Virtuoso Data Access Driver for the World Wide Web RDBMS is zero."""^^xsd:string ;
    schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
-   schema:validThrough "2020-12-31T23:59:59+00:00"^^xsd:dateTime .
+   schema:validThrough "2022-12-31T23:59:59+00:00"^^xsd:dateTime .
 
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
       <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-personal-client-access-90-day-sql#this> .
@@ -270,7 +270,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
       schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-LOD-Subscription-365#this> ;
       skos:related <http://data.openlinksw.com/oplweb/product/DaaS#this> ;
       schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
-      schema:validThrough "2020-12-31T23:59:59+00:00"^^xsd:dateTime ;
+      schema:validThrough "2022-12-31T23:59:59+00:00"^^xsd:dateTime ;
       oplofr:isMemberOf :OfferGroupClientConnectivity .
 
 ## 365 Day Client Connectivity for LOD Cloud License via SQL
@@ -335,7 +335,7 @@ duration:Duration-2020-10-LOD-Subscription-365
       schema:name "Virtuoso Data Access Driver for the World Wide Web RDBMS -- 90 Day License for a Single Network Client -- Unit Price: 0.00"^^xsd:string ;
       schema:comment """This 90 day duration license provides SQL access via ODBC, JDBC, ADO.NET, OLE-DB and XMLA providers to the Linked Open Data cloud which enables Web interaction on par with SQL RDBMS interactions via the aforementioned data access standards.  Note, you can purchase multiple licenses per user, group of users etc."""^^xsd:string ;
       schema:validFrom "2017-01-01T00:00:00+00:00"^^xsd:dateTime ;
-      schema:validThrough "2020-12-31T23:59:59+00:00"^^xsd:dateTime .
+      schema:validThrough "2022-12-31T23:59:59+00:00"^^xsd:dateTime .
 
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
       <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-LOD-personal-client-access-365-day-sql#this> .
