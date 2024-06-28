@@ -1,0 +1,78 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix offers: <http://www.openlinksw.com/ontology/offers#> .
+@prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplic: <http://www.openlinksw.com/ontology/licenses#> .
+
+## Associating a Company with its Offers
+<http://www.openlinksw.com/dataspace/organization/openlink#this> 
+   schema:offers                       <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-trial-WKSSVR-ANY#this>.
+
+
+## Trial License Duration
+<http://data.openlinksw.com/oplweb/license/License-Duration#Duration-Virtuoso-Evaluation-15>
+                                       a license:LicenseDuration ;
+   schema:name                         """15 Day Duration """^^xsd:string ;
+   license:isDurationOf                <http://data.openlinksw.com/oplweb/license/License-virtuoso-8-trial-WKSSVR-ANY#this> ;
+   license:durationDays                "15"^^xsd:integer .
+                                       
+# Trial Price Specification            
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-Virtuoso-evaluation#this>
+    a                                  schema:UnitPriceSpecification ,
+                                       offers:RetailPriceSpecification ;
+   schema:priceCurrency                "USD"^^xsd:string;
+   schema:price                        "00.00"^^xsd:decimal ; 
+   schema:name                         """Price specification for Virtuoso Trial -- Free 15 Day Evaluation License -- Unit Price: 0.00"""^^xsd:string ;
+   schema:comment                      """The price of the 15 Day Evaluation License for Virtuoso is zero."""^^xsd:string ;
+   schema:validFrom                    "2024-06-26T00:00:00+00:00"^^xsd:dateTime .
+   
+
+## Trial Offer
+<http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-trial-WKSSVR-ANY#this> a
+                                       schema:Offer,
+                                       offers:Virtuoso8Offer,	
+                                       offers:TrialOffer ;
+   schema:url                          <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-trial-WKSSVR-ANY>;
+   schema:validFrom                    "2024-06-26T00:00:00+00:00"^^xsd:dateTime ;
+   schema:priceSpecification           <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-Virtuoso-evaluation#this>;
+   schema:itemOffered                  <http://data.openlinksw.com/oplweb/license/License-virtuoso-8-trial-WKSSVR-ANY#this> ;
+   schema:category                     "trial"^^xsd:string ;
+   gr:businessFunction                 gr:Sell ;
+   skos:prefLabel                      "Software License Offer: Virtuoso 8.x Application Development License for any Workstation-class Operating System"^^xsd:string ;
+   schema:comment                      """Software License Offer: Trial Virtuoso 8.x License (15 day duration, no processor or session limits) for deployment on any suppoerted operating system."""^^xsd:string ;
+   schema:description                  """Trial Virtuoso 8.x License (15 day duration, no processor or session limits) for deployment on any supported operating system."""^^xsd:string ;
+   offers:offerNumber                  "virtuoso-8-trial-WKSSVR-ANY"^^xsd:string ;
+   schema:name                         "Software License Offer: Trial Virtuoso 8.x License for any supported Operating System"^^xsd:string ;
+   schema:potentialAction              <https://shop.openlinksw.com/license_generator/virtuoso-generate.vsp?serverVersion=8.3&product=virtuoso&productLicense=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Fproduct%2FVirtuoso%23this&clientSelection=clientserver&opSystem=default&opsysFamily=http%3A%2F%2Fwww.openlinksw.com%2Fontology%2Fsoftware%23OSFamilyAny>.
+
+
+## Trial License
+<http://data.openlinksw.com/oplweb/license/License-virtuoso-8-trial-WKSSVR-ANY#this> a
+                                       oplic:ExpiringLicense,
+                                       oplic:ProductLicense,
+                                       oplic:Virtuoso8License , schema:Product ;
+   oplsof:hasOperatingSystemType       oplsof:serverWorkstationOS ;
+   oplsof:hasOperatingSystemFamily     oplsof:OSFamilyAny ;
+   schema:description                  """Trial License for Virtuoso 8.x Trial license has no restriction on sessions or processors and can be used on any supported operating system for 15 days."""^^xsd:string ;
+   oplic:productLicenseOf              <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+   schema:name                         "Virtuoso 8.x License: 15 day Trial License for deployment on any supported Operating System."^^xsd:string;
+   schema:comment                      """Virtuoso 8.x Trial Licenses (15 day duration, no processor or session limits) for deployment on any supported operating system."""^^xsd:string ;
+   schema:model                        <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+   oplic:hasLicenseModule              <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+                                       <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/Replication#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/VDB#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/VAL#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+   oplic:serialNumberBroadcast         "1"^^xsd:integer ;
+   oplic:hasDuration                   <http://data.openlinksw.com/oplweb/license/License-Duration#Duration-Virtuoso-Evaluation-15> ;
+   oplic:partOf                        <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-trial-WKSSVR-ANY#this> ;
+   oplsof:hasDatabaseFamily            oplsof:OpenLinkVirtuoso .
+
+
