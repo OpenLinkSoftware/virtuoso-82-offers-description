@@ -57,7 +57,7 @@ _:node1d7fijg99x1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_fa
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> a license:Duration ;
 	license:durationYears "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	schema:name "License Duration -- One Year Annual" ;
+	schema:name "License Duration — One Year" ;
 	license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-personal-WKS-WIN#this> license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
