@@ -8,8 +8,37 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix oplic: <http://www.openlinksw.com/ontology/licenses#> .
 @prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
-@prefix source: <#>.
-@prefix : <#>.
+# @prefix          : "TBD" .
+# @prefix    source: "TBD" .
+# @prefix sourceDAV: "TBD" .
+
+sourceDAV:
+   a                    schema:CreativeWork ;
+   schema:author        <http://www.openlinksw.com/#this> ;
+   xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName   "OpenLink Software" ;
+   cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+#    schema:datePublished "TBD" ;
+#    schema:dateCreated   "TBD" ;
+   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime ;
+   schema:name          "Virtuoso 8.2 Offers Related Information Document " ;
+   schema:comment       """This document is a launch point for discovering routes to various information sources associated with Virtuoso offers.""";
+   owl:sameAs           source: .
+
+source:
+   a                    schema:CreativeWork ;
+   schema:name          "OpenLink Virtuoso 8.2 Special Offers "^^xsd:string  ;
+   schema:comment       """This is a turtle document that uses Linked Data oriented content to describe Virtuoso offers """^^xsd:string  ;
+   schema:author        <http://www.openlinksw.com/#this> ;
+   xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName   "OpenLink Software" ;
+   cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+#    schema:datePublished "TBD" ;
+#    schema:dateCreated   "TBD" ;
+   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime ;
+#    schema:about         "TBD" ;
+#    xhv:alternate        "TBD" ;
+#    skos:related         "TBD" .
 
 ## Associating a Company with its Offers
 <http://www.openlinksw.com/dataspace/organization/openlink#this> 
