@@ -7,8 +7,8 @@
 @prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 # @prefix          : "TBD" .
-# @prefix    source: "TBD" .
-# @prefix sourceDAV: "TBD" .
+@prefix    source: <https://www.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-83-Offers-Licenses-Prices2019.ttl> .
+@prefix sourceDAV: <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-83-Offers-Licenses-Prices2019.ttl> .
 
 sourceDAV:
    a                    schema:CreativeWork ;
@@ -20,7 +20,7 @@ sourceDAV:
    schema:comment       """This document is a launch point for discovering routes to various information sources associated with Virtuoso 8.3 offers.""";
    owl:sameAs           source: ;
 #    schema:datePublished "TBD" ;
-#    schema:dateCreated   "TBD" ;
+   schema:dateCreated   "2019-11-15T00:00:00-0500"^^xsd:dateTime ;
    schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
 source:
@@ -31,11 +31,11 @@ source:
    xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
    cc:attributionName   "OpenLink Software" ;
    cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-#    schema:about         "TBD" ;
-#    xhv:alternate        "TBD" ;
-#    skos:related         "TBD" ;
+#    schema:about         <"TBD"> ;
+#    xhv:alternate        <"TBD"> ;
+#    skos:related         <"TBD"> ;
 #    schema:datePublished "TBD" ;
-#    schema:dateCreated   "TBD" ;
+   schema:dateCreated   "2019-11-15T00:00:00-0500"^^xsd:dateTime ;
    schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
