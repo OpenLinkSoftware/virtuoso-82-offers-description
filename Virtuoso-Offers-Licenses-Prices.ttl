@@ -18,12 +18,12 @@ sourceDAV:
    xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
    cc:attributionName   "OpenLink Software" ;
    cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-#    schema:datePublished "TBD" ;
-#    schema:dateCreated   "TBD" ;
-   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime ;
    schema:name          "Virtuoso 8.2 Offers Related Information Document " ;
    schema:comment       """This document is a launch point for discovering routes to various information sources associated with Virtuoso offers.""";
-   owl:sameAs           source: .
+   owl:sameAs           source: ;
+#    schema:datePublished "TBD" ;
+#    schema:dateCreated   "TBD" ;
+   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
 source:
    a                    schema:CreativeWork ;
@@ -33,12 +33,12 @@ source:
    xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
    cc:attributionName   "OpenLink Software" ;
    cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-#    schema:datePublished "TBD" ;
-#    schema:dateCreated   "TBD" ;
-   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime ;
 #    schema:about         "TBD" ;
 #    xhv:alternate        "TBD" ;
-#    skos:related         "TBD" .
+#    skos:related         "TBD" ;
+#    schema:datePublished "TBD" ;
+#    schema:dateCreated   "TBD" ;
+   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
 ## Associating a Company with its Offers
 <http://www.openlinksw.com/dataspace/organization/openlink#this> 
