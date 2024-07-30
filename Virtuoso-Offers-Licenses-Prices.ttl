@@ -1,16 +1,16 @@
-@prefix schema: <http://schema.org/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix offers: <http://www.openlinksw.com/ontology/offers#> .
-@prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
-@prefix gr: <http://purl.org/goodrelations/v1#> .
-@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
-@prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix oplic: <http://www.openlinksw.com/ontology/licenses#> .
-@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> . 
-# @prefix          : "TBD" .
-# @prefix    source: "TBD" .
-# @prefix sourceDAV: "TBD" .
+@prefix    schema: <http://schema.org/> .
+@prefix      rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix    offers: <http://www.openlinksw.com/ontology/offers#> .
+@prefix    oplpro: <http://www.openlinksw.com/ontology/products#> .
+@prefix        gr: <http://purl.org/goodrelations/v1#> .
+@prefix   license: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix    oplsof: <http://www.openlinksw.com/ontology/software#> .
+@prefix      skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix     oplic: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix      wdrs: <http://www.w3.org/2007/05/powder-s#> . 
+# @prefix          : <"TBD"> .
+@prefix    source: <https://www.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-Offers-Licenses-Prices.ttl> .
+@prefix sourceDAV: <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-Offers-Licenses-Prices.ttl> .
 
 sourceDAV:
    a                    schema:CreativeWork ;
@@ -22,7 +22,7 @@ sourceDAV:
    schema:comment       """This document is a launch point for discovering routes to various information sources associated with Virtuoso offers.""";
    owl:sameAs           source: ;
 #    schema:datePublished "TBD" ;
-#    schema:dateCreated   "TBD" ;
+   schema:dateCreated   "2020-10-06T00:00:00-0500"^^xsd:dateTime ;
    schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
 source:
@@ -33,11 +33,11 @@ source:
    xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
    cc:attributionName   "OpenLink Software" ;
    cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-#    schema:about         "TBD" ;
-#    xhv:alternate        "TBD" ;
-#    skos:related         "TBD" ;
-#    schema:datePublished "TBD" ;
-#    schema:dateCreated   "TBD" ;
+#    schema:about         <"TBD"> ;
+#    xhv:alternate        <"TBD"> ;
+#    skos:related         <"TBD"> ;
+#    schema:datePublished <"TBD"> ;
+   schema:dateCreated   "2020-10-06T00:00:00-0500"^^xsd:dateTime ;
    schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
 ## Associating a Company with its Offers
