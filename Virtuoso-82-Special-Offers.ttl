@@ -1,12 +1,108 @@
-@prefix schema: <http://schema.org/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix offers: <http://www.openlinksw.com/ontology/offers#> .
-@prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
-@prefix gr: <http://purl.org/goodrelations/v1#> .
-@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
-@prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix    schema: <http://schema.org/> .
+@prefix      rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix    offers: <http://www.openlinksw.com/ontology/offers#> .
+@prefix    oplpro: <http://www.openlinksw.com/ontology/products#> .
+@prefix        gr: <http://purl.org/goodrelations/v1#> .
+@prefix   license: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix    oplsof: <http://www.openlinksw.com/ontology/software#> .
+@prefix      skos: <http://www.w3.org/2004/02/skos/core#> .
+# @prefix          : "TBD" .
+@prefix    source: <https://www.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-82-Special-Offers.ttl> .
+@prefix sourceDAV: <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-82-Special-Offers.ttl> .
 
+sourceDAV:
+   a                    schema:CreativeWork ;
+   schema:author        <http://www.openlinksw.com/#this> ;
+   xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName   "OpenLink Software" ;
+   cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:name          "Virtuoso 8.2 Special Offers Related Information Document " ;
+   schema:comment       """This document is a launch point for discovering routes to various information sources associated with Virtuoso 8.2 special offers.""";
+   owl:sameAs           source: ;
+#    schema:datePublished "TBD" ;
+   schema:dateCreated   "2018-11-05T00:00:00-0500"^^xsd:dateTime ;
+   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
+
+source:
+   a                    schema:CreativeWork ;
+   schema:name          "OpenLink Virtuoso 8.2 Special Offers "^^xsd:string  ;
+   schema:comment       """This is a turtle document that uses Linked Data oriented content to describe Virtuoso 8.2 Special Offers """^^xsd:string  ;
+   schema:author        <http://www.openlinksw.com/#this> ;
+   xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
+   cc:attributionName   "OpenLink Software" ;
+   cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
+   schema:about         _:node1d7fijg99x1 ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-department-SRV-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-department-SRV-MAC#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-department-SRV-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-development-SRV-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-app-development-SRV-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-personal-WKS-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-personal-WKS-MAC#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2019-04-virtuoso-82-personal-WKS-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-LIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-WIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-LIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-MAC-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-personal-WKS-WIN-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-MAC#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-department-SRV-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-development-SRV-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-app-development-SRV-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-LIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-MAC#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN#this> ,
+                        <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Flicense%2FLicense-2019-04-virtuoso-82-app-development-SRV-MAC+%23this> ,
+                        <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC+-retail-price%23this> ,
+                        <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer-unitprice%2FUnitPriceSpecification2019-04-virtuoso-82-app-development-SRV-MAC+-special-price%23this> ,
+                        <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-MAC%23this+> ,
+                        <http://data.openlinksw.com/oplweb/offer#http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-http%3A%2F%2Fvirtuoso.openlinksw.com%2Foffers%2Forder%3Furi%3Dhttp%253A%252F%252Fdata.openlinksw.com%252Foplweb%252Foffer%252FOffer-2019-04-virtuoso-82-app-development-SRV-MAC+%2523this%26type%3Dbuy%26mode%3Dv%2523this%26type%3Dbuy%26mode%3Dv> ,
+                        <http://virtuoso.openlinksw.com/offers/> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-department-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-dev-workgroup-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-app-development-SRV-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-LIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
+                        <http://www.openlinksw.com/dataspace/organization/openlink#this> ,
+                        <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-MAC#this> .
+                        source: ,
+                        sourceDAV: ;
+#    xhv:alternate        <"TBD"> ;
+#    skos:related         <"TBD"> ;
+#    schema:datePublished "TBD" ;
+   schema:dateCreated   "2018-11-05T00:00:00-0500"^^xsd:dateTime ;
+   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-WIN> ;
