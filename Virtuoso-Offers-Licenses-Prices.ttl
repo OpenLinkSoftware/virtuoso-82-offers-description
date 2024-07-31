@@ -33,7 +33,27 @@ source:
    xhv:license          <http://creativecommons.org/licenses/by/4.0/deed.en_US> ;
    cc:attributionName   "OpenLink Software" ;
    cc:attributionURL    <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
-#    schema:about         <"TBD"> ;
+   schema:about         _:node1das6kevvx1 ,
+                        <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-initial-deployment-WKSSVR-ANY#this> ,
+                        <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-retail-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-special-price#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-project-WKS-ANY#this> ,
+                        <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY#this> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-development-WKS-ANY%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-project-WKS-ANY%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2020-10-virtuoso-8-app-developer-workgroup-WKSSVR-ANY%23this&type=buy&mode=v> ,
+                        <http://virtuoso.openlinksw.com/pricing/> ,
+                        <http://www.openlinksw.com/dataspace/organization/openlink#this> ,
+                        source: ,
+                        sourceDAV: ;
 #    xhv:alternate        <"TBD"> ;
 #    skos:related         <"TBD"> ;
 #    schema:datePublished <"TBD"> ;
