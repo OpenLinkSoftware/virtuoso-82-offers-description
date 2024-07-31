@@ -95,7 +95,6 @@ source:
                         <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-MAC%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
                         <http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-http://virtuoso.openlinksw.com/offers/order?uri=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FOffer-2019-04-virtuoso-82-personal-WKS-WIN%23this&type=buy&mode=v%23this&type=buy&mode=v> ,
                         <http://www.openlinksw.com/dataspace/organization/openlink#this> ,
-                        <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers <http://data.openlinksw.com/oplweb/offer/Offer-2019-04-virtuoso-82-personal-WKS-MAC#this> .
                         source: ,
                         sourceDAV: ;
 #    xhv:alternate        <"TBD"> ;
