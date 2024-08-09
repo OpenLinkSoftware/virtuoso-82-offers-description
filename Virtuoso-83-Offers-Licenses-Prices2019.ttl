@@ -6,7 +6,6 @@
 @prefix license: <http://www.openlinksw.com/ontology/licenses#> .
 @prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-# @prefix          : "TBD" .
 @prefix    source: <https://www.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-83-Offers-Licenses-Prices2019.ttl> .
 @prefix sourceDAV: <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-83-Offers-Licenses-Prices2019.ttl> .
 
@@ -19,9 +18,8 @@ sourceDAV:
    schema:name          "Virtuoso 8.2 Special Offers Related Information Document " ;
    schema:comment       """This document is a launch point for discovering routes to various information sources associated with Virtuoso 8.3 offers.""";
    owl:sameAs           source: ;
-#    schema:datePublished "TBD" ;
    schema:dateCreated   "2019-11-15T00:00:00-0500"^^xsd:dateTime ;
-   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
+   schema:dateModified  "2024-08-09T12:00:00-05:00"^^xsd:dateTime .
 
 source:
    a                    schema:CreativeWork ;
@@ -44,7 +42,6 @@ source:
                         <http://data.openlinksw.com/oplweb/license/License-2020-04-virtuoso-83-personal-WKS-LIN#this> ,
                         <http://data.openlinksw.com/oplweb/license/License-2020-04-virtuoso-83-personal-WKS-MAC#this> ,
                         <http://data.openlinksw.com/oplweb/license/License-2020-04-virtuoso-83-personal-WKS-WIN#this> ,
-                        <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ,
                         <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-LIN-retail-price#this> ,
                         <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-MAC-retail-price#this> ,
                         <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification2019-04-virtuoso-82-app-dev-department-SRV-WIN-retail-price#this> ,
@@ -97,11 +94,8 @@ source:
                         <http://www.openlinksw.com/dataspace/organization/openlink#this> ,
                         source: ,
                         sourceDAV: ;
-#    xhv:alternate        <"TBD"> ;
-#    skos:related         <"TBD"> ;
-#    schema:datePublished "TBD" ;
    schema:dateCreated   "2019-11-15T00:00:00-0500"^^xsd:dateTime ;
-   schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
+   schema:dateModified  "2024-08-09T12:00:00-05:00"^^xsd:dateTime .
 
 <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-WIN#this> a schema:Offer , offers:Virtuoso8Offer , offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-WIN> ;
@@ -151,11 +145,6 @@ _:node1das6kevvx1 oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_fa
 	license:maxNetworkInstance "2"^^<http://www.w3.org/2001/XMLSchema#integer> ;
 	oplsof:hasOperatingSystemType oplsof:workstationOS ;
 	license:hasLicenseModule <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this> , <http://data.openlinksw.com/oplweb/module/Replication#this> , <http://data.openlinksw.com/oplweb/module/ABACACLs#this> , <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this> , <http://data.openlinksw.com/oplweb/module/VAL#this> , <http://data.openlinksw.com/oplweb/module/VDB#this> .
-
-<http://data.openlinksw.com/oplweb/license/License-Duration#annual> a license:Duration ;
-	license:durationYears "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-	schema:name "License Duration — One Year" ;
-	license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2020-04-virtuoso-83-personal-WKS-WIN#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-2020-04-virtuoso-83-personal-WKS-WIN#this> license:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
 	oplsof:hasOperatingSystemFamily oplsof:Windows ;
