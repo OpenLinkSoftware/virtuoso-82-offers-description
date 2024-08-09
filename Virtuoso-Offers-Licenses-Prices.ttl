@@ -11,7 +11,6 @@
 @prefix       xhv: <http://www.w3.org/1999/xhtml/vocab#> . 
 @prefix        cc: <http://creativecommons.org/ns#> . 
 @prefix       owl: <http://www.w3.org/2002/07/owl#> . 
-
 @prefix    source: <https://www.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-Offers-Licenses-Prices.ttl> .
 @prefix sourceDAV: <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-Offers-Licenses-Prices.ttl> .
 
@@ -24,7 +23,6 @@ sourceDAV:
    schema:name          "Virtuoso 8.2 Offers Related Information Document " ;
    schema:comment       """This document is a launch point for discovering routes to various information sources associated with Virtuoso offers.""";
    owl:sameAs           source: ;
-#    schema:datePublished "TBD" ;
    schema:dateCreated   "2020-10-06T00:00:00-0500"^^xsd:dateTime ;
    schema:dateModified  "2024-08-08T17:00:00-05:00"^^xsd:dateTime .
 
@@ -57,9 +55,6 @@ source:
                         <http://www.openlinksw.com/dataspace/organization/openlink#this> ,
                         source: ,
                         sourceDAV: ;
-#    xhv:alternate        <"TBD"> ;
-#    skos:related         <"TBD"> ;
-#    schema:datePublished <"TBD"> ;
    schema:dateCreated   "2020-10-06T00:00:00-0500"^^xsd:dateTime ;
    schema:dateModified  "2024-07-30T17:00:00-05:00"^^xsd:dateTime .
 
@@ -104,7 +99,7 @@ oplic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2020-10-vi
     offers:VirtuosoSpecialOffer ;
 	schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2020-10-virtuoso-8-app-developer-development-WKS-ANY>;
     schema:validFrom "2020-10-31T23:59:59Z"^^xsd:dateTime ;
-    schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
 	schema:price "499.00"^^xsd:decimal ;
 	schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-early-stage-WKS-ANY-special-price#this>;
 	schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2020-10-virtuoso-8-early-stage-combo-WKS-ANY#this> ;
@@ -148,7 +143,7 @@ offers:Virtuoso8Pricing ,
 offers:SpecialUnitPriceSpecification;
 wdrs:describedby source: ;
 schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
-schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
 schema:name """Software License Offer: Virtuoso 8.x Application Development License 
              For Any (Linux, Windows, macOS) Operating Systems -- Special Offer Unit Price: 499.99"""^^xsd:string ;
 schema:price "499.00"^^xsd:decimal ;
@@ -164,7 +159,7 @@ offers:Virtuoso8Pricing ,
 offers:RetailUnitPriceSpecification;
 wdrs:describedby source: ;
 schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
-schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
 schema:name """Software License Offer: Virtuoso 8.x Application Development License 
              For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 999.99"""^^xsd:string ;
 schema:price "999.99"^^xsd:decimal ;
@@ -229,7 +224,7 @@ schema:priceCurrency "USD"^^xsd:string .
     schema:price "749.00"^^xsd:decimal ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-app-developer-project-WKS-ANY-special-price#this>;
     schema:validFrom "2020-10-31T23:59:59Z"^^xsd:dateTime ;
-    schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
     schema:comment """Software License Offer: Virtuoso 8.x Project Development License (non-expiring, 16 cores, 5 threads) 
 				   for deployment on any Workstation-class Operating System. 
 				   """^^xsd:string ;
@@ -258,7 +253,7 @@ schema:priceCurrency "USD"^^xsd:string .
     offers:Virtuoso8RetailUnitPriceSpecification;
 	wdrs:describedby source: ;
     schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
-    schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
     schema:name """Software License Offer: Virtuoso 8.x Application Development License 
                 For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 1,466.99"""^^xsd:string ;
     schema:price "1498.00"^^xsd:decimal ;
@@ -272,7 +267,7 @@ schema:priceCurrency "USD"^^xsd:string .
 	offers:SpecialUnitPriceSpecification;
 	wdrs:describedby source: ;
 	schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
-	schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+	schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
 	schema:name """Software License Offer: Virtuoso 8.x Application Development License 
                 For Any (Linux, Windows, macOS) Operating Systems -- Special Offer Unit Price: 799.00"""^^xsd:string ;
 	schema:price "749.00"^^xsd:decimal ;
@@ -341,7 +336,7 @@ schema:priceCurrency "USD"^^xsd:string .
 	schema:price "999.00"^^xsd:decimal ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2020-10-virtuoso-8-late-stage-WKS-ANY-special-price#this>;
     schema:validFrom "2020-10-31T23:59:59Z"^^xsd:dateTime ;
-    schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
 	schema:comment """Software License Offer: Virtuoso 8.x Workgroup Development License (non-expiring, 16 cores, 10 threads) 
 					  for deployment on any Workstation- or Server-class Operating System. 
 				   """^^xsd:string ;
@@ -368,7 +363,7 @@ schema:priceCurrency "USD"^^xsd:string .
     a schema:UnitPriceSpecification , offers:Virtuoso8Pricing ,  
     offers:Virtuoso8RetailUnitPriceSpecification;
     schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
-    schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
     schema:name """Software License Offer: Virtuoso 8.x Application Development License 
                 For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 1,998.99"""^^xsd:string ;
     schema:price "1998.99"^^xsd:decimal ;
@@ -378,7 +373,7 @@ schema:priceCurrency "USD"^^xsd:string .
     a schema:UnitPriceSpecification , offers:Virtuoso8Pricing ,  
     offers:Virtuoso8SpecialUnitPriceSpecification;
     schema:validFrom "2020-09-30T23:59:59Z"^^xsd:dateTime ;
-    schema:validThrough "2023-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
     schema:name """Software License Offer: Virtuoso 8.x Application Development License 
                 For Any (Linux, Windows, macOS) Operating Systems -- Retail Offer Unit Price: 999.99"""^^xsd:string ;
     schema:price "999.00"^^xsd:decimal ;
