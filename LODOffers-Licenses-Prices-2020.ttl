@@ -224,7 +224,7 @@ duration:Duration-2020-10-LOD-Evaluation-30
 
  duration:Duration-2020-12-LOD-Subscription-90
      a opllic:LicenseDuration ;
-     schema:name "Non expiring"^^xsd:string ;
+     schema:name """90 Day Duration """^^xsd:string ;
      wdrs:describedby source: ;
      opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/License-2020-10-LOD-Subscription-90#this>  ;
      opllic:durationDays "90"^^xsd:integer  ;
