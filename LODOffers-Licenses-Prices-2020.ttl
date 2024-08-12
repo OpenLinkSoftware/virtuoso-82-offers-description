@@ -30,7 +30,7 @@ sourceDAV:
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:datePublished "2020-10-09T11:38:25-00:00"^^xsd:dateTime ;
    schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
-   schema:dateModified "2021-12-31T11:31:59-05:00"^^xsd:dateTime;
+   schema:dateModified "2024-08-12T15:27:59+01:00"^^xsd:dateTime;
    schema:name "OpenLink LOD Cloud Products Licenses Related Information Document " ;
    schema:comment """This document is a launch point for discovering routes to various information sources associated with OpenLink LOD Cloud Products Licenses. """^^xsd:string ;
    owl:sameAs source: .
@@ -47,7 +47,7 @@ source: a schema:CreativeWork ;
    cc:attributionURL <http://www.openlinksw.com/dataspace/organization/openlink#this> ;
    schema:datePublished "2020-10-09T11:38:25-00:00"^^xsd:dateTime ;
    schema:dateCreated "2013-01-12T12:38:25-00:00"^^xsd:dateTime ;
-   schema:dateModified "2021-12-31T11:31:59-05:00"^^xsd:dateTime;
+   schema:dateModified "2024-08-12T15:27:59+01:00"^^xsd:dateTime;
    # sioc:has_container <.> ;
    # sioc:sibling <LODOffersPrices.ttl> ,
    #             <LODOffers.ttl> ,
