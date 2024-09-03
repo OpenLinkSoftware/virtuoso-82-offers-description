@@ -111,6 +111,7 @@ oplic:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2024-09-virtuo
     offers:VirtuosoSpecialOffer ;
     schema:url <http://data.openlinksw.com/oplweb/offer/Offer-2024-09-virtuoso-8-personal-productivity-WKS-ANY> ;
     schema:category "personalproductivity" ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/License-2024-09-virtuoso-8-personal-productivity-WKS-ANY#this> ;
     # schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-2CORE.png> ;  
     schema:image <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/images/OPL-VIRTOFFER-2CON-2CORE.png> ;
     offers:isMemberOf <http://virtuoso.openlinksw.com/data/turtle/virtuoso8/2019/Virtuoso8Offers.ttl#OfferGroupEarlyStage> ;
@@ -452,7 +453,7 @@ schema:priceCurrency "USD"^^xsd:string .
 	schema:price "999.00"^^xsd:decimal ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-2024-09-virtuoso-8-late-stage-WKS-ANY-special-price#this>;
     schema:validFrom "2024-08-30T23:59:59Z"^^xsd:dateTime ;
-    schema:validThrough "2024-10-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2024-08-31T23:59:59Z"^^xsd:dateTime ;
 	schema:comment """Software License Offer: Virtuoso 8.x Workgroup Development License (non-expiring, 16 cores, 10 threads) 
 					  for deployment on any Workstation- or Server-class Operating System. 
 				   """^^xsd:string ;
