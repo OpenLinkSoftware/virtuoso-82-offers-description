@@ -177,7 +177,8 @@ schema:priceCurrency "USD"^^xsd:string .
     oplic:ProductLicense,
     oplic:Virtuoso8License , schema:Product ;
     oplsof:hasDatabaseFamily oplsof:OpenLinkVirtuoso ;
-    schema:image <https://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-2CORE.png> ;
+    # schema:image <http://virtuoso.openlinksw.com/images/OPL-VIRTOFFER-2CON-2CORE.png> ;  
+    schema:image <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/images/OPL-VIRTOFFER-2CON-2CORE.png> ;
     schema:name "Virtuoso 8.x License: 2024-09-virtuoso-8-personal-productivity-WKS-ANY 2 cores"^^xsd:string;
     skos:prefLabel "Virtuoso 8.x License: 2024-09-virtuoso-8-personal-productivity-WKS-ANY"^^xsd:string ;
     schema:comment """
