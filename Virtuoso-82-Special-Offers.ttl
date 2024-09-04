@@ -11,8 +11,8 @@
 @prefix       xhv: <http://www.w3.org/1999/xhtml/vocab#> . 
 @prefix        cc: <http://creativecommons.org/ns#> . 
 @prefix       owl: <http://www.w3.org/2002/07/owl#> . 
-@prefix    source: <https://www.openlinksw.com/data/turtle/virtuoso8/2024/Virtuoso-Offers-Licenses-Prices.ttl> .
-@prefix sourceDAV: <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2024/Virtuoso-Offers-Licenses-Prices.ttl> .
+@prefix    source: <https://www.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-Offers-Licenses-Prices.ttl> .
+@prefix sourceDAV: <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/data/turtle/virtuoso8/2020/Virtuoso-Offers-Licenses-Prices.ttl> .
 
 sourceDAV:
    a                    schema:CreativeWork ;
