@@ -57,6 +57,7 @@
                                        oplic:Virtuoso8License , schema:Product ;
    oplsof:hasOperatingSystemType       oplsof:serverWorkstationOS ;
    oplsof:hasOperatingSystemFamily     oplsof:OSFamilyAny ;
+   skos:altLabel                      "Trial License"^^xsd:string ;
    schema:description                  """Trial License for Virtuoso 8.x Trial license has no restriction on sessions or processors and can be used on any supported operating system for 15 days."""^^xsd:string ;
    oplic:productLicenseOf              <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
    schema:name                         "Virtuoso 8.x License: 15 day Trial License for deployment on any supported Operating System."^^xsd:string;
