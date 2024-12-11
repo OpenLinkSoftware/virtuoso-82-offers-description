@@ -1,0 +1,86 @@
+## Turtle Start ##
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix offers: <http://www.openlinksw.com/ontology/offers#> .
+@prefix oplpro: <http://www.openlinksw.com/ontology/products#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix license: <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof: <http://www.openlinksw.com/ontology/software#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplic: <http://www.openlinksw.com/ontology/licenses#> .
+
+## Associating a Company with its Offers
+<http://www.openlinksw.com/dataspace/organization/openlink#this> 
+   schema:offers                       <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-Enterprise-WKSSVR-ANY#this>.
+
+
+## Enterprise License Duration
+<http://data.openlinksw.com/oplweb/license/License-Duration#Duration-Virtuoso-Enterprise>
+                                       a license:LicenseDuration ;
+   schema:name                         """Negotiable Duration"""^^xsd:string ;
+   license:isDurationOf                <http://data.openlinksw.com/oplweb/license/License-virtuoso-8-Enterprise-WKSSVR-ANY#this> .
+                                       
+# enterprise Price Specification            
+# Pricing will be negotiable...
+<http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-Virtuoso-enterprise#this>
+    a                                  schema:UnitPriceSpecification ,
+                                       offers:RetailPriceSpecification ;
+   schema:priceCurrency                "USD"^^xsd:string;
+   schema:name                         """Price specification for Virtuoso Enterprise -- Custom Annual (365 days) License -- Unit Price: negotiable"""^^xsd:string ;
+   schema:comment                      """The price of the Annual (365 days) Enterprise License for Virtuoso is negotiable depending on required features."""^^xsd:string ;
+   schema:validFrom                    "2024-11-27T23:59:59Z"^^xsd:dateTime ;
+   schema:validThrough                 "2024-12-31T23:59:59Z"^^xsd:dateTime .
+   
+
+## Enterprise Offer
+## This is a custom offer with no set price
+
+<http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-Enterprise-WKSSVR-ANY#this> a
+                                       schema:Offer,
+                                       offers:Virtuoso8Offer,	
+                                       offers:EnterpriseOffer ;
+   schema:url                          <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-Enterprise-WKSSVR-ANY>;
+   schema:validFrom                    "2024-11-27T23:59:59Z"^^xsd:dateTime ;
+   schema:validThrough                 "2024-12-31T23:59:59Z"^^xsd:dateTime ;
+   schema:priceSpecification           <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-Virtuoso-enterprise#this>;
+   schema:itemOffered                  <http://data.openlinksw.com/oplweb/license/License-virtuoso-8-Enterprise-WKSSVR-ANY#this> ;
+   schema:category                     "enterprise"^^xsd:string ;
+   gr:businessFunction                 gr:Sell ;
+   skos:prefLabel                      "Software License Offer: Virtuoso 8.x Enterprise License. Duration, Processor and session limits are subject to negotiation. For deployment on any supported operating system."^^xsd:string ;
+   schema:comment                      """Software License Offer: Enterprise Virtuoso 8.x License.  Duration, Processor and session limits are subject to negotiation. For deployment on any supported operating system."""^^xsd:string ;
+   schema:description                  """Enterprise Virtuoso 8.x License for deployment on any supported operating system.  Duration, Process or session limits are subject to negotiation."""^^xsd:string ;
+   offers:offerNumber                  "virtuoso-8-Enterprise-WKSSVR-ANY"^^xsd:string ;
+   schema:name                         "Software License Offer: Enterprise Virtuoso 8.x License for any supported Operating System"^^xsd:string ;
+    skos:related                       [oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/virtuoso#this>] ;
+   schema:potentialAction              <https://www.openlinksw.com/contact/?dept=Product%20Sales&subject=Virtuoso%20Enterprise%20License%20Enquiry&content=Hi%20%OD%ODI'm%20interested%20in%20a%20Virtuoso%20enterprise%20license.%20I%20would%20love%20to%20talk%20to%20someone%20about%20how%20you%20can%20best%20meet%20my%20needs.>.
+
+
+## Enterprise License
+<http://data.openlinksw.com/oplweb/license/License-virtuoso-8-Enterprise-WKSSVR-ANY#this> a
+                                       oplic:ExpiringLicense,
+                                       oplic:ProductLicense,
+                                       oplic:Virtuoso8License , schema:Product ;
+   oplsof:hasOperatingSystemType       oplsof:serverWorkstationOS ;
+   oplsof:hasOperatingSystemFamily     oplsof:OSFamilyAny ;
+   skos:altLabel                      "Enterprise License"^^xsd:string ;
+   schema:description                  """An Enterprise License for Virtuoso 8.x tailored to your specific needs."""^^xsd:string ;
+   oplic:productLicenseOf              <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
+   schema:image <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/images/OPL-VIRT-ENT-OFFER-ANY.png>;
+   schema:name                         "Enterprise Virtuoso 8.x License: For deployment on any supported Operating System."^^xsd:string;
+   schema:comment                      """Virtuoso 8.x Enterprise License (Duration, processor and session limits subject to negotiation) for deployment on any supported operating system."""^^xsd:string ;
+   schema:model                        <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
+   oplic:hasLicenseModule              <http://data.openlinksw.com/oplweb/module/Virtuoso8ColumnStore#this>,
+                                       <http://data.openlinksw.com/oplweb/module/BusinessAnalytics#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/Replication#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/SPIN#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/VDB#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/VAL#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/ABACACLs#this>, 
+                                       <http://data.openlinksw.com/oplweb/module/SHACL#this> ;
+   oplic:serialNumberBroadcast         "1"^^xsd:integer ;
+   oplic:hasDuration                   <http://data.openlinksw.com/oplweb/license/License-Duration#Duration-Virtuoso-Enterprise> ;
+   oplic:partOf                        <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-Enterprise-WKSSVR-ANY#this> ;
+   oplsof:hasDatabaseFamily            oplsof:OpenLinkVirtuoso .
+
+# Should the modules be listed - ?
+## Turtle End ##
