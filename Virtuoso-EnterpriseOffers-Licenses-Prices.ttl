@@ -28,7 +28,7 @@
    schema:priceCurrency                "USD"^^xsd:string;
    schema:name                         """Price specification for Virtuoso Enterprise -- Custom Annual (365 days) License -- Unit Price: negotiable"""^^xsd:string ;
    schema:comment                      """The price of the Annual (365 days) Enterprise License for Virtuoso is negotiable depending on required features."""^^xsd:string ;
-   schema:validFrom                    "2024-11-27T00:00:00+00:00"^^xsd:dateTime ;
+   schema:validFrom                    "2024-11-27T23:59:59Z"^^xsd:dateTime ;
    schema:validThrough                 "2024-12-31T23:59:59Z"^^xsd:dateTime .
    
 
@@ -40,7 +40,7 @@
                                        offers:Virtuoso8Offer,	
                                        offers:EnterpriseOffer ;
    schema:url                          <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-Enterprise-WKSSVR-ANY>;
-   schema:validFrom                    "2024-11-27T00:00:00+00:00"^^xsd:dateTime ;
+   schema:validFrom                    "2024-11-27T23:59:59Z"^^xsd:dateTime ;
    schema:validThrough                 "2024-12-31T23:59:59Z"^^xsd:dateTime ;
    schema:priceSpecification           <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-Virtuoso-enterprise#this>;
    schema:itemOffered                  <http://data.openlinksw.com/oplweb/license/License-virtuoso-8-Enterprise-WKSSVR-ANY#this> ;
@@ -65,8 +65,7 @@
    skos:altLabel                      "Enterprise License"^^xsd:string ;
    schema:description                  """An Enterprise License for Virtuoso 8.x tailored to your specific needs."""^^xsd:string ;
    oplic:productLicenseOf              <http://data.openlinksw.com/oplweb/product_release/VirtuosoRelease8x#this> ;
-   # Note - this is not the right image
-   schema:image <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/images/OPL-VIRTOFFER-2CON-2CORE.png> ;
+   schema:image <https://www.openlinksw.com/DAV/virtuoso2.openlinksw.com/images/OPL-VIRT-ENT-OFFER-ANY.png>;
    schema:name                         "Enterprise Virtuoso 8.x License: For deployment on any supported Operating System."^^xsd:string;
    schema:comment                      """Virtuoso 8.x Enterprise License (Duration, processor and session limits subject to negotiation) for deployment on any supported operating system."""^^xsd:string ;
    schema:model                        <http://data.openlinksw.com/oplweb/product/column-store-cl#this> ;
