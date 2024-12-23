@@ -100,7 +100,7 @@ oplic:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2024-09-virtuo
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#annual> a license:Duration ;
     license:durationYears "1"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-    schema:name "License Duration — One Year" ;
+    schema:name "License Duration - One Year" ;
     license:isDurationOf <http://data.openlinksw.com/oplweb/offer/Offer-2024-09-virtuoso-83-personal-WKS-WIN#this> .
 
 ## Personal Productivity License Offer
