@@ -1,4 +1,4 @@
-e@prefix    schema: <http://schema.org/> .
+@prefix    schema: <http://schema.org/> .
 @prefix      rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix    offers: <http://www.openlinksw.com/ontology/offers#> .
 @prefix    oplpro: <http://www.openlinksw.com/ontology/products#> .
