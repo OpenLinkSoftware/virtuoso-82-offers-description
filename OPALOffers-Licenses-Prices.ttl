@@ -1,0 +1,227 @@
+## Turtle Start ##
+@prefix schema:    <http://schema.org/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms:   <http://purl.org/dc/terms/> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix acl:       <http://www.w3.org/ns/auth/acl#> .
+@prefix oplacl:    <http://www.openlinksw.com/ontology/acl#> .
+@prefix oplres:    <http://www.openlinksw.com/ontology/restrictions#> .
+@prefix http:      <http://www.w3.org/2011/http-headers#> .
+@prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/OPALOffers-License-Prices.ttl> .
+@prefix :          <#> . # Base URI for this document's entities
+
+# --- Document Metadata (Simplified Stub) ---
+
+source: a schema:CreativeWork ;
+    schema:name "OPAL Chat Service Offers and Restrictions Definitions" ;
+    schema:comment "This document describes sample offers for an OPAL Chat Service, referencing predefined OPAL restrictions." ;
+    schema:author <http://www.openlinksw.com/#this> ; # Placeholder
+    cc:attributionName "OpenLink Software Example" ;
+    schema:datePublished "2025-05-29T00:00:00Z"^^xsd:dateTime .
+
+# --- Offer Group ---
+
+<#OfferGroupChatService> a oplofr:OfferGroup ;
+    schema:name "OPAL Chat Service Offers" ;
+    rdfs:label "OPAL Chat Service Offers" .
+
+# --- Licensed Product / Service  ---
+
+<#ChatService> a schema:Service, oplsof:SoftwareApplicationProduct ; # Using oplsof:SoftwareApplicationProduct as an analogy to DaaS product.
+    schema:identifier "urn:oai:chat" ;
+    schema:name "OPAL LLM Chat Service" ;
+    rdfs:label "OPAL LLM Chat Service" ;
+    schema:description "A large language model chat service configurable via OPAL restrictions." ;
+    # -- Associates Licensed Product/Service with Service Host --
+    #schema:relatedLink oplres:uriburner-opal-server ;
+    schema:relatedLink oplres:ods-qa-server ;
+    # schema:relatedLink oplres:test-server ;
+    schema:provider <http://www.openlinksw.com/dataspace/organization/openlink#this> . # Placeholder provider
+
+<#OPALAPIAccess> a schema:Service, oplsof:SoftwareApplicationProduct ; # Using oplsof:SoftwareApplicationProduct as an analogy to DaaS product.
+    schema:identifier "urn:oai:chat" ;
+    schema:name "OPAL API Access" ;
+    rdfs:label "OPAL API Access" ;
+    schema:description "Authorizations and Restrictions for accessing the OPAL Chat Service via API keys." ;
+    # -- Associates Licensed Product/Service with Service Host --
+    schema:relatedLink oplres:uriburner-opal-server ;
+    schema:provider <http://www.openlinksw.com/dataspace/organization/openlink#this> ; # Placeholder provider
+    schema:feature [ schema:name "HTU"@en ; schema:value <urn:oai:chat> ],
+                   [ schema:name "rate-limit-max-sessions-per-agent"@en ; schema:value "3" ],
+                   [ schema:name "session-reset-interval-seconds"@en ; schema:value "60" ],
+                   [ schema:name "max-total-token-usage-per-session"@en ; schema:value "4096" ],
+                   [ schema:name "enable-api-key-based-access"@en ; schema:value "true" ].
+
+# --- Offer 1: Basic Interactive Chat Tier ---
+
+# --- Price Specification for Offer 1 ---
+<http://data.openlinksw.com/oplweb/offer-unitprice/BasicInteractiveChatTierPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "0.00"^^xsd:decimal ;
+    schema:unitCode "C62"^^xsd:string ; # Piece
+    schema:name "Basic Chat Tier - Free" ;
+    schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    wdrs:describedby source: .
+
+# --- Basic Chat License Description ---
+<http://data.openlinksw.com/oplweb/license/BasicInteractiveChatTierLicense#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
+    schema:name "Basic Interactive Chat Tier License" ;
+    skos:prefLabel "Basic Interactive Chat Tier License" ;
+    skos:altLabel "Basic Interactive Chat Tier License" ;
+    schema:description "License for light, interactive use of the OPAL Chat Service. API key access is not enabled." ;
+    opllic:productLicenseOf <#ChatService> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/BasicInteractiveChatTierOffer#this> ;
+    opllic:hasClientConnectionRestriction <#BasicInteractiveChatTierRestriction> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    wdrs:describedby source: .
+
+# --- Basic Chat Offer Description ---
+<http://data.openlinksw.com/oplweb/offer/BasicInteractiveChatTierOffer#this> a schema:Offer, oplofr:ServiceOffer ; # Using a generic oplofr:ServiceOffer
+    oplofr:offerNumber "OPAL-CHAT-BASIC-001"^^xsd:string ;
+    schema:name "OPAL Chat Service - Basic Interactive Tier" ;
+    skos:prefLabel "OPAL Chat Service - Basic Interactive Tier" ;
+    schema:comment "This offer provides basic access to the OPAL Chat Service, suitable for interactive use with limitations on prompts and tokens per session. API key access is disabled." ;
+    schema:description "Basic interactive access to the OPAL Chat Service." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ; # Even if free, it's an act of "selling"/providing
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/BasicInteractiveChatTierLicense#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/BasicInteractiveChatTierPriceSpecification#this> ;
+    oplofr:isMemberOf <#OfferGroupChatService> ;
+    schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FBasicInteractiveChatTierOffer%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+# --- Offer 2: Developer API Access Tier ---
+
+# -- Price Sspecification for Offer 2 --
+# TBD should be a subscription...
+<http://data.openlinksw.com/oplweb/offer-unitprice/DeveloperAPIAccessTierPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "10.00"^^xsd:decimal ; # Example price
+    schema:valueAddedTaxIncluded "false"^^xsd:boolean ;
+    schema:eligibleQuantity [ a schema:QuantitativeValue ; schema:unitText "Monthly" ] ;
+    schema:name "Developer API Tier - Monthly Subscription" ;
+    schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    wdrs:describedby source: .
+
+# -- Developer API Access Tier License Description --
+<http://data.openlinksw.com/oplweb/license/DeveloperAPIAccessTierLicense#this> a opllic:ProductLicense, schema:Product, opllic:SubscriptionLicense, opllic:JAK ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
+    schema:name "Developer API Access Tier License" ;
+    skos:prefLabel "Developer API Access Tier License" ;
+    skos:altLabel "Developer API Access Tier License" ;
+    schema:description "License for developer access to the OPAL Chat Service via API keys, with rate limits." ;
+    opllic:productLicenseOf <#OPALAPIAccess> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/DeveloperAPIAccessTierOffer#this> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    wdrs:describedby source: .
+
+# -- Offer Description for Developer API Access Tier --
+<http://data.openlinksw.com/oplweb/offer/DeveloperAPIAccessTierOffer#this> a schema:Offer, oplofr:ServiceOffer ;
+    oplofr:offerNumber "OPAL-CHAT-DEVAPI-001"^^xsd:string ;
+    schema:name "OPAL Chat Service - Developer API Tier" ;
+    skos:prefLabel "OPAL Chat Service - Developer API Tier" ;
+    schema:comment "This offer is tailored for developers using API keys, with specific rate limits and enabled API access." ;
+    schema:description "Developer API access to the OPAL Chat Service." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/DeveloperAPIAccessTierLicense#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DeveloperAPIAccessTierPriceSpecification#this> ;
+    oplofr:isMemberOf <#OfferGroupChatService> ;
+    schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDeveloperAPIAccessTierOffer%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+# --- Offer 3: Dedicated Chat Assistant Tier ---
+
+# -- Price Specification for Offer 3 --
+# TBD should be a subscription...
+<http://data.openlinksw.com/oplweb/offer-unitprice/DedicatedChatAssistantTierPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "50.00"^^xsd:decimal ; # Example price
+    schema:valueAddedTaxIncluded "false"^^xsd:boolean ;
+    schema:eligibleQuantity [ a schema:QuantitativeValue ; schema:unitText "Monthly" ] ;
+    schema:name "Dedicated Chat Assistant Tier - Monthly Subscription" ;
+    schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    wdrs:describedby source: .
+
+# -- Dedicated Chat Assistant Tier License Description --
+<http://data.openlinksw.com/oplweb/license/DedicatedChatAssistantTierLicense#this> a opllic:ProductLicense, schema:Product, opllic:SubscriptionLicense, opllic:ACLOnly ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
+    schema:name "Dedicated Chat Assistant Tier License" ;
+    skos:prefLabel "Dedicated Chat Assistant Tier License" ;
+    skos:altLabel "Dedicated Chat Assistant Tier License" ;
+    schema:description "License for using the OPAL Chat Service restricted to a specific chat assistant module." ;
+    opllic:productLicenseOf <#ChatService> ; # Or could be a more specific product variant
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/DedicatedChatAssistantTierOffer#this> ;
+    opllic:hasClientConnectionRestriction <#DedicatedChatAssistantTierRestriction> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    wdrs:describedby source: .
+
+# -- Offer Description for Dedicated Chat Assistant Tier --
+<http://data.openlinksw.com/oplweb/offer/DedicatedChatAssistantTierOffer#this> a schema:Offer, oplofr:ServiceOffer ;
+    oplofr:offerNumber "OPAL-CHAT-ASSISTANT-001"^^xsd:string ;
+    schema:name "OPAL Chat Service - Dedicated Chat Assistant Tier" ;
+    skos:prefLabel "OPAL Chat Service - Dedicated Chat Assistant Tier" ;
+    schema:comment "This offer restricts usage of the OPAL Chat Service to a designated chat assistant module, suitable for embedded or specialized applications." ;
+    schema:description "Dedicated assistant access to the OPAL Chat Service." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/DedicatedChatAssistantTierLicense#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DedicatedChatAssistantTierPriceSpecification#this> ;
+    oplofr:isMemberOf <#OfferGroupChatService> ;
+    schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDedicatedChatAssistantTierOffer%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+# --- Link provider to offers ---
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer <http://data.openlinksw.com/oplweb/offer/BasicInteractiveChatTierOffer#this>,
+                                                                                   <http://data.openlinksw.com/oplweb/offer/DeveloperAPIAccessTierOffer#this>,
+                                                                                   <http://data.openlinksw.com/oplweb/offer/DedicatedChatAssistantTierOffer#this> .
+
+# --- OPAL Instance Hosts ---
+# -- These are servers to which the ACLs will be applied.
+# -- Shop already has ACL generation privileges for URIBurner
+
+oplres:uriburner-opal-server a opllic:VirtuosoServer ;
+  schema:name "URIBurner " ;
+  schema:comment "URIBurner server instance " ;
+  opllic:hasDomain "linkeddata.uriburner.com"^^xsd:string ;
+  opllic:hasACLRulesEndpoint <https://linkeddata.uriburner.com/acl/rules> ;
+  opllic:hasACLGroupsEndpoint <https://linkeddata.uriburner.com/acl/groups> ;
+  opllic:hasACLRestrictionsEndpoint <https://linkeddata.uriburner.com/acl/restrictions> ;
+  opllic:hasCertGeneratorEndpoint <https://linkeddata.uriburner.com/certgen/> ;
+  wdrs:describedby source: .
+
+oplres:ods-qa-server a opllic:VirtuosoServer ;
+  schema:name "ODS QA" ;
+  schema:comment "ODS QA" ;
+  opllic:hasDomain "ods-qa.openlinksw.com"^^xsd:string ;
+  opllic:hasACLRulesEndpoint <https://ods-qa.openlinksw.com/acl/rules> ;
+  opllic:hasACLGroupsEndpoint <https://ods-qa.openlinksw.com/acl/groups> ;
+  opllic:hasACLRestrictionsEndpoint <https://ods-qa.openlinksw.com/acl/restrictions> ;
+  opllic:hasCertGeneratorEndpoint <https://ods-qa.openlinksw.com/certgen/> ;
+  wdrs:describedby source: .
+
+## Turtle End ##
