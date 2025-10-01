@@ -138,7 +138,15 @@ rdfs:subClassOf a owl:TransitiveProperty .
               oplofr:BundleOfferSingleTier ,
               oplofr:BundleOfferSingleTierLite ,
               oplofr:BundleOfferSingleTierExpress ,
-              oplofr:BundleOfferMultiTier ;
+              oplofr:BundleOfferMultiTier ,
+              oplofr:SubscriptionPriceSpecification,
+              oplofr:SubscriptionOffer,
+              oplofr:SupportAssistantAccessTierOffer,
+              oplofr:BringYourOwnKeyChatTierOffer ,
+              oplofr:DataTwinglerSpecificModuleTierOffer,
+              oplofr:MaxChatTierOffer
+              oplofr:interval,
+              oplofr:intervalCount ;
   schema:about
               oplofr:offerNumber ,
               oplofr:priceSpecificationOf ,
@@ -206,7 +214,15 @@ rdfs:subClassOf a owl:TransitiveProperty .
               oplofr:BundleOfferSingleTier ,
               oplofr:BundleOfferSingleTierLite ,
               oplofr:BundleOfferSingleTierExpress ,
-              oplofr:BundleOfferMultiTier .
+              oplofr:BundleOfferMultiTier ,
+              oplofr:SubscriptionPriceSpecification,
+              oplofr:SubscriptionOffer,
+              oplofr:SupportAssistantAccessTierOffer,
+              oplofr:BringYourOwnKeyChatTierOffer ,
+              oplofr:DataTwinglerSpecificModuleTierOffer,
+              oplofr:MaxChatTierOffer
+              oplofr:interval,
+              oplofr:intervalCount ;
 
 <http://open.vocab.org/terms/defines> owl:inverseOf <http://www.w3.org/2007/05/powder-s#describedby> .
 
@@ -314,7 +330,15 @@ rdfs:subClassOf a owl:TransitiveProperty .
               oplofr:BundleOfferSingleTier ,
               oplofr:BundleOfferSingleTierLite ,
               oplofr:BundleOfferSingleTierExpress ,
-              oplofr:BundleOfferMultiTier .
+              oplofr:BundleOfferMultiTier ,
+              oplofr:SubscriptionPriceSpecification,
+              oplofr:SubscriptionOffer,
+              oplofr:SupportAssistantAccessTierOffer,
+              oplofr:BringYourOwnKeyChatTierOffer ,
+              oplofr:DataTwinglerSpecificModuleTierOffer,
+              oplofr:MaxChatTierOffer
+              oplofr:interval,
+              oplofr:intervalCount ;
 
 <http://www.openlinksw.com/data/turtle/offers.ttl>
   rdfs:seeAlso <http://virtuoso.openlinksw.com/offers/> ,
@@ -464,6 +488,36 @@ oplofr:UDABasicLiteOffer a owl:Class ;
       rdfs:comment "UDA Basic Lite Offer which contains only one price specification -- the Retail price"@en ;
       rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
 
+oplofr:SubscriptionOffer a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoOffer ;
+      rdfs:label "Virtuoso Subscription Offer"^^xsd:string ;
+      rdfs:comment "Virtuoso offer that require setting up a subscription to access a service"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BringYourOwnKeyChatTierOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Bring Your Own Key Chat Tier Offer"^^xsd:string ;
+      rdfs:comment "Access to the OPAL Chat Service using your own API key"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SupportAssistantAccessTierOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Support Assitant Module Offer"^^xsd:string ;
+      rdfs:comment "Access to the OPAL Chat Service allowing use of the Support Assistant only. Requires your own API key."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:DataTwinglerSpecificModuleTierOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Data Twingler Module Offer"^^xsd:string ;
+      rdfs:comment "Access to the OPAL Chat Service allowing use of Data Twingler module only. Requires your own API key."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:MaxChatTierOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Max Chat Tier Offer"^^xsd:string ;
+      rdfs:comment "Access to the OPAL Chat Service using the system wide API keys with no restriction on module used."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
 oplofr:OfferGroup a owl:Class ;
       rdfs:label "Offer Group" ;
       rdfs:comment "A set of Offers for better overview usage."@en ;
@@ -569,6 +623,23 @@ oplofr:hasISOCode a owl:ObjectProperty , rdf:Property ;
       rdfs:domain oplofr:Currency ;
       rdfs:range xsd:string .
 
+# <-------------- Subscription Price Properties --------------> #
+oplofr:interval a owl:ObjectProperty, rdf:Property ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:label "interval"^^xsd:string ;
+      skos:altLabel "Billing interval unit"^^xsd:string ;
+      rdfs:comment "Billing interval unit (e.g. day, month, year)"^^xsd:string ;
+      rdfs:domain oplorf:SubscriptionPriceSpecification ;
+      rdfs:range xsd:string .
+
+oplofr:intervalCount a owl:ObjectProperty, rdf:Property ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> ;
+      rdfs:label "interval count"^^xsd:string ;
+      skos:altLabel "Billing interval count"^^xsd:string ;
+      rdfs:comment "Billing interval count (e.g. if billing is every 2 months then the interval count is 2)"^^xsd:string ;
+      rdfs:domain oplorf:SubscriptionPriceSpecification ;
+      rdfs:range xsd:integer .
+
 
 # <-------------- Offers Prices --------------> #
 
@@ -662,6 +733,11 @@ oplofr:Virtuoso7RetailUnitPriceSpecification a owl:Class ;
 oplofr:Virtuoso7SpecialUnitPriceSpecification a owl:Class ;
       rdfs:subClassOf oplofr:VirtuosoSpecialUnitPriceSpecification ;
       rdfs:label "Virtuoso 7 Special Unit Price Specification"^^xsd:string ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SubscriptionPriceSpecification a owl:Class ;
+      rdfs:subClassOf oplofr:VirtuosoRetailUnitPriceSpecification ;
+      rdfs:label "Supbscription Price Specification"^^xsd:string ;
       rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
 
 oplofr:retailPriceSpecificationOf
