@@ -183,7 +183,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Bring Your Own Key Chat Offer Description --
-<http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyChatTierOfferOds-qa#this> a schema:Offer, oplofr:BringYourOwnKeyChatTierOffer ;
+<http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyChatTierOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:BringYourOwnKeyChatTierOffer ;
     oplofr:offerNumber "OPAL-CHAT-BYOK-ODSQA-001"^^xsd:string ;
     schema:name "OPAL Chat Service - Bring Your Own Key on ods-qa" ;
     skos:prefLabel "OPAL Chat Service - Bring Your Own Key on ods-qa" ;
@@ -214,7 +214,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Bring Your Own Key Chat Offer Description --
-<http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyChatTierOfferUriburner#this> a schema:Offer, oplofr:BringYourOwnKeyChatTierOffer ;
+<http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyChatTierOfferUriburner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:BringYourOwnKeyChatTierOffer ;
     oplofr:offerNumber "OPAL-CHAT-BYOK-UB-001"^^xsd:string ;
     schema:name "OPAL Chat Service - Bring Your Own Key on uriburner" ;
     skos:prefLabel "OPAL Chat Service - Bring Your Own Key on uriburner" ;
@@ -262,7 +262,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Data Twingler Access Offer Description --
-<http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleTierOfferOds-qa#this> a schema:Offer, oplofr:DataTwinglerSpecificModuleTierOffer ;
+<http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleTierOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DataTwinglerSpecificModuleTierOffer ;
     oplofr:offerNumber "OPAL-CHAT-DATATWINGLER-ODSQA-001"^^xsd:string ;
     schema:name "OPAL Data Twingler Module" ;
     skos:prefLabel "OPAL Data Twingler Module" ;
@@ -307,7 +307,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Support Assistant Access Offer Description --
-<http://data.openlinksw.com/oplweb/offer/SupportAssistantAccessTierOfferOds-qa#this> a schema:Offer, oplofr:SupportAssistantAccessTierOffer ;
+<http://data.openlinksw.com/oplweb/offer/SupportAssistantAccessTierOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:SupportAssistantAccessTierOffer ;
     oplofr:offerNumber "OPAL-CHAT-SUPPORTASSISTANT-ODSQA-001"^^xsd:string ;
     schema:name "OPAL Support Assistant" ;
     skos:prefLabel "OPAL Support Assistant" ;
@@ -352,7 +352,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Offer Description for Max Chat Tier --
-<http://data.openlinksw.com/oplweb/offer/MaxChatTierOfferOds-qa#this> a schema:Offer, oplofr:MaxChatTierOffer ;
+<http://data.openlinksw.com/oplweb/offer/MaxChatTierOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:MaxChatTierOffer ;
     oplofr:offerNumber "OPAL-CHAT-MAX-ODSQA-001"^^xsd:string ;
     schema:name "OPAL Chat Service - Max Chat Tier" ;
     skos:prefLabel "OPAL Chat Service - Max Chat Tier" ;
