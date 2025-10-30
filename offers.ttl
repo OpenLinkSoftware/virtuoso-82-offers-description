@@ -141,10 +141,18 @@ rdfs:subClassOf a owl:TransitiveProperty .
               oplofr:BundleOfferMultiTier ,
               oplofr:SubscriptionPriceSpecification,
               oplofr:SubscriptionOffer,
-              oplofr:SupportAssistantAccessTierOffer,
-              oplofr:BringYourOwnKeyChatTierOffer ,
-              oplofr:DataTwinglerSpecificModuleTierOffer,
-              oplofr:MaxChatTierOffer
+              oplofr:DataTwinglerSpecificModuleEntryLevelOffer ,
+              oplofr:DataTwinglerSpecificModulePlusOffer ,
+              oplofr:DataTwinglerSpecificModuleProOffer ,
+              oplofr:DataTwinglerSpecificModuleMaxOffer ,
+              oplofr:SupportAssistantSpecificModuleEntryLevelOffer ,
+              oplofr:SupportAssistantSpecificModulePlusOffer ,
+              oplofr:SupportAssistantSpecificModuleProOffer ,
+              oplofr:SupportAssistantSpecificModuleMaxOffer ,
+              oplofr:BringYourOwnKeyEntryLevelOffer ,
+              oplofr:BringYourOwnKeyPlusOffer ,
+              oplofr:BringYourOwnKeyProOffer ,
+              oplofr:MaxOffer ,
               oplofr:interval,
               oplofr:intervalCount ;
   schema:about
@@ -217,12 +225,20 @@ rdfs:subClassOf a owl:TransitiveProperty .
               oplofr:BundleOfferMultiTier ,
               oplofr:SubscriptionPriceSpecification,
               oplofr:SubscriptionOffer,
-              oplofr:SupportAssistantAccessTierOffer,
-              oplofr:BringYourOwnKeyChatTierOffer ,
-              oplofr:DataTwinglerSpecificModuleTierOffer,
-              oplofr:MaxChatTierOffer
+              oplofr:DataTwinglerSpecificModuleEntryLevelOffer ,
+              oplofr:DataTwinglerSpecificModulePlusOffer ,
+              oplofr:DataTwinglerSpecificModuleProOffer ,
+              oplofr:DataTwinglerSpecificModuleMaxOffer ,
+              oplofr:SupportAssistantSpecificModuleEntryLevelOffer ,
+              oplofr:SupportAssistantSpecificModulePlusOffer ,
+              oplofr:SupportAssistantSpecificModuleProOffer ,
+              oplofr:SupportAssistantSpecificModuleMaxOffer ,
+              oplofr:BringYourOwnKeyEntryLevelOffer ,
+              oplofr:BringYourOwnKeyPlusOffer ,
+              oplofr:BringYourOwnKeyProOffer ,
+              oplofr:MaxOffer ,
               oplofr:interval,
-              oplofr:intervalCount ;
+              oplofr:intervalCount .
 
 <http://open.vocab.org/terms/defines> owl:inverseOf <http://www.w3.org/2007/05/powder-s#describedby> .
 
@@ -333,12 +349,20 @@ rdfs:subClassOf a owl:TransitiveProperty .
               oplofr:BundleOfferMultiTier ,
               oplofr:SubscriptionPriceSpecification,
               oplofr:SubscriptionOffer,
-              oplofr:SupportAssistantAccessTierOffer,
-              oplofr:BringYourOwnKeyChatTierOffer ,
-              oplofr:DataTwinglerSpecificModuleTierOffer,
-              oplofr:MaxChatTierOffer
+              oplofr:DataTwinglerSpecificModuleEntryLevelOffer ,
+              oplofr:DataTwinglerSpecificModulePlusOffer ,
+              oplofr:DataTwinglerSpecificModuleProOffer ,
+              oplofr:DataTwinglerSpecificModuleMaxOffer ,
+              oplofr:SupportAssistantSpecificModuleEntryLevelOffer ,
+              oplofr:SupportAssistantSpecificModulePlusOffer ,
+              oplofr:SupportAssistantSpecificModuleProOffer ,
+              oplofr:SupportAssistantSpecificModuleMaxOffer ,
+              oplofr:BringYourOwnKeyEntryLevelOffer ,
+              oplofr:BringYourOwnKeyPlusOffer ,
+              oplofr:BringYourOwnKeyProOffer ,
+              oplofr:MaxOffer ,
               oplofr:interval,
-              oplofr:intervalCount ;
+              oplofr:intervalCount .
 
 <http://www.openlinksw.com/data/turtle/offers.ttl>
   rdfs:seeAlso <http://virtuoso.openlinksw.com/offers/> ,
@@ -494,28 +518,76 @@ oplofr:SubscriptionOffer a owl:Class ;
       rdfs:comment "Virtuoso offer that require setting up a subscription to access a service"@en ;
       rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
 
-oplofr:BringYourOwnKeyChatTierOffer a owl:Class ;
+oplofr:DataTwinglerSpecificModuleEntryLevelOffer a owl:Class ;
       rdfs:subClassOf oplofr:SubscriptionOffer ;
-      rdfs:label "Bring Your Own Key Chat Tier Offer"^^xsd:string ;
-      rdfs:comment "Access to the OPAL Chat Service using your own API key"@en ;
+      rdfs:label "Data Twingler Module Entry Level Offer"^^xsd:string ;
+      rdfs:comment "Entry level access to the OPAL Chat Service allowing use of Data Twingler module only. Requires your own API key."@en ;
       rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
 
-oplofr:SupportAssistantAccessTierOffer a owl:Class ;
+oplofr:DataTwinglerSpecificModulePlusOffer a owl:Class ;
       rdfs:subClassOf oplofr:SubscriptionOffer ;
-      rdfs:label "Support Assitant Module Offer"^^xsd:string ;
-      rdfs:comment "Access to the OPAL Chat Service allowing use of the Support Assistant only. Requires your own API key."@en ;
+      rdfs:label "Data Twingler Module Plus Offer"^^xsd:string ;
+      rdfs:comment "Plus level access to the OPAL Chat Service allowing use of Data Twingler module only. Requires your own API key."@en ;
       rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
 
-oplofr:DataTwinglerSpecificModuleTierOffer a owl:Class ;
+oplofr:DataTwinglerSpecificModuleProOffer a owl:Class ;
       rdfs:subClassOf oplofr:SubscriptionOffer ;
-      rdfs:label "Data Twingler Module Offer"^^xsd:string ;
-      rdfs:comment "Access to the OPAL Chat Service allowing use of Data Twingler module only. Requires your own API key."@en ;
+      rdfs:label "Data Twingler Module Pro Offer"^^xsd:string ;
+      rdfs:comment "Pro level access to the OPAL Chat Service allowing use of Data Twingler module only. Requires your own API key."@en ;
       rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
 
-oplofr:MaxChatTierOffer a owl:Class ;
+oplofr:DataTwinglerSpecificModuleMaxOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Data Twingler Module Max Offer"^^xsd:string ;
+      rdfs:comment "Max level access to the OPAL Chat Service allowing use of Data Twingler module only. Uses the system wide API key."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SupportAssistantSpecificModuleEntryLevelOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Support Assistant Module Entry Level Offer"^^xsd:string ;
+      rdfs:comment "Entry level access to the OPAL Chat Service allowing use of the Support Assistant only. Requires your own API key."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SupportAssistantSpecificModulePlusOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Support Assistant Module Plus Offer"^^xsd:string ;
+      rdfs:comment "Plus level access to the OPAL Chat Service allowing use of the Support Assistant only. Requires your own API key."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SupportAssistantSpecificModuleProOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Support Assistant Module Pro Offer"^^xsd:string ;
+      rdfs:comment "Pro level access to the OPAL Chat Service allowing use of the Support Assistant only. Requires your own API key."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:SupportAssistantSpecificModuleMaxOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Support Assistant Module Max Offer"^^xsd:string ;
+      rdfs:comment "Max level access to the OPAL Chat Service allowing use of the Support Assistant only. Uses the system wide API key."@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BringYourOwnKeyEntryLevelOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Bring Your Own Key Chat Entry Level Offer"^^xsd:string ;
+      rdfs:comment "Entry level access to the OPAL Chat Service using your own API key"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BringYourOwnKeyPlusOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Bring Your Own Key Chat Plus Offer"^^xsd:string ;
+      rdfs:comment "Plus level access to the OPAL Chat Service using your own API key"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:BringYourOwnKeyProOffer a owl:Class ;
+      rdfs:subClassOf oplofr:SubscriptionOffer ;
+      rdfs:label "Bring Your Own Key Chat Pro Offer"^^xsd:string ;
+      rdfs:comment "Pro level access to the OPAL Chat Service using your own API key"@en ;
+      rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
+
+oplofr:MaxOffer a owl:Class ;
       rdfs:subClassOf oplofr:SubscriptionOffer ;
       rdfs:label "Max Chat Tier Offer"^^xsd:string ;
-      rdfs:comment "Access to the OPAL Chat Service using the system wide API keys with no restriction on module used."@en ;
+      rdfs:comment "Max level access to the OPAL Chat Service using the system wide API keys with no restriction on module used."@en ;
       rdfs:isDefinedBy <http://www.openlinksw.com/ontology/offers#> .
 
 oplofr:OfferGroup a owl:Class ;
@@ -629,7 +701,7 @@ oplofr:interval a owl:ObjectProperty, rdf:Property ;
       rdfs:label "interval"^^xsd:string ;
       skos:altLabel "Billing interval unit"^^xsd:string ;
       rdfs:comment "Billing interval unit (e.g. day, month, year)"^^xsd:string ;
-      rdfs:domain oplorf:SubscriptionPriceSpecification ;
+      rdfs:domain oplofr:SubscriptionPriceSpecification ;
       rdfs:range xsd:string .
 
 oplofr:intervalCount a owl:ObjectProperty, rdf:Property ;
@@ -637,7 +709,7 @@ oplofr:intervalCount a owl:ObjectProperty, rdf:Property ;
       rdfs:label "interval count"^^xsd:string ;
       skos:altLabel "Billing interval count"^^xsd:string ;
       rdfs:comment "Billing interval count (e.g. if billing is every 2 months then the interval count is 2)"^^xsd:string ;
-      rdfs:domain oplorf:SubscriptionPriceSpecification ;
+      rdfs:domain oplofr:SubscriptionPriceSpecification ;
       rdfs:range xsd:integer .
 
 
