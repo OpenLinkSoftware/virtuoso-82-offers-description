@@ -1,0 +1,444 @@
+@prefix schema:    <http://schema.org/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
+@prefix oplres:    <http://www.openlinksw.com/ontology/restrictions#> .
+@prefix oplacl:    <http://www.openlinksw.com/ontology/acl#> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix :          <#> .
+
+# --- Offer Group Definition ---
+
+<#OfferGroupApiAccess> a oplofr:OfferGroup ;
+    skos:prefLabel "OPAL API Access Offers" ;
+    rdfs:label "OPAL API Access Offers" ;
+    schema:description "Offers for sessions instantiated via the /chat/api endpoints." .
+
+# --- Link provider to offers ---
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
+    <http://data.openlinksw.com/oplweb/offer/ApiAccessEntryLevelOfferOds-qa#this> ,
+    <http://data.openlinksw.com/oplweb/offer/ApiAccessMediumLevelOfferOds-qa#this> ,
+    <http://data.openlinksw.com/oplweb/offer/ApiAccessAdvancedLevelOfferOds-qa#this> ,
+    <http://data.openlinksw.com/oplweb/offer/ApiAccessMaxOfferOds-qa#this> .
+
+# ==============================================================================
+
+# 1. OFFERS
+
+# ==============================================================================
+
+# --- Entry Level Offer (BYOK) ---
+
+<http://data.openlinksw.com/oplweb/offer/ApiAccessEntryLevelOfferOds-qa#this>
+    a schema:Offer, oplofr:SubscriptionOffer, oplofr:ApiAccessEntryLevelOffer ;
+    oplofr:offerNumber "OPAL-API-ENTRY-ODSQA-001"^^xsd:string ;
+    skos:prefLabel "OPAL API Access - Entry Level (BYOK)" ;
+    schema:comment "This offer allows entry level access to the OPAL API using your own key." ;
+    schema:name "OPAL API Access - Entry Level (BYOK)" ;
+    schema:description "Entry level API access. Features: SQL Script, SPASQL, Remote SPARQL, GraphQL. Free demo Assistant usage allowed." ;
+    oplofr:isMemberOf <#OfferGroupApiAccess> ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessEntryLevelLicenseOds-qa#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessEntryLevelPriceSpecification#this> ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    # Post-purchase verification link
+    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+
+# --- Medium Level Offer (BYOK) ---
+
+<http://data.openlinksw.com/oplweb/offer/ApiAccessMediumLevelOfferOds-qa#this>
+    a schema:Offer, oplofr:SubscriptionOffer, oplofr:ApiAccessMediumLevelOffer ;
+    oplofr:offerNumber "OPAL-API-MEDIUM-ODSQA-001"^^xsd:string ;
+    skos:prefLabel "OPAL API Access - Medium Level (BYOK)" ;
+    schema:comment "This offer allows medium level access to the OPAL API using your own key." ;
+    schema:name "OPAL API Access - Medium Level (BYOK)" ;
+    schema:description "Medium level API access. Adds RDF Sponge, Facet Search, Web Fetch." ;
+    oplofr:isMemberOf <#OfferGroupApiAccess> ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseOds-qa#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMediumLevelPriceSpecification#this> ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+
+# --- Advanced Level Offer (BYOK) ---
+
+<http://data.openlinksw.com/oplweb/offer/ApiAccessAdvancedLevelOfferOds-qa#this>
+    a schema:Offer, oplofr:SubscriptionOffer, oplofr:ApiAccessAdvancedLevelOffer ;
+    oplofr:offerNumber "OPAL-API-ADVANCED-ODSQA-001"^^xsd:string ;
+    skos:prefLabel "OPAL API Access - Advanced (BYOK)" ;
+    schema:comment "This offer allows advanced level access to the OPAL API using your own key." ;
+    schema:name "OPAL API Access - Advanced (BYOK)" ;
+    schema:description "Advanced level API access. Adds use of available Agent Configs." ;
+    oplofr:isMemberOf <#OfferGroupApiAccess> ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseOds-qa#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessAdvancedLevelPriceSpecification#this> ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+
+# --- Max Offer (System-Wide) ---
+
+<http://data.openlinksw.com/oplweb/offer/ApiAccessMaxOfferOds-qa#this>
+    a schema:Offer, oplofr:SubscriptionOffer, oplofr:ApiAccessMaxOffer ;
+    oplofr:offerNumber "OPAL-API-MAX-ODSQA-001"^^xsd:string ;
+    skos:prefLabel "OPAL API Access - Max (System-Wide)" ;
+    schema:comment "This offer allows max level access to the OPAL API using the system wide key." ;
+    schema:name "OPAL API Access - Max (System-Wide)" ;
+    schema:description "Max level API access using System-Wide keys. Includes all features, Assistants, Agent Configs, and System integrations." ;
+    oplofr:isMemberOf <#OfferGroupApiAccess> ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseOds-qa#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMaxPriceSpecification#this> ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+
+# ==============================================================================
+
+# 2. LICENSES
+
+# ==============================================================================
+
+<http://data.openlinksw.com/oplweb/license/ApiAccessEntryLevelLicenseOds-qa#this>
+    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly ;
+    skos:altLabel "OPAL API Access Entry Level License" ;
+    schema:name "OPAL API Access Entry Level License" ;
+    schema:description "License for Entry Level API access via /chat/api using BYOK." ;
+    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessEntryLevelOfferOds-qa#this> ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    # Credentials obtained via OAuth
+    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+
+<http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseOds-qa#this>
+    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    skos:altLabel "OPAL API Access Medium Level License" ;
+    schema:name "OPAL API Access Medium Level License" ;
+    schema:description "License for Medium Level API access via /chat/api using BYOK." ;
+    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessMediumLevelOfferOds-qa#this> ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+
+<http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseOds-qa#this>
+    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    skos:altLabel "OPAL API Access Advanced License" ;
+    schema:name "OPAL API Access Advanced License" ;
+    schema:description "License for Advanced Level API access via /chat/api using BYOK." ;
+    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessAdvancedLevelOfferOds-qa#this> ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+
+<http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseOds-qa#this>
+    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    skos:altLabel "OPAL API Access Max License" ;
+    schema:name "OPAL API Access Max License" ;
+    schema:description "License for Max Level API access via /chat/api using System-Wide keys." ;
+    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessMaxOfferOds-qa#this> ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+
+# ==============================================================================
+
+# 3. PRICE SPECIFICATIONS
+
+# ==============================================================================
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessEntryLevelPriceSpecification#this>
+    a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "0.00"^^xsd:decimal ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    skos:prefLabel "API Access Entry Level (Free)" .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMediumLevelPriceSpecification#this>
+    a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification, oplofr:SubscriptionPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "9.99"^^xsd:decimal ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    oplofr:interval "month"^^xsd:string ;
+    oplofr:intervalCount "1"^^xsd:integer ;
+    skos:prefLabel "API Access Medium Level" .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessAdvancedLevelPriceSpecification#this>
+    a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification, oplofr:SubscriptionPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "19.99"^^xsd:decimal ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    oplofr:interval "month"^^xsd:string ;
+    oplofr:intervalCount "1"^^xsd:integer ;
+    skos:prefLabel "API Access Advanced" .
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMaxPriceSpecification#this>
+    a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification, oplofr:SubscriptionPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "49.99"^^xsd:decimal ;
+    schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    oplofr:interval "month"^^xsd:string ;
+    oplofr:intervalCount "1"^^xsd:integer ;
+    skos:prefLabel "API Access Max (System-Wide)" .
+
+# ==============================================================================
+
+# 4. CONDITIONAL GROUPS
+
+# ==============================================================================
+
+<#ApiAccessEntryUser> a oplacl:ConditionalGroup ;
+    foaf:name "Users with API Access Entry Level License" ;
+    oplacl:hasCondition [
+      a oplacl:GroupCondition, oplacl:QueryCondition ;
+      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
+     ] .
+
+<#ApiAccessMediumUser> a oplacl:ConditionalGroup ;
+    foaf:name "Users with API Access Medium Level License" ;
+    oplacl:hasCondition [
+      a oplacl:GroupCondition, oplacl:QueryCondition ;
+      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessMediumLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+     ] .
+
+<#ApiAccessAdvancedUser> a oplacl:ConditionalGroup ;
+    foaf:name "Users with API Access Advanced Level License" ;
+    oplacl:hasCondition [
+      a oplacl:GroupCondition, oplacl:QueryCondition ;
+      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessAdvancedLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+     ] .
+
+<#ApiAccessMaxUser> a oplacl:ConditionalGroup ;
+    foaf:name "Users with API Access Max License" ;
+    oplacl:hasCondition [
+      a oplacl:GroupCondition, oplacl:QueryCondition ;
+      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessMaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+     ] .
+
+# ==============================================================================
+
+# 5. RESTRICTIONS
+
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+
+# A. Session & Token Limits
+
+# ------------------------------------------------------------------------------
+
+# --- Entry Level Limits ---
+
+# Max Prompts: 20
+
+# Max Input Tokens: 2,000
+
+# Max Total Tokens: 4,000
+
+# Interval (Per Minute): 25
+
+oplres:api-entry-max-prompts a oplres:Restriction ;
+    skos:prefLabel "API Entry: Max prompts per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasMaxValue "20"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessEntryUser> .
+
+oplres:api-entry-max-input-tokens a oplres:Restriction ;
+    skos:prefLabel "API Entry: Max input tokens per prompt" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasMaxValue "2000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessEntryUser> .
+
+oplres:api-entry-max-total-tokens a oplres:Restriction ;
+    skos:prefLabel "API Entry: Max total tokens per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasMaxValue "4000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessEntryUser> .
+
+oplres:api-entry-rate-limit a oplres:Restriction ;
+    skos:prefLabel "API Entry: Max prompts per minute" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
+    oplres:hasMaxValue "25"^^xsd:int ;
+    oplres:hasRestrictedValue "60"^^xsd:int ; # The interval in seconds (1 min)
+    oplres:hasAgent <#ApiAccessEntryUser> .
+
+# --- Medium Level Limits ---
+
+# Max Prompts: 200
+
+# Max Input Tokens: 20,000
+
+# Max Total Tokens: 40,000
+
+# Interval (Per Minute): 250
+
+oplres:api-medium-max-prompts a oplres:Restriction ;
+    skos:prefLabel "API Medium: Max prompts per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasMaxValue "200"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessMediumUser> .
+
+oplres:api-medium-max-input-tokens a oplres:Restriction ;
+    skos:prefLabel "API Medium: Max input tokens per prompt" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasMaxValue "20000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessMediumUser> .
+
+oplres:api-medium-max-total-tokens a oplres:Restriction ;
+    skos:prefLabel "API Medium: Max total tokens per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasMaxValue "40000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessMediumUser> .
+
+oplres:api-medium-rate-limit a oplres:Restriction ;
+    skos:prefLabel "API Medium: Max prompts per minute" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
+    oplres:hasMaxValue "250"^^xsd:int ;
+    oplres:hasRestrictedValue "60"^^xsd:int ;
+    oplres:hasAgent <#ApiAccessMediumUser> .
+
+# --- Advanced Level Limits ---
+
+# Max Prompts: 400
+
+# Max Input Tokens: 100,000
+
+# Max Total Tokens: 200,000
+
+# Interval (Per Minute): 500
+
+oplres:api-advanced-max-prompts a oplres:Restriction ;
+    skos:prefLabel "API Advanced: Max prompts per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasMaxValue "400"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessAdvancedUser> .
+
+oplres:api-advanced-max-input-tokens a oplres:Restriction ;
+    skos:prefLabel "API Advanced: Max input tokens per prompt" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasMaxValue "100000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessAdvancedUser> .
+
+oplres:api-advanced-max-total-tokens a oplres:Restriction ;
+    skos:prefLabel "API Advanced: Max total tokens per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasMaxValue "200000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessAdvancedUser> .
+
+oplres:api-advanced-rate-limit a oplres:Restriction ;
+    skos:prefLabel "API Advanced: Max prompts per minute" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
+    oplres:hasMaxValue "500"^^xsd:int ;
+    oplres:hasRestrictedValue "60"^^xsd:int ;
+    oplres:hasAgent <#ApiAccessAdvancedUser> .
+
+# --- Max Level Limits ---
+
+# Max Prompts: 1,000
+
+# Max Input Tokens: 500,000
+
+# Max Total Tokens: 1,000,000
+
+# Interval (Per Minute): 1,000
+
+oplres:api-max-max-prompts a oplres:Restriction ;
+    skos:prefLabel "API Max: Max prompts per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasMaxValue "1000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessMaxUser> .
+
+oplres:api-max-max-input-tokens a oplres:Restriction ;
+    skos:prefLabel "API Max: Max input tokens per prompt" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasMaxValue "500000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessMaxUser> .
+
+oplres:api-max-max-total-tokens a oplres:Restriction ;
+    skos:prefLabel "API Max: Max total tokens per session" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasMaxValue "1000000"^^xsd:decimal ;
+    oplres:hasAgent <#ApiAccessMaxUser> .
+
+oplres:api-max-rate-limit a oplres:Restriction ;
+    skos:prefLabel "API Max: Max prompts per minute" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
+    oplres:hasMaxValue "1000"^^xsd:int ;
+    oplres:hasRestrictedValue "60"^^xsd:int ;
+    oplres:hasAgent <#ApiAccessMaxUser> .
+
+# ------------------------------------------------------------------------------
+
+# B. Feature & Tool Restrictions
+
+# ------------------------------------------------------------------------------
+
+# --- Entry Level Features ---
+
+# SQL, SPASQL, Remote SPARQL, GraphQL
+
+oplres:api-entry-tools a oplres:Restriction ;
+    skos:prefLabel "API Entry: Included Features" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
+    oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query" ; # GraphQL implied or added if specific URI exists
+    oplres:hasAgent <#ApiAccessEntryUser> .
+
+# --- Medium Level Features ---
+
+# Adds: Sponge, Facet Search, Web Fetch
+
+oplres:api-medium-tools a oplres:Restriction ;
+    skos:prefLabel "API Medium: Included Features" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
+    oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
+    oplres:hasAgent <#ApiAccessMediumUser> .
+
+# --- Advanced Level Features ---
+
+# Adds: Agent Configs (Implied by Module Access, effectively Same tools as Medium + Config permission)
+
+oplres:api-advanced-tools a oplres:Restriction ;
+    skos:prefLabel "API Advanced: Included Features" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
+    oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
+    oplres:hasAgent <#ApiAccessAdvancedUser> .
+
+# --- Max Level Features ---
+
+# System Wide Access - Includes all
+
+oplres:api-max-enable-keys a oplres:Restriction ;
+    skos:prefLabel "API Max: Enable System-Wide Keys" ;
+    oplres:hasRestrictedParameter <urn:oai:chat:enable-api-keys> ;
+    oplres:hasRestrictedValue "1"^^xsd:string ;
+    oplres:hasAgent <#ApiAccessMaxUser> .
