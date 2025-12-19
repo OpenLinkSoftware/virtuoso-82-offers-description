@@ -43,64 +43,13 @@ source: a schema:CreativeWork ;
 
 # --- Licensed Product / Service  ---
 
-<#ub-serverOPAL>
-    a schema:Service ;
-    schema:name "OPAL via ub-server"@en ;
-    schema:applicationCategory "AI Agent Platform"@en ;
-    schema:applicationSubCategory "LLM-Integrated AI Agent Middleware"@en ;
-    schema:description """OPAL (OpenLink AI Layer) instance hosted by ub-server, enabling AI Agent interaction with Data Spaces using natural language and the MCP protocol."""@en ;
-    schema:softwareVersion "1.0"@en ;
-    schema:provider [
-        a schema:Organization ;
-        schema:name "OpenLink Software"@en ;
-        schema:url <https://www.openlinksw.com/> ;
-    ] ;
-    schema:url <https://ub-server.openlinksw.com/> ;
-    schema:hasPart
-        [
-            a schema:WebAPI ;
-            schema:name "OPAL Chat Endpoint"@en ;
-            schema:description """Conversational agent for natural language interactions with linked data and other data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Chat Agent"@en ;
-            schema:url <https://ub-server.openlinksw.com/chat> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "OPAL Assist-Metal Endpoint"@en ;
-            schema:description """Context-sensitive agent for metadata-rich interactions across federated data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Assist Agent"@en ;
-            schema:url <https://ub-server.openlinksw.com/assist-metal> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Streamable HTTP)"@en ;
-            schema:description """Endpoint exposing the MCP Server via a Streamable HTTP transport protocol for continuous, stateful interactions with AI Agents."""@en ;
-            schema:serviceType "MCP Server (Streamable HTTP)"@en ;
-            schema:url <https://ub-server.openlinksw.com/chat/mcp/messages> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Server Sent Events)"@en ;
-            schema:description """Endpoint exposing the MCP Server using Server Sent Events (SSE), enabling real-time event-driven communication between LLM-integrated agents and data spaces."""@en ;
-            schema:serviceType "MCP Server (SSE)"@en ;
-            schema:url <https://ub-server.openlinksw.com/chat/mcp/sse> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ] .
-
-<#URIBurnerOPAL>
+# The MCP server is used to create required ACLs for all URIBurner ACL offers
+<http://data.openlinksw.com/oplweb/URIBurnerOPAL#this>
     a schema:Service ;
     schema:name "OPAL via URIBurner"@en ;
     schema:applicationCategory "AI Agent Platform"@en ;
     schema:applicationSubCategory "LLM-Integrated AI Agent Middleware"@en ;
     schema:description """OPAL (OpenLink AI Layer) instance hosted by URIBurner, enabling AI Agent interaction with Data Spaces using natural language and the MCP protocol."""@en ;
-    schema:operatingSystem "Linux"@en ;
     schema:softwareVersion "1.0"@en ;
     schema:provider [
         a schema:Organization ;
@@ -146,15 +95,16 @@ source: a schema:CreativeWork ;
             schema:termsOfService <https://opal.openlinksw.com/tos/> ;
         ] .
 
-<#ub-serverDA>
+# Knowledge graph access
+<http://data.openlinksw.com/oplweb/URIBurnerDA#this> a schema:WebAPI ;
     a schema:Service ;
-    schema:name "Knowledge graph access via ub-server"@en ;
+    schema:name "Knowledge graph access via URIBurner"@en ;
     schema:applicationCategory "Data Access"@en ;
     schema:applicationSubCategory "ACL controlled knowledge graph access"@en ;
     schema:description """Knowledge graph hosted by ub-server, can be explored via the /sparql endpoint."""@en ;
     schema:softwareVersion "1.0"@en ;
-# -- OPAL server needed to create the ACLs 
-    skos:related <#ub-serverOPAL> ;
+# -- OPAL server needed to create the ACLs
+    skos:related <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     schema:provider [
         a schema:Organization ;
         schema:name "OpenLink Software"@en ;
@@ -169,7 +119,6 @@ source: a schema:CreativeWork ;
             schema:serviceType "SPARQL Query Service"@en ;
             schema:url <https://ub-server.openlinksw.com/sparql> .
         ] .
-
 
 # --- Data Twingler Agent Offers ---
 # -- Data Twingler Entry Level Price Specification --
@@ -194,7 +143,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Entry Level License" ;
     skos:altLabel "Data Twingler Specific Module Entry Level License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleEntryLevelOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -238,7 +187,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Plus License" ;
     skos:altLabel "Data Twingler Specific Module Plus License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModulePlusOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -282,7 +231,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Pro License" ;
     skos:altLabel "Data Twingler Specific Module Pro License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module Pro on a BYOK basis." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleProOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -326,7 +275,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Max License" ;
     skos:altLabel "Data Twingler Specific Module Max License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module using the system wide API key." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleMaxOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -372,7 +321,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Specific Module Entry Level License" ;
     skos:altLabel "Support Assistant Specific Module Entry Level License" ;
     schema:description "License for interactive use of the OPAL Support Assistant Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleEntryLevelOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -416,7 +365,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Specific Module Plus License" ;
     skos:altLabel "Support Assistant Specific Module Plus License" ;
     schema:description "License for interactive use of the OPAL Support Assistant Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModulePlusOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -460,7 +409,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Specific Module Pro License" ;
     skos:altLabel "Support Assistant Specific Module Pro License" ;
     schema:description "License for interactive use of the OPAL Support Assistant Module Pro on a BYOK basis." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleProOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -503,7 +452,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Max License" ;
     skos:altLabel "Support Assistant Max License" ;
     schema:description "License for interactive use of the OpenLink Support Assistant using the system wide API key." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleMaxOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -546,7 +495,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Bring Your Own Key Entry Level License for ub-server" ;
     skos:altLabel "Bring Your Own Key Entry Level License for ub-server" ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using your own API key." ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyEntryLevelOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -589,7 +538,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Bring Your Own Key Plus License for ub-server" ;
     skos:altLabel "Bring Your Own Key Plus License for ub-server" ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using your own API key.  Includes all the features of the Entry Level Offer plus RDF Sponge, Facet Search and Web Fetch" ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyPlusOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -632,7 +581,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Bring Your Own Key Pro License for ub-server" ;
     skos:altLabel "Bring Your Own Key Pro License for ub-server" ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using your own API key.  Includes all the features of the Plus Offer plus use of available Agent Configs" ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyProOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -675,7 +624,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Max License for ub-server" ;
     skos:altLabel "Max License for ub-server" ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using the system wide key.  Includes all available features: - BYOK capabilities - Assistants - Agent Configs - System-wide integrations and services" ;
-    opllic:productLicenseOf <#ub-serverOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/MaxOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -706,7 +655,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Max License for uriburner" ;
     skos:altLabel "Max License for uriburner" ;
     schema:description "License for interactive use of the OPAL Chat Service on uriburner using the system wide key.  Includes all available features: - BYOK capabilities - Assistants - Agent Configs - System-wide integrations and services" ;
-    opllic:productLicenseOf <#URIBurnerOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -751,7 +700,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Demo Graph Access License for ub-server" ;
     skos:altLabel "Demo Graph Access License for ub-server" ;
     schema:description "License to access the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph on a read-only basis." ;
-    opllic:productLicenseOf <#ub-serverDA> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .

@@ -43,7 +43,8 @@ source: a schema:CreativeWork ;
 
 # --- Licensed Product / Service  ---
 
-<#ods-qaOPAL>
+# The MCP server is used to create required ACL for all ODS-QA ACL offers
+<http://data.openlinksw.com/oplweb/ods-qaOPAL#this>
     a schema:Service ;
     schema:name "OPAL via ods-qa"@en ;
     schema:applicationCategory "AI Agent Platform"@en ;
@@ -94,67 +95,14 @@ source: a schema:CreativeWork ;
             schema:termsOfService <https://opal.openlinksw.com/tos/> ;
         ] .
 
-<#URIBurnerOPAL>
-    a schema:Service ;
-    schema:name "OPAL via URIBurner"@en ;
-    schema:applicationCategory "AI Agent Platform"@en ;
-    schema:applicationSubCategory "LLM-Integrated AI Agent Middleware"@en ;
-    schema:description """OPAL (OpenLink AI Layer) instance hosted by URIBurner, enabling AI Agent interaction with Data Spaces using natural language and the MCP protocol."""@en ;
-    schema:operatingSystem "Linux"@en ;
-    schema:softwareVersion "1.0"@en ;
-    schema:provider [
-        a schema:Organization ;
-        schema:name "OpenLink Software"@en ;
-        schema:url <https://www.openlinksw.com/> ;
-    ] ;
-    schema:url <https://linkeddata.uriburner.com/> ;
-    schema:hasPart
-        [
-            a schema:WebAPI ;
-            schema:name "OPAL Chat Endpoint"@en ;
-            schema:description """Conversational agent for natural language interactions with linked data and other data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Chat Agent"@en ;
-            schema:url <https://linkeddata.uriburner.com/chat> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "OPAL Assist-Metal Endpoint"@en ;
-            schema:description """Context-sensitive agent for metadata-rich interactions across federated data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Assist Agent"@en ;
-            schema:url <https://linkeddata.uriburner.com/assist-metal> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Streamable HTTP)"@en ;
-            schema:description """Endpoint exposing the MCP Server via a Streamable HTTP transport protocol for continuous, stateful interactions with AI Agents."""@en ;
-            schema:serviceType "MCP Server (Streamable HTTP)"@en ;
-            schema:url <https://linkeddata.uriburner.com/chat/mcp/messages> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Server Sent Events)"@en ;
-            schema:description """Endpoint exposing the MCP Server using Server Sent Events (SSE), enabling real-time event-driven communication between LLM-integrated agents and data spaces."""@en ;
-            schema:serviceType "MCP Server (SSE)"@en ;
-            schema:url <https://linkeddata.uriburner.com/chat/mcp/sse> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ] .
-
-<#ods-qaDA>
-    a schema:Service ;
+# Knowledge graph access
+<http://data.openlinksw.com/oplweb/ods-qaDA#this> a schema:WebAPI ;
     schema:name "Knowledge graph access via ods-qa"@en ;
     schema:applicationCategory "Data Access"@en ;
     schema:applicationSubCategory "ACL controlled knowledge graph access"@en ;
     schema:description """Knowledge graph hosted by ods-qa, can be explored via the /sparql endpoint."""@en ;
-    schema:softwareVersion "1.0"@en ;
-# -- OPAL server needed to create the ACLs 
-    skos:related <#ods-qaOPAL> ;
+# -- OPAL server needed to create the ACLs
+    skos:related <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     schema:provider [
         a schema:Organization ;
         schema:name "OpenLink Software"@en ;
@@ -194,7 +142,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Entry Level License" ;
     skos:altLabel "Data Twingler Specific Module Entry Level License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleEntryLevelOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -238,7 +186,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Plus License" ;
     skos:altLabel "Data Twingler Specific Module Plus License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModulePlusOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -282,7 +230,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Pro License" ;
     skos:altLabel "Data Twingler Specific Module Pro License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module Pro on a BYOK basis." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleProOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -326,7 +274,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Data Twingler Specific Module Max License" ;
     skos:altLabel "Data Twingler Specific Module Max License" ;
     schema:description "License for interactive use of the OPAL Data Twingler Module using the system wide API key." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleMaxOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -372,7 +320,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Specific Module Entry Level License" ;
     skos:altLabel "Support Assistant Specific Module Entry Level License" ;
     schema:description "License for interactive use of the OPAL Support Assistant Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleEntryLevelOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -416,7 +364,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Specific Module Plus License" ;
     skos:altLabel "Support Assistant Specific Module Plus License" ;
     schema:description "License for interactive use of the OPAL Support Assistant Module on a BYOK basis." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModulePlusOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -460,7 +408,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Specific Module Pro License" ;
     skos:altLabel "Support Assistant Specific Module Pro License" ;
     schema:description "License for interactive use of the OPAL Support Assistant Module Pro on a BYOK basis." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleProOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -503,7 +451,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Support Assistant Max License" ;
     skos:altLabel "Support Assistant Max License" ;
     schema:description "License for interactive use of the OpenLink Support Assistant using the system wide API key." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleMaxOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -546,7 +494,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Bring Your Own Key Entry Level License for ods-qa" ;
     skos:altLabel "Bring Your Own Key Entry Level License for ods-qa" ;
     schema:description "License for interactive use of the OPAL Chat Service on ods-qa using your own API key." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyEntryLevelOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -589,7 +537,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Bring Your Own Key Plus License for ods-qa" ;
     skos:altLabel "Bring Your Own Key Plus License for ods-qa" ;
     schema:description "License for interactive use of the OPAL Chat Service on ods-qa using your own API key.  Includes all the features of the Entry Level Offer plus RDF Sponge, Facet Search and Web Fetch" ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyPlusOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -632,7 +580,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Bring Your Own Key Pro License for ods-qa" ;
     skos:altLabel "Bring Your Own Key Pro License for ods-qa" ;
     schema:description "License for interactive use of the OPAL Chat Service on ods-qa using your own API key.  Includes all the features of the Plus Offer plus use of available Agent Configs" ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyProOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -675,7 +623,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Max License for ods-qa" ;
     skos:altLabel "Max License for ods-qa" ;
     schema:description "License for interactive use of the OPAL Chat Service on ods-qa using the system wide key.  Includes all available features: - BYOK capabilities - Assistants - Agent Configs - System-wide integrations and services" ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/MaxOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -706,7 +654,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Max License for uriburner" ;
     skos:altLabel "Max License for uriburner" ;
     schema:description "License for interactive use of the OPAL Chat Service on uriburner using the system wide key.  Includes all available features: - BYOK capabilities - Assistants - Agent Configs - System-wide integrations and services" ;
-    opllic:productLicenseOf <#URIBurnerOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
@@ -751,7 +699,7 @@ source: a schema:CreativeWork ;
     skos:prefLabel "Demo Graph Access License for ods-qa" ;
     skos:altLabel "Demo Graph Access License for ods-qa" ;
     schema:description "License to access the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph on a read-only basis." ;
-    opllic:productLicenseOf <#ods-qaDA> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     wdrs:describedby source: .
