@@ -51,7 +51,7 @@
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessEntryLevelOfferOds-qa%23this> ;
-    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+    schema:url <https://linkeddata.uriburner.com/chat/api> .
 
 # --- Medium Level Offer (BYOK) ---
 
@@ -69,7 +69,7 @@
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMediumLevelOfferOds-qa%23this> ;
-    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+    schema:url <https://linkeddata.uriburner.com/chat/api> .
 
 # --- Advanced Level Offer (BYOK) ---
 
@@ -87,7 +87,7 @@
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessAdvancedLevelOfferOds-qa%23this> ;
-    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+    schema:url <https://linkeddata.uriburner.com/chat/api> .
 
 # --- Max Offer (System-Wide) ---
 
@@ -105,7 +105,7 @@
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMaxOfferOds-qa%23this> ;
-    schema:url <https://ods-qa.openlinksw.com/chat/api> .
+    schema:url <https://linkeddata.uriburner.com/chat/api> .
 
 # ==============================================================================
 
@@ -118,53 +118,53 @@
     skos:altLabel "OPAL API Access Entry Level License" ;
     schema:name "OPAL API Access Entry Level License" ;
     schema:description "License for Entry Level API access via /chat/api using BYOK." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL-API#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessEntryLevelOfferOds-qa#this> ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
     # Credentials obtained via OAuth
-    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+    skos:related <https://linkeddata.uriburner.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseOds-qa#this>
     a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Medium Level License" ;
     schema:name "OPAL API Access Medium Level License" ;
     schema:description "License for Medium Level API access via /chat/api using BYOK." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL-API#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessMediumLevelOfferOds-qa#this> ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+    skos:related <https://linkeddata.uriburner.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseOds-qa#this>
     a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Advanced License" ;
     schema:name "OPAL API Access Advanced License" ;
     schema:description "License for Advanced Level API access via /chat/api using BYOK." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL-API#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessAdvancedLevelOfferOds-qa#this> ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+    skos:related <https://linkeddata.uriburner.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseOds-qa#this>
     a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Max License" ;
     schema:name "OPAL API Access Max License" ;
     schema:description "License for Max Level API access via /chat/api using System-Wide keys." ;
-    opllic:productLicenseOf <#ods-qaOPAL> ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL-API#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/ApiAccessMaxOfferOds-qa#this> ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-    skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
+    skos:related <https://linkeddata.uriburner.com/oauth/applications.vsp> .
 
 # ==============================================================================
 
@@ -246,7 +246,51 @@
 
 # ==============================================================================
 
-# 5. RESTRICTIONS
+# 5. Licensed Product i.e., API Access Description
+
+# ==============================================================================
+
+<http://data.openlinksw.com/oplweb/URIBurnerOPAL-API#this> a schema:WebAPI ;
+    schema:name "OPAL Chat API" ;
+    schema:description "API endpoint for interacting with OPAL on URIBurner, enabling programmatic Machine-Centric Programming (MCP) chat sessions." ;
+    schema:url <https://linkeddata.uriburner.com/chat/api> ;
+    skos:related <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
+    schema:provider [
+        a schema:Organization ;
+        schema:name "OpenLink Software" ;
+        schema:url <https://www.openlinksw.com/>
+    ] ;
+    schema:documentation <https://opal.openlinksw.com/install/> ;
+    schema:exampleOfWork <https://www.openlinksw.com/data//html/opal-system-functions-or-agents-apis-developer-journey-gemini-17.html> ;
+    schema:hasPart [
+        a schema:EntryPoint ;
+        schema:name "OPAL Chat Endpoint" ;
+        schema:urlTemplate "https://linkeddata.uriburner.com/chat/api" ;
+        schema:httpMethod "POST" ;
+        schema:contentType "application/json" ;
+        schema:actionPlatform <http://schema.org/OnlinePlatform>
+    ] ;
+    schema:potentialAction [
+        a schema:CommunicateAction ;
+        schema:name "SendMessage" ;
+        schema:target [
+            a schema:EntryPoint ;
+            schema:urlTemplate "https://linkeddata.uriburner.com/chat/api" ;
+            schema:httpMethod "POST"
+        ] ;
+        schema:expects [
+            a schema:Text ;
+            schema:description "JSON payload containing message content and metadata for OPAL"
+        ] ;
+        schema:result [
+            a schema:Text ;
+            schema:description "JSON response containing the OPAL chat reply or status"
+        ]
+    ] .
+
+# ==============================================================================
+
+# 6. RESTRICTIONS
 
 # ==============================================================================
 
