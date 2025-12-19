@@ -50,8 +50,7 @@
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
-    # Post-purchase verification link
-    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessEntryLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 
 # --- Medium Level Offer (BYOK) ---
@@ -69,7 +68,7 @@
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
-    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMediumLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 
 # --- Advanced Level Offer (BYOK) ---
@@ -87,7 +86,7 @@
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
-    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessAdvancedLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 
 # --- Max Offer (System-Wide) ---
@@ -105,7 +104,7 @@
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
-    schema:potentialAction <https://ods-qa.openlinksw.com/playground> ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMaxOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 
 # ==============================================================================
@@ -269,27 +268,35 @@
 
 oplres:api-entry-max-prompts a oplres:Restriction ;
     skos:prefLabel "API Entry: Max prompts per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "20"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessEntryUser> .
 
 oplres:api-entry-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Entry: Max input tokens per prompt" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "2000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessEntryUser> .
 
 oplres:api-entry-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Entry: Max total tokens per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "4000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessEntryUser> .
 
 oplres:api-entry-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Entry: Max prompts per minute" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
-    oplres:hasMaxValue "25"^^xsd:int ;
-    oplres:hasRestrictedValue "60"^^xsd:int ; # The interval in seconds (1 min)
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasMaxValue "1500"^^xsd:int ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasAgent <#ApiAccessEntryUser> .
 
 # --- Medium Level Limits ---
@@ -304,27 +311,35 @@ oplres:api-entry-rate-limit a oplres:Restriction ;
 
 oplres:api-medium-max-prompts a oplres:Restriction ;
     skos:prefLabel "API Medium: Max prompts per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "200"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessMediumUser> .
 
 oplres:api-medium-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Medium: Max input tokens per prompt" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "20000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessMediumUser> .
 
 oplres:api-medium-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Medium: Max total tokens per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "40000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessMediumUser> .
 
 oplres:api-medium-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Medium: Max prompts per minute" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
-    oplres:hasMaxValue "250"^^xsd:int ;
-    oplres:hasRestrictedValue "60"^^xsd:int ;
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasMaxValue "15000"^^xsd:int ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasAgent <#ApiAccessMediumUser> .
 
 # --- Advanced Level Limits ---
@@ -339,27 +354,34 @@ oplres:api-medium-rate-limit a oplres:Restriction ;
 
 oplres:api-advanced-max-prompts a oplres:Restriction ;
     skos:prefLabel "API Advanced: Max prompts per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "400"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessAdvancedUser> .
 
 oplres:api-advanced-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Advanced: Max input tokens per prompt" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "100000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessAdvancedUser> .
 
 oplres:api-advanced-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Advanced: Max total tokens per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "200000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessAdvancedUser> .
 
 oplres:api-advanced-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Advanced: Max prompts per minute" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
-    oplres:hasMaxValue "500"^^xsd:int ;
-    oplres:hasRestrictedValue "60"^^xsd:int ;
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasMaxValue "3000"^^xsd:int ;
     oplres:hasAgent <#ApiAccessAdvancedUser> .
 
 # --- Max Level Limits ---
@@ -374,27 +396,34 @@ oplres:api-advanced-rate-limit a oplres:Restriction ;
 
 oplres:api-max-max-prompts a oplres:Restriction ;
     skos:prefLabel "API Max: Max prompts per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "1000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessMaxUser> .
 
 oplres:api-max-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Max: Max input tokens per prompt" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "500000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessMaxUser> .
 
 oplres:api-max-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Max: Max total tokens per session" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "1000000"^^xsd:decimal ;
     oplres:hasAgent <#ApiAccessMaxUser> .
 
 oplres:api-max-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Max: Max prompts per minute" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
-    oplres:hasMaxValue "1000"^^xsd:int ;
-    oplres:hasRestrictedValue "60"^^xsd:int ;
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasMaxValue "60000"^^xsd:int ;
     oplres:hasAgent <#ApiAccessMaxUser> .
 
 # ------------------------------------------------------------------------------
@@ -409,8 +438,19 @@ oplres:api-max-rate-limit a oplres:Restriction ;
 
 oplres:api-entry-tools a oplres:Restriction ;
     skos:prefLabel "API Entry: Included Features" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
-    oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query" ; # GraphQL implied or added if specific URI exists
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query" ;
+    oplres:hasAgent <#ApiAccessEntryUser> .
+
+oplres:api-entry-modules a oplres:Restriction ;
+    skos:prefLabel "API Entry: Included modules" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
+    oplres:hasRestrictedParameter  <urn:oai:chat:module> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasRestrictedValue "cello-config,data-twingler-config,opml-rss-news-reader,uda-support-assistant-config,virtuoso-support-assistant-config,data-twingler-uniprot" ;
     oplres:hasAgent <#ApiAccessEntryUser> .
 
 # --- Medium Level Features ---
@@ -419,8 +459,18 @@ oplres:api-entry-tools a oplres:Restriction ;
 
 oplres:api-medium-tools a oplres:Restriction ;
     skos:prefLabel "API Medium: Included Features" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
+    oplres:hasAgent <#ApiAccessMediumUser> .
+
+oplres:api-medium-modules a oplres:Restriction ;
+    skos:prefLabel "API Medium: Included modules" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
+    oplres:hasRestrictedParameter  <urn:oai:chat:module> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
+    oplres:hasRestrictedValue "cello-config,data-twingler-config,opml-rss-news-reader,uda-support-assistant-config,virtuoso-support-assistant-config,data-twingler-uniprot" ;
     oplres:hasAgent <#ApiAccessMediumUser> .
 
 # --- Advanced Level Features ---
@@ -429,7 +479,9 @@ oplres:api-medium-tools a oplres:Restriction ;
 
 oplres:api-advanced-tools a oplres:Restriction ;
     skos:prefLabel "API Advanced: Included Features" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
     oplres:hasAgent <#ApiAccessAdvancedUser> .
 
@@ -439,6 +491,8 @@ oplres:api-advanced-tools a oplres:Restriction ;
 
 oplres:api-max-enable-keys a oplres:Restriction ;
     skos:prefLabel "API Max: Enable System-Wide Keys" ;
+    oplres:hasRestrictedResource <urn:oai:chat> ;
     oplres:hasRestrictedParameter <urn:oai:chat:enable-api-keys> ;
+    oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "1"^^xsd:string ;
     oplres:hasAgent <#ApiAccessMaxUser> .
