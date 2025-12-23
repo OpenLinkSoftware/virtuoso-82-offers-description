@@ -13,7 +13,6 @@
 @prefix gr:        <http://purl.org/goodrelations/v1#> .
 @prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
 @prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
-@prefix :          <#> .
 
 # --- Offer Group Definition ---
 

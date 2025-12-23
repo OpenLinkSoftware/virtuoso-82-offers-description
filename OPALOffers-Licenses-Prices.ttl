@@ -20,7 +20,6 @@
 @prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#> .
 @prefix gr:        <http://purl.org/goodrelations/v1#> .
 @prefix source:    <http://virtuoso.openlinksw.com/data/turtle/OPALOffers-License-Prices.ttl> .
-@prefix :          <#> . # Base URI for this document's entities
 
 # --- Document Metadata (Simplified Stub) ---
 
