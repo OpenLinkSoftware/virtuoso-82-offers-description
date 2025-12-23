@@ -37,10 +37,6 @@ source: a schema:CreativeWork ;
     schema:name "OPAL Chat Service Offers" ;
     rdfs:label "OPAL Chat Service Offers" .
 
-<#OfferGroupGraphAccess> a oplofr:OfferGroup ;
-    schema:name "Specific Knowledge Graph Access Offers" ;
-    rdfs:label "Specific Knowledge Graph Access Offers" .
-
 # --- Licensed Product / Service  ---
 
 # The MCP server is used to create required ACLs for all URIBurner ACL offers
@@ -93,31 +89,6 @@ source: a schema:CreativeWork ;
             schema:url <https://linkeddata.uriburner.com/chat/mcp/sse> ;
             schema:documentation <https://opal.openlinksw.com/install/> ;
             schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ] .
-
-# Knowledge graph access
-<http://data.openlinksw.com/oplweb/URIBurnerDA#this> a schema:WebAPI ;
-    a schema:Service ;
-    schema:name "Knowledge graph access via URIBurner"@en ;
-    schema:applicationCategory "Data Access"@en ;
-    schema:applicationSubCategory "ACL controlled knowledge graph access"@en ;
-    schema:description """Knowledge graph hosted by ub-server, can be explored via the /sparql endpoint."""@en ;
-    schema:softwareVersion "1.0"@en ;
-# -- OPAL server needed to create the ACLs
-    skos:related <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
-    schema:provider [
-        a schema:Organization ;
-        schema:name "OpenLink Software"@en ;
-        schema:url <https://www.openlinksw.com/> ;
-    ] ;
-    schema:url <https://ub-server.openlinksw.com/> ;
-    schema:hasPart
-        [
-            a schema:WebAPI ;
-            schema:name "SPARQL Query Service Endpoint"@en ;
-            schema:description """HTTP SPARQL Query Service Endpoint."""@en ;
-            schema:serviceType "SPARQL Query Service"@en ;
-            schema:url <https://ub-server.openlinksw.com/sparql> .
         ] .
 
 # --- Data Twingler Agent Offers ---
@@ -646,81 +617,6 @@ source: a schema:CreativeWork ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FMaxOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
-# -- Max License Description (uriburner) --
-<http://data.openlinksw.com/oplweb/license/MaxLicenseUriburner#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
-    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
-    oplsof:hasDatabopl_shop_stripe.sqlaseFamily oplsof:WorldWideWeb ;
-    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
-    schema:name "Max License for uriburner" ;
-    skos:prefLabel "Max License for uriburner" ;
-    skos:altLabel "Max License for uriburner" ;
-    schema:description "License for interactive use of the OPAL Chat Service on uriburner using the system wide key.  Includes all available features: - BYOK capabilities - Assistants - Agent Configs - System-wide integrations and services" ;
-    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
-    opllic:partOf <http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-    wdrs:describedby source: .
-
-# -- Max Offer Description (uriburner) --
-<http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:MaxOffer ;
-    oplofr:offerNumber "OPAL-MAX-UB-001"^^xsd:string ;
-    schema:name "OPAL Chat Service - Max on uriburner" ;
-    skos:prefLabel "OPAL Chat Service - Max on uriburner" ;
-    schema:comment "This offer provides Max level access to the OPAL Chat Service on uriburner, using the system wide key." ;
-    schema:description "Max access to the OPAL Chat Service on uriburner." ;
-    wdrs:describedby source: ;
-    schema:businessFunction gr:Sell ;
-    schema:itemOffered <http://data.openlinksw.com/oplweb/license/MaxLicenseUriburner#this> ;
-    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/MaxPriceSpecification#this> ;
-    oplofr:isMemberOf <#OfferGroupChatService> ;
-    schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FMaxOfferUriburner%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
-
-
-# --- Knowledge Graph Access Offers ---
-# -- Price Specification --
-<http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
-    schema:priceCurrency "USD"^^xsd:string ;
-    schema:price "49.99"^^xsd:decimal ;
-    schema:unitCode "C62"^^xsd:string ; # Piece
-    schema:name "Demo Graph Access" ;
-    schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-    oplofr:interval "month"^^xsd:string ;
-    oplofr:intervalCount "1"^^xsd:integer ;
-    wdrs:describedby source: .
-
-# -- License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
-    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
-    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
-    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
-    schema:name "Demo Graph Access License for ub-server" ;
-    skos:prefLabel "Demo Graph Access License for ub-server" ;
-    skos:altLabel "Demo Graph Access License for ub-server" ;
-    schema:description "License to access the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph on a read-only basis." ;
-    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
-    opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-    wdrs:describedby source: .
-
-# -- Offer Description --
-<http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DemoGraphAccessOffer ;
-    oplofr:offerNumber "DEMOACCESS-UB-001"^^xsd:string ;OPLSHOP.DBA.get_opal_service_id_from_license_uri (licenseUri);
-    schema:name "Demo Knowledge Graph Access on URIBurner (UB) server" ;
-    skos:prefLabel "Demo Knowledge Graph Access on URIBurner (UB) server" ;
-    schema:comment "This allows you to explore the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph on a read-only basis." ;
-    schema:description "Demo knowledge graph access on URIBurner (UB) server allowing read-only access to the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph." ;
-    wdrs:describedby source: ;
-    schema:businessFunction gr:Sell ;
-    schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseub-server#this> ;
-    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
-    oplofr:isMemberOf <#OfferGroupGraphAccess> ;
-    schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
 
 # --- Link provider to offers ---
@@ -736,9 +632,7 @@ source: a schema:CreativeWork ;
     <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyEntryLevelOfferub-server#this> ,
     <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyPlusOfferub-server#this> ,
     <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyProOfferub-server#this> ,
-    <http://data.openlinksw.com/oplweb/offer/MaxOfferub-server#this> ,
-    <http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> ,
-    <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> .
+    <http://data.openlinksw.com/oplweb/offer/MaxOfferub-server#this> .
 
 ## Group Definitions for each offer type
 
@@ -824,13 +718,6 @@ source: a schema:CreativeWork ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:MaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
-     ] .
-
-<#DemoGraphAccessUsers> a oplacl:ConditionalGroup ;
-  foaf:name "Users identified using a NetID based Identifier who have purchased the demo graph access offer and whose license is in date" ;
-  oplacl:hasCondition [
-    a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
 ## Restrictions
@@ -1129,16 +1016,6 @@ oplres:plus-level-assistant-access-tools a oplres:Restriction ;
   oplres:hasAgent <#BringYourOwnKeyPlusUsers> ;
   oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
   oplres:hasMaxValue 2 ;
-  wdrs:describedby <#source> .
-
-## Graph Access
-oplacl:demo-graph-access a acl:Authorization ;
-  schema:name "Rule to allow access to the demo graph" ;
-  acl:accessTo <urn:demo:graph> ;
-  oplacl:hasAccessMode oplacl:Read ;
-  oplacl:hasRealm oplacl:DefaultRealm ;
-  oplacl:hasScope oplacl:PrivateGraphs ;
-  acl:agent <#DemoGraphAccessUsers> ;
   wdrs:describedby <#source> .
 
 ## Turtle End ##

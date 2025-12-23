@@ -39,13 +39,14 @@ source: a schema:CreativeWork ;
 
 # --- Licensed Product / Service  ---
 
-<#ods-qaDA>
-    a schema:Service ;
-    schema:name "Virtuoso Graph Access via ods-qa"@en ;
-    schema:applicationCategory "Knowledge Graph Access"@en ;
-    schema:applicationSubCategory "Linked Data Middleware"@en ;
-    schema:description """Specific Knowledge Graph Access hosted by ods-qa."""@en ;
-    schema:softwareVersion "1.0"@en ;
+# Knowledge graph access
+<http://data.openlinksw.com/oplweb/ods-qaDA#this> a schema:WebAPI ;
+    schema:name "Knowledge graph access via ods-qa"@en ;
+    schema:applicationCategory "Data Access"@en ;
+    schema:applicationSubCategory "ACL controlled knowledge graph access"@en ;
+    schema:description """Knowledge graph hosted by ods-qa, can be explored via the /sparql endpoint."""@en ;
+# -- OPAL server needed to create the ACLs
+    skos:related <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     schema:provider [
         a schema:Organization ;
         schema:name "OpenLink Software"@en ;
@@ -55,222 +56,37 @@ source: a schema:CreativeWork ;
     schema:hasPart
         [
             a schema:WebAPI ;
-            schema:name "OPAL Chat Endpoint"@en ;
-            schema:description """Conversational agent for natural language interactions with linked data and other data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Chat Agent"@en ;
-            schema:url <https://ods-qa.openlinksw.com/chat> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "OPAL Assist-Metal Endpoint"@en ;
-            schema:description """Context-sensitive agent for metadata-rich interactions across federated data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Assist Agent"@en ;
-            schema:url <https://ods-qa.openlinksw.com/assist-metal> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Streamable HTTP)"@en ;
-            schema:description """Endpoint exposing the MCP Server via a Streamable HTTP transport protocol for continuous, stateful interactions with AI Agents."""@en ;
-            schema:serviceType "MCP Server (Streamable HTTP)"@en ;
-            schema:url <https://ods-qa.openlinksw.com/chat/mcp/messages> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Server Sent Events)"@en ;
-            schema:description """Endpoint exposing the MCP Server using Server Sent Events (SSE), enabling real-time event-driven communication between LLM-integrated agents and data spaces."""@en ;
-            schema:serviceType "MCP Server (SSE)"@en ;
-            schema:url <https://ods-qa.openlinksw.com/chat/mcp/sse> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
+            schema:name "SPARQL Query Service Endpoint"@en ;
+            schema:description """HTTP SPARQL Query Service Endpoint."""@en ;
+            schema:serviceType "SPARQL Query Service"@en ;
+            schema:url <https://ods-qa.openlinksw.com/sparql> .
         ] .
 
-<#URIBurnerDA>
+<http://data.openlinksw.com/oplweb/URIBurnerDA#this> a schema:WebAPI ;
     a schema:Service ;
-    schema:name "Virtuoso Graph Access via Uriburner"@en ;
-    schema:applicationCategory "Knowledge Graph Access"@en ;
-    schema:applicationSubCategory "Linked Data Middleware"@en ;
-    schema:description """Specific Knowledge Graph Access hosted by ods-qa."""@en ;
-    schema:operatingSystem "Linux"@en ;
+    schema:name "Knowledge graph access via URIBurner"@en ;
+    schema:applicationCategory "Data Access"@en ;
+    schema:applicationSubCategory "ACL controlled knowledge graph access"@en ;
+    schema:description """Knowledge graph hosted by ub-server, can be explored via the /sparql endpoint."""@en ;
     schema:softwareVersion "1.0"@en ;
+# -- OPAL server needed to create the ACLs
+    skos:related <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     schema:provider [
         a schema:Organization ;
         schema:name "OpenLink Software"@en ;
         schema:url <https://www.openlinksw.com/> ;
     ] ;
-    schema:url <https://linkeddata.uriburner.com/> ;
+    schema:url <https://ub-server.openlinksw.com/> ;
     schema:hasPart
         [
             a schema:WebAPI ;
-            schema:name "OPAL Chat Endpoint"@en ;
-            schema:description """Conversational agent for natural language interactions with linked data and other data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Chat Agent"@en ;
-            schema:url <https://linkeddata.uriburner.com/chat> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "OPAL Assist-Metal Endpoint"@en ;
-            schema:description """Context-sensitive agent for metadata-rich interactions across federated data spaces."""@en ;
-            schema:serviceType "MCP-compliant AI Assist Agent"@en ;
-            schema:url <https://linkeddata.uriburner.com/assist-metal> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Streamable HTTP)"@en ;
-            schema:description """Endpoint exposing the MCP Server via a Streamable HTTP transport protocol for continuous, stateful interactions with AI Agents."""@en ;
-            schema:serviceType "MCP Server (Streamable HTTP)"@en ;
-            schema:url <https://linkeddata.uriburner.com/chat/mcp/messages> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
-        ],
-        [
-            a schema:WebAPI ;
-            schema:name "MCP Server (Server Sent Events)"@en ;
-            schema:description """Endpoint exposing the MCP Server using Server Sent Events (SSE), enabling real-time event-driven communication between LLM-integrated agents and data spaces."""@en ;
-            schema:serviceType "MCP Server (SSE)"@en ;
-            schema:url <https://linkeddata.uriburner.com/chat/mcp/sse> ;
-            schema:documentation <https://opal.openlinksw.com/install/> ;
-            schema:termsOfService <https://opal.openlinksw.com/tos/> ;
+            schema:name "SPARQL Query Service Endpoint"@en ;
+            schema:description """HTTP SPARQL Query Service Endpoint."""@en ;
+            schema:serviceType "SPARQL Query Service"@en ;
+            schema:url <https://ub-server.openlinksw.com/sparql> .
         ] .
 
 # --- Specific Knowledge Graph Access Offers ---
-# --- Knowledge Graph Access Offers ---
-# -- Entry Level Price Specification --
-# -- <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessEntryLevelPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
-# --     schema:priceCurrency "USD"^^xsd:string ;
-# --     schema:price "0.00"^^xsd:decimal ;
-# --     schema:unitCode "C62"^^xsd:string ; # Piece
-# --     schema:name "Demo Graph Access Entry Level - Free" ;
-# --     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-# --     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-# --     wdrs:describedby source: .
-
-# -- Entry Level License Description (ods-qa server)--
-# -- <http://data.openlinksw.com/oplweb/license/DemoGraphAccessEntryLevelLicenseOds-qa#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly ;
-# --     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
-# --     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
-# --     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
-# --     schema:name "Demo Graph Access Entry Level License for ods-qa" ;
-# --     skos:prefLabel "Demo Graph Access Entry Level License for ods-qa" ;
-# --     skos:altLabel "Demo Graph Access Entry Level License for ods-qa" ;
-# --     schema:description "License for interactive use of the OPAL Chat Service on ods-qa to access the demo knowledge graph using your own API key." ;
-# --     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
-# --     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessEntryLevelOfferOds-qa#this> ;
-# --     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-# --     wdrs:describedby source: .
-
-# -- Entry Level Offer Description --
-# -- <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessEntryLevelOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DemoGraphAccessEntryLevelOffer ;
-# --     oplofr:offerNumber "OPAL-DEMOACCESS-EL-ODSQA-001"^^xsd:string ;
-# --     schema:name "OPAL Chat Service - Demo Graph Access Entry Level on ods-qa" ;
-# --     skos:prefLabel "OPAL Chat Service - Demo Graph Access Entry Level on ods-qa" ;
-# --     schema:comment "This offer provides Entry level access to the OPAL Chat Service on ods-qa allowing access to the demo knowledge graph, using your own API keys." ;
-# --     schema:description "Entry Level access to the OPAL Chat Service on ods-qa allowing access to the demo knowledge graph.  Includes support for SQL Script execution, SPASQL Query, Remote SPARQL Query and GraphQL Query." ;
-# --     wdrs:describedby source: ;
-# --     schema:businessFunction gr:Sell ; # Even if free, it's an act of "selling"/providing
-# --     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessEntryLevelLicenseOds-qa#this> ;
-# --     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessEntryLevelPriceSpecification#this> ;
-# --     oplofr:isMemberOf <#OfferGroupChatService> ;
-# --     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-# --     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-# --     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessEntryLevelOfferOds-qa%23this> ;
-# --     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
-
-# -- Plus Price Specification --
-# -- <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPlusPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
-# --     schema:priceCurrency "USD"^^xsd:string ;
-# --     schema:price "9.99"^^xsd:decimal ;
-# --     schema:unitCode "C62"^^xsd:string ; # Piece
-# --     schema:name "Demo Graph Access Plus" ;
-# --     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-# --     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-# --     oplofr:interval "month"^^xsd:string ;
-# --     oplofr:intervalCount "1"^^xsd:integer ;
-# --     wdrs:describedby source: .
-
-# -- Plus License Description (ods-qa server)--
-# -- <http://data.openlinksw.com/oplweb/license/DemoGraphAccessPlusLicenseOds-qa#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
-# --     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
-# --     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
-# --     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
-# --     schema:name "Demo Graph Access Plus License for ods-qa" ;
-# --     skos:prefLabel "Demo Graph Access Plus License for ods-qa" ;
-# --     skos:altLabel "Demo Graph Access Plus License for ods-qa" ;
-# --     schema:description "License for interactive use of the OPAL Chat Service on ods-qa to access the demo knowledge graph using your own API key.  Includes all the features of the Entry Level Offer plus RDF Sponge, Facet Search and Web Fetch" ;
-# --     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
-# --     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessPlusOfferOds-qa#this> ;
-# --     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-# --     wdrs:describedby source: .
-
-# -- Plus Offer Description --
-# -- <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessPlusOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DemoGraphAccessPlusOffer ;
-# --     oplofr:offerNumber "OPAL-DEMOACCESS-PLUS-ODSQA-001"^^xsd:string ;
-# --     schema:name "OPAL Chat Service - Demo Graph Access Plus on ods-qa" ;
-# --     skos:prefLabel "OPAL Chat Service - Demo Graph Access Plus on ods-qa" ;
-# --     schema:comment "This offer provides Plus level access to the OPAL Chat Service on ods-qa allowing access to the demo knowledge graph, using your own API keys." ;
-# --     schema:description "Plus level access to the OPAL Chat Service on ods-qa allowing access to the demo knowledge graph." ;
-# --     wdrs:describedby source: ;
-# --     schema:businessFunction gr:Sell ;
-# --     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessPlusLicenseOds-qa#this> ;
-# --     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPlusPriceSpecification#this> ;
-# --     oplofr:isMemberOf <#OfferGroupChatService> ;
-# --     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-# --     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-# --     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessPlusOfferOds-qa%23this> ;
-# --     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
-
-# -- Pro Price Specification --
-# -- <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessProPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
-# --     schema:priceCurrency "USD"^^xsd:string ;
-# --     schema:price "19.99"^^xsd:decimal ;
-# --     schema:unitCode "C62"^^xsd:string ; # Piece
-# --     schema:name "Demo Graph Access Pro" ;
-# --     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-# --     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-# --     oplofr:interval "month"^^xsd:string ;
-# --     oplofr:intervalCount "1"^^xsd:integer ;
-# --     wdrs:describedby source: .
-
-# -- Pro License Description (ods-qa server)--
-# -- <http://data.openlinksw.com/oplweb/license/DemoGraphAccessProLicenseOds-qa#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly , opllic:SubscriptionLicense ;
-# --     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
-# --     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
-# --     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
-# --     schema:name "Demo Graph Access Pro License for ods-qa" ;
-# --     skos:prefLabel "Demo Graph Access Pro License for ods-qa" ;
-# --     skos:altLabel "Demo Graph Access Pro License for ods-qa" ;
-# --     schema:description "License for interactive use of the OPAL Chat Service on ods-qa to access the demo knowledge graph using your own API key.  Includes all the features of the Plus Offer plus use of available Agent Configs" ;
-# --     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
-# --     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessProOfferOds-qa#this> ;
-# --     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-# --     wdrs:describedby source: .
-
-# -- Pro Offer Description --
-# -- <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessProOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DemoGraphAccessProOffer ;
-# --     oplofr:offerNumber "OPAL-DEMOACCESS-PRO-ODSQA-001"^^xsd:string ;
-# --     schema:name "OPAL Chat Service - Demo Graph Access Pro on ods-qa" ;
-# --     skos:prefLabel "OPAL Chat Service - Demo Graph Access Pro on ods-qa" ;
-# --     schema:comment "This offer provides Pro level access to the OPAL Chat Service on ods-qa to access the demo knowledge graph, using your own API keys." ;
-# --     schema:description "Pro level access to the OPAL Chat Service on ods-qa with access to the demo knowledge graph." ;
-# --     wdrs:describedby source: ;
-# --     schema:businessFunction gr:Sell ;
-# --     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessProLicenseOds-qa#this> ;
-# --     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessProPriceSpecification#this> ;
-# --     oplofr:isMemberOf <#OfferGroupChatService> ;
-# --     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-# --     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-# --     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessProOfferOds-qa%23this> ;
-# --     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
-
 # -- Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
     schema:priceCurrency "USD"^^xsd:string ;
@@ -308,47 +124,57 @@ source: a schema:CreativeWork ;
     schema:businessFunction gr:Sell ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseOds-qa#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
-    oplofr:isMemberOf <#OfferGroupChatService> ;
+    oplofr:isMemberOf <#OfferGroupGraphAccess> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferOds-qa%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
+# -- License Description (ub-server server)--
+<http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
+    schema:name "Demo Graph Access License for ub-server" ;
+    skos:prefLabel "Demo Graph Access License for ub-server" ;
+    skos:altLabel "Demo Graph Access License for ub-server" ;
+    schema:description "License to access the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph on a read-only basis." ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    wdrs:describedby source: .
+
+# -- Offer Description --
+<http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DemoGraphAccessOffer ;
+    oplofr:offerNumber "DEMOACCESS-UB-001"^^xsd:string ;OPLSHOP.DBA.get_opal_service_id_from_license_uri (licenseUri);
+    schema:name "Demo Knowledge Graph Access on URIBurner (UB) server" ;
+    skos:prefLabel "Demo Knowledge Graph Access on URIBurner (UB) server" ;
+    schema:comment "This allows you to explore the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph on a read-only basis." ;
+    schema:description "Demo knowledge graph access on URIBurner (UB) server allowing read-only access to the demo graph (denoted by Graph IRI <urn:demo:graph>) knowledge graph." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseub-server#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
+    oplofr:isMemberOf <#OfferGroupGraphAccess> ;
+    schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferub-server%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+
 # --- Link provider to offers ---
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
-#--     <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessEntryLevelOfferOds-qa#this> ,
-#--     <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessPlusOfferOds-qa#this> ,
-#--     <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessProOfferOds-qa#this> ,
-    <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferOds-qa#this> .
+    <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferOds-qa#this> ;
+    <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> .
 
 ## Group Definitions for each offer type
-#-- <#DemoGraphAccessEntryLevelUsers> a oplacl:ConditionalGroup ;
-#--   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Entry level demo graph access offer and whose license is in date" ;
-#--   oplacl:hasCondition [
-#--     a oplacl:GroupCondition, oplacl:QueryCondition ;
-#--     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where { ^{uri}^ oplprchs:madePurchase ?purchase .   ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
-#--      ] .
-
-#-- <#DemoGraphAccessPlusUsers> a oplacl:ConditionalGroup ;
-#--   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Plus level demo graph access offer and whose license is in date" ;
-#--   oplacl:hasCondition [
-#--     a oplacl:GroupCondition, oplacl:QueryCondition ;
-#--     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where { ^{uri}^ oplprchs:madePurchase ?purchase .   ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessPlusOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
-#--      ] .
-
-#-- <#DemoGraphAccessProUsers> a oplacl:ConditionalGroup ;
-#--   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Pro level demo graph access offer and whose license is in date" ;
-#--   oplacl:hasCondition [
-#--     a oplacl:GroupCondition, oplacl:QueryCondition ;
-#--     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where { ^{uri}^ oplprchs:madePurchase ?purchase .   ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessProOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
-#--      ] .
-
 <#DemoGraphAccessUsers> a oplacl:ConditionalGroup ;
   foaf:name "Users identified using a NetID based Identifier who have purchased the demo graph access offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where { ^{uri}^ oplprchs:madePurchase ?purchase .   ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
+
 
 ## Graph Access
 oplacl:demo-graph-access a acl:Authorization ;
