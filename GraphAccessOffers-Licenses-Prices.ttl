@@ -164,7 +164,7 @@ source: a schema:CreativeWork ;
 
 # --- Link provider to offers ---
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
-    <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferOds-qa#this> ;
+    <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferOds-qa#this> ,
     <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> .
 
 ## Group Definitions for each offer type
