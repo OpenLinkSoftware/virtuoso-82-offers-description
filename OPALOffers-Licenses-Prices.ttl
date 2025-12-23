@@ -617,37 +617,6 @@ source: a schema:CreativeWork ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FMaxOfferOds-qa%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
-# -- Max License Description (uriburner) --
-<http://data.openlinksw.com/oplweb/license/MaxLicenseUriburner#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
-    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
-    oplsof:hasDatabopl_shop_stripe.sqlaseFamily oplsof:WorldWideWeb ;
-    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
-    schema:name "Max License for uriburner" ;
-    skos:prefLabel "Max License for uriburner" ;
-    skos:altLabel "Max License for uriburner" ;
-    schema:description "License for interactive use of the OPAL Chat Service on uriburner using the system wide key.  Includes all available features: - BYOK capabilities - Assistants - Agent Configs - System-wide integrations and services" ;
-    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
-    opllic:partOf <http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-    wdrs:describedby source: .
-
-# -- Max Offer Description (uriburner) --
-<http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:MaxOffer ;
-    oplofr:offerNumber "OPAL-MAX-UB-001"^^xsd:string ;
-    schema:name "OPAL Chat Service - Max on uriburner" ;
-    skos:prefLabel "OPAL Chat Service - Max on uriburner" ;
-    schema:comment "This offer provides Max level access to the OPAL Chat Service on uriburner, using the system wide key." ;
-    schema:description "Max access to the OPAL Chat Service on uriburner." ;
-    wdrs:describedby source: ;
-    schema:businessFunction gr:Sell ;
-    schema:itemOffered <http://data.openlinksw.com/oplweb/license/MaxLicenseUriburner#this> ;
-    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/MaxPriceSpecification#this> ;
-    oplofr:isMemberOf <#OfferGroupChatService> ;
-    schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
-    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FMaxOfferUriburner%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
-
 # --- Link provider to offers ---
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
     <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleEntryLevelOfferOds-qa#this>,
@@ -661,8 +630,7 @@ source: a schema:CreativeWork ;
     <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyEntryLevelOfferOds-qa#this> ,
     <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyPlusOfferOds-qa#this> ,
     <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyProOfferOds-qa#this> ,
-    <http://data.openlinksw.com/oplweb/offer/MaxOfferOds-qa#this> ,
-    <http://data.openlinksw.com/oplweb/offer/MaxOfferUriburner#this> .
+    <http://data.openlinksw.com/oplweb/offer/MaxOfferOds-qa#this> .
 
 ## Group Definitions for each offer type
 
