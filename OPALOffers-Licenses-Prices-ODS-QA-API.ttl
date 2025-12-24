@@ -215,28 +215,28 @@
 
 # ==============================================================================
 
-<#ApiAccessEntryUser> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> a oplacl:ConditionalGroup ;
     foaf:name "Users with API Access Entry Level License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
       oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
      ] .
 
-<#ApiAccessMediumUser> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> a oplacl:ConditionalGroup ;
     foaf:name "Users with API Access Medium Level License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
       oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessMediumLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#ApiAccessAdvancedUser> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> a oplacl:ConditionalGroup ;
     foaf:name "Users with API Access Advanced Level License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
       oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessAdvancedLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#ApiAccessMaxUser> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> a oplacl:ConditionalGroup ;
     foaf:name "Users with API Access Max License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
@@ -315,7 +315,7 @@ oplres:api-entry-max-prompts a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "20"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessEntryUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> .
 
 oplres:api-entry-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Entry: Max input tokens per prompt" ;
@@ -323,7 +323,7 @@ oplres:api-entry-max-input-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "2000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessEntryUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> .
 
 oplres:api-entry-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Entry: Max total tokens per session" ;
@@ -331,7 +331,7 @@ oplres:api-entry-max-total-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "4000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessEntryUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> .
 
 oplres:api-entry-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Entry: Max prompts per minute" ;
@@ -340,7 +340,7 @@ oplres:api-entry-rate-limit a oplres:Restriction ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "1500"^^xsd:int ;
     oplres:hasRealm oplacl:DefaultRealm ;
-    oplres:hasAgent <#ApiAccessEntryUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> .
 
 # --- Medium Level Limits ---
 
@@ -358,7 +358,7 @@ oplres:api-medium-max-prompts a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "200"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessMediumUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> .
 
 oplres:api-medium-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Medium: Max input tokens per prompt" ;
@@ -366,7 +366,7 @@ oplres:api-medium-max-input-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "20000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessMediumUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> .
 
 oplres:api-medium-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Medium: Max total tokens per session" ;
@@ -374,7 +374,7 @@ oplres:api-medium-max-total-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "40000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessMediumUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> .
 
 oplres:api-medium-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Medium: Max prompts per minute" ;
@@ -383,7 +383,7 @@ oplres:api-medium-rate-limit a oplres:Restriction ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "15000"^^xsd:int ;
     oplres:hasRealm oplacl:DefaultRealm ;
-    oplres:hasAgent <#ApiAccessMediumUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> .
 
 # --- Advanced Level Limits ---
 
@@ -401,7 +401,7 @@ oplres:api-advanced-max-prompts a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "400"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessAdvancedUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> .
 
 oplres:api-advanced-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Advanced: Max input tokens per prompt" ;
@@ -409,7 +409,7 @@ oplres:api-advanced-max-input-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "100000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessAdvancedUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> .
 
 oplres:api-advanced-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Advanced: Max total tokens per session" ;
@@ -417,7 +417,7 @@ oplres:api-advanced-max-total-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "200000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessAdvancedUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> .
 
 oplres:api-advanced-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Advanced: Max prompts per minute" ;
@@ -425,7 +425,7 @@ oplres:api-advanced-rate-limit a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "3000"^^xsd:int ;
-    oplres:hasAgent <#ApiAccessAdvancedUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> .
 
 # --- Max Level Limits ---
 
@@ -443,7 +443,7 @@ oplres:api-max-max-prompts a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "1000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessMaxUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> .
 
 oplres:api-max-max-input-tokens a oplres:Restriction ;
     skos:prefLabel "API Max: Max input tokens per prompt" ;
@@ -451,7 +451,7 @@ oplres:api-max-max-input-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "500000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessMaxUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> .
 
 oplres:api-max-max-total-tokens a oplres:Restriction ;
     skos:prefLabel "API Max: Max total tokens per session" ;
@@ -459,7 +459,7 @@ oplres:api-max-max-total-tokens a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "1000000"^^xsd:decimal ;
-    oplres:hasAgent <#ApiAccessMaxUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> .
 
 oplres:api-max-rate-limit a oplres:Restriction ;
     skos:prefLabel "API Max: Max prompts per minute" ;
@@ -467,7 +467,7 @@ oplres:api-max-rate-limit a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasMaxValue "60000"^^xsd:int ;
-    oplres:hasAgent <#ApiAccessMaxUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> .
 
 # ------------------------------------------------------------------------------
 
@@ -485,7 +485,7 @@ oplres:api-entry-tools a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query" ;
-    oplres:hasAgent <#ApiAccessEntryUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> .
 
 oplres:api-entry-modules a oplres:Restriction ;
     skos:prefLabel "API Entry: Included modules" ;
@@ -494,7 +494,7 @@ oplres:api-entry-modules a oplres:Restriction ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "cello-config,data-twingler-config,opml-rss-news-reader,uda-support-assistant-config,virtuoso-support-assistant-config,data-twingler-uniprot" ;
-    oplres:hasAgent <#ApiAccessEntryUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> .
 
 # --- Medium Level Features ---
 
@@ -506,7 +506,7 @@ oplres:api-medium-tools a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
-    oplres:hasAgent <#ApiAccessMediumUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> .
 
 oplres:api-medium-modules a oplres:Restriction ;
     skos:prefLabel "API Medium: Included modules" ;
@@ -514,7 +514,7 @@ oplres:api-medium-modules a oplres:Restriction ;
     oplres:hasRestrictedParameter  <urn:oai:chat:module> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "cello-config,data-twingler-config,opml-rss-news-reader,uda-support-assistant-config,virtuoso-support-assistant-config,data-twingler-uniprot" ;
-    oplres:hasAgent <#ApiAccessMediumUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> .
 
 # --- Advanced Level Features ---
 
@@ -526,7 +526,7 @@ oplres:api-advanced-tools a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:enabled-tools> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
-    oplres:hasAgent <#ApiAccessAdvancedUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> .
 
 # --- Max Level Features ---
 
@@ -538,4 +538,4 @@ oplres:api-max-enable-keys a oplres:Restriction ;
     oplres:hasRestrictedParameter <urn:oai:chat:enable-api-keys> ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "1"^^xsd:string ;
-    oplres:hasAgent <#ApiAccessMaxUser> .
+    oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> .

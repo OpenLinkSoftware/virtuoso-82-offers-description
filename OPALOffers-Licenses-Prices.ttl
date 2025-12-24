@@ -633,84 +633,84 @@ source: a schema:CreativeWork ;
 
 ## Group Definitions for each offer type
 
-<#DataTwinglerEntryLevelSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModuleEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
      ] .
 
-<#DataTwinglerPlusSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModulePlusOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#DataTwinglerProSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModuleProOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#DataTwinglerMaxSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModuleMaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#SupportAssistantEntryLevelSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModuleEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . }"
      ] .
 
-<#SupportAssistantPlusSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModulePlusOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#SupportAssistantProSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModuleProOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#SupportAssistantMaxSpecificChatUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased access to the Support Assistant chat offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModuleMaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#BringYourOwnKeyEntryLevelUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Entry level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:BringYourOwnKeyEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
      ] .
 
-<#BringYourOwnKeyPlusUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Plus level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:BringYourOwnKeyPlusOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#BringYourOwnKeyProUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/BringYourOwnKeyProUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Pro level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:BringYourOwnKeyProOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
-<#MaxUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/MaxUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Max level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
@@ -729,9 +729,9 @@ oplres:max-prompt-count-per-session a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
   oplres:hasMaxValue "20"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#DataTwinglerEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#BringYourOwnKeyEntryLevelUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-token-usage-per-prompt a oplres:Restriction ;
@@ -741,9 +741,9 @@ oplres:max-token-usage-per-prompt a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
   oplres:hasMaxValue "2000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#DataTwinglerEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#BringYourOwnKeyEntryLevelUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-total-token-usage-per-session a oplres:Restriction ;
@@ -753,9 +753,9 @@ oplres:max-total-token-usage-per-session a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
   oplres:hasMaxValue "4000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#DataTwinglerEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#BringYourOwnKeyEntryLevelUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> ;
   wdrs:describedby <#source> .
 
 
@@ -778,9 +778,9 @@ oplres:max-prompt-interval-count-entry a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
   oplres:hasMaxValue "1500"^^xsd:int ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#DataTwinglerEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#BringYourOwnKeyEntryLevelUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-prompt-interval-count-plus a oplres:Restriction ;
@@ -790,9 +790,9 @@ oplres:max-prompt-interval-count-plus a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
   oplres:hasMaxValue "15000"^^xsd:int ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#DataTwinglerPlusSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantPlusSpecificChatUsers> ;
-  oplres:hasAgent <#BringYourOwnKeyPlusUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-prompt-interval-count-pro a oplres:Restriction ;
@@ -802,9 +802,9 @@ oplres:max-prompt-interval-count-pro a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
   oplres:hasMaxValue "3000"^^xsd:int ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#DataTwinglerProSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantProSpecificChatUsers> ;
-  oplres:hasAgent <#BringYourOwnKeyProUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyProUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-prompt-interval-count-max a oplres:Restriction ;
@@ -814,9 +814,9 @@ oplres:max-prompt-interval-count-max a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts-interval-count> ;
   oplres:hasMaxValue "60000"^^xsd:int ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#MaxUsers> ;
-  oplres:hasAgent <#SupportAssistantMaxSpecificChatUsers> ;
-  oplres:hasAgent <#DataTwinglerMaxSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/MaxUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 ## Plus
@@ -827,9 +827,9 @@ oplres:max-prompt-count-per-session-plus-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
   oplres:hasMaxValue "200"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyPlusUsers> ;
-  oplres:hasAgent <#DataTwinglerPlusSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantPlusSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-token-usage-per-prompti-plus-offer a oplres:Restriction ;
@@ -839,9 +839,9 @@ oplres:max-token-usage-per-prompti-plus-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
   oplres:hasMaxValue "20000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyPlusUsers> ;
-  oplres:hasAgent <#DataTwinglerPlusSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantPlusSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-total-token-usage-per-session-plus-offer a oplres:Restriction ;
@@ -851,9 +851,9 @@ oplres:max-total-token-usage-per-session-plus-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
   oplres:hasMaxValue "40000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyPlusUsers> ;
-  oplres:hasAgent <#DataTwinglerPlusSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantPlusSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 
@@ -865,9 +865,9 @@ oplres:max-prompt-count-per-session-pro-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
   oplres:hasMaxValue "400"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyProUsers> ;
-  oplres:hasAgent <#DataTwinglerProSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantProSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyProUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-token-usage-per-prompt-pro-offer a oplres:Restriction ;
@@ -877,9 +877,9 @@ oplres:max-token-usage-per-prompt-pro-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
   oplres:hasMaxValue "100000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyProUsers> ;
-  oplres:hasAgent <#DataTwinglerProSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantProSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyProUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-total-token-usage-per-session-pro-offer a oplres:Restriction ;
@@ -889,9 +889,9 @@ oplres:max-total-token-usage-per-session-pro-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
   oplres:hasMaxValue "200000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyProUsers> ;
-  oplres:hasAgent <#DataTwinglerProSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantProSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyProUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 ## Max
@@ -902,9 +902,9 @@ oplres:max-prompt-count-per-session-max-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompts> ;
   oplres:hasMaxValue "1000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#MaxUsers> ;
-  oplres:hasAgent <#SupportAssistantMaxSpecificChatUsers> ;
-  oplres:hasAgent <#DataTwinglerMaxSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/MaxUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-token-usage-per-prompt-max-offer a oplres:Restriction ;
@@ -914,9 +914,9 @@ oplres:max-token-usage-per-prompt-max-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-prompt-tokens> ;
   oplres:hasMaxValue "500000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#MaxUsers> ;
-  oplres:hasAgent <#SupportAssistantMaxSpecificChatUsers> ;
-  oplres:hasAgent <#DataTwinglerMaxSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/MaxUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:max-total-token-usage-per-session-max-offer a oplres:Restriction ;
@@ -926,9 +926,9 @@ oplres:max-total-token-usage-per-session-max-offer a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:max-tokens> ;
   oplres:hasMaxValue "1000000"^^xsd:decimal ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#MaxUsers> ;
-  oplres:hasAgent <#SupportAssistantMaxSpecificChatUsers> ;
-  oplres:hasAgent <#DataTwinglerMaxSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/MaxUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 
@@ -941,10 +941,10 @@ oplres:use-data-twingler a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:module> ;  
   oplres:hasRealm oplacl:DefaultRealm ;
   oplres:hasRestrictedValue "data-twingler-config"^^xsd:string ;
-  oplres:hasAgent <#DataTwinglerEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#DataTwinglerPlusSpecificChatUsers> ;
-  oplres:hasAgent <#DataTwinglerProSpecificChatUsers> ;
-  oplres:hasAgent <#DataTwinglerMaxSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:use-support-assistant a oplres:Restriction ;
@@ -954,10 +954,10 @@ oplres:use-support-assistant a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:module> ;  
   oplres:hasRealm oplacl:DefaultRealm ;
   oplres:hasRestrictedValue "virtuoso-support-assistant-config"^^xsd:string ;
-  oplres:hasAgent <#SupportAssistantEntryLevelSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantPlusSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantProSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantMaxSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 ## Requiring a value
@@ -968,9 +968,9 @@ oplres:restrict-enable-api-keys a oplres:Restriction ;
   oplres:hasRestrictedParameter <urn:oai:chat:enable-api-keys> ;
   oplres:hasRealm oplacl:DefaultRealm ;
   oplres:hasRestrictedValue "1"^^xsd:string ;
-  oplres:hasAgent <#MaxUsers> ;
-  oplres:hasAgent <#DataTwinglerMaxSpecificChatUsers> ;
-  oplres:hasAgent <#SupportAssistantMaxSpecificChatUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/MaxUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> ;
   wdrs:describedby <#source> .
 
 oplres:plus-level-assistant-access a oplres:Restriction ;
@@ -979,7 +979,7 @@ oplres:plus-level-assistant-access a oplres:Restriction ;
   oplres:hasRestrictedResource <urn:oai:chat> ;
   oplres:hasRestrictedParameter	 <urn:oai:chat:module> ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyPlusUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> ;
   oplres:hasRestrictedValue "cello-config,data-twingler-config,opml-rss-news-reader,uda-support-assistant-config,virtuoso-support-assistant-config,data-twingler-uniprot" ;
   wdrs:describedby <#source> .
 
@@ -989,7 +989,7 @@ oplres:entry-level-assistant-access a oplres:Restriction ;
   oplres:hasRestrictedResource <urn:oai:chat> ;
   oplres:hasRestrictedParameter	 <urn:oai:chat:module> ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyEntryLevelUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> ;
   oplres:hasRestrictedValue "cello-config,data-twingler-config,opml-rss-news-reader,uda-support-assistant-config,virtuoso-support-assistant-config,data-twingler-uniprot" ;
   wdrs:describedby <#source> .
 
@@ -999,7 +999,7 @@ oplres:entry-level-assistant-access-tools a oplres:Restriction ;
   oplres:hasRestrictedResource <urn:oai:chat> ;
   oplres:hasRestrictedParameter	 <urn:oai:chat:enabled-tools> ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyEntryLevelUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> ;
   oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query" ;
   oplres:hasMaxValue 1 ;
   wdrs:describedby <#source> .
@@ -1010,7 +1010,7 @@ oplres:plus-level-assistant-access-tools a oplres:Restriction ;
   oplres:hasRestrictedResource <urn:oai:chat> ;
   oplres:hasRestrictedParameter	 <urn:oai:chat:enabled-tools> ;
   oplres:hasRealm oplacl:DefaultRealm ;
-  oplres:hasAgent <#BringYourOwnKeyPlusUsers> ;
+  oplres:hasAgent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> ;
   oplres:hasRestrictedValue "UB.DBA.sparqlQuery,Demo.demo.execute_spasql_query,Demo.demo.execute_sql_query,OAI.DBA.WEB_FETCH,OAI.DBA.SPONGE_URL,FCT.DBA.FacetSearch" ;
   oplres:hasMaxValue 2 ;
   wdrs:describedby <#source> .

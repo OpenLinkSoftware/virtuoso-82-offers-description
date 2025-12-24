@@ -33,7 +33,7 @@ source: a schema:CreativeWork ;
 
 # --- Offer Group ---
 
-<#OfferGroupGraphAccess> a oplofr:OfferGroup ;
+<http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> a oplofr:OfferGroup ;
     schema:name "Specific Knowledge Graph Access Offers" ;
     rdfs:label "Specific Knowledge Graph Access Offers" .
 
@@ -124,7 +124,7 @@ source: a schema:CreativeWork ;
     schema:businessFunction gr:Sell ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseOds-qa#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
-    oplofr:isMemberOf <#OfferGroupGraphAccess> ;
+    oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferOds-qa%23this> ;
@@ -155,7 +155,7 @@ source: a schema:CreativeWork ;
     schema:businessFunction gr:Sell ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseub-server#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
-    oplofr:isMemberOf <#OfferGroupGraphAccess> ;
+    oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferub-server%23this> ;
@@ -168,7 +168,7 @@ source: a schema:CreativeWork ;
     <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> .
 
 ## Group Definitions for each offer type
-<#DemoGraphAccessUsers> a oplacl:ConditionalGroup ;
+<http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "Users identified using a NetID based Identifier who have purchased the demo graph access offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
@@ -183,7 +183,7 @@ oplacl:demo-graph-access a acl:Authorization ;
   oplacl:hasAccessMode oplacl:Read ;
   oplacl:hasRealm oplacl:DefaultRealm ;
   oplacl:hasScope oplacl:PrivateGraphs ;
-  acl:agent <#DemoGraphAccessUsers> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsers#this> ;
   wdrs:describedby <#source> .
 
 ## Restrictions
