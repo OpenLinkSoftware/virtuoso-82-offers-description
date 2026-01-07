@@ -1015,4 +1015,27 @@ oplres:plus-level-assistant-access-tools a oplres:Restriction ;
   oplres:hasMaxValue 2 ;
   wdrs:describedby <#source> .
 
+
+## Chat access rule
+
+oplacl:chat-access-offers a acl:Authorization ;
+  schema:name "Rule to allow access to /chat when an offer is purchased" ;
+  acl:accessTo <urn:oai:chat> ;
+  oplacl:hasAccessMode oplacl:Read, oplacl:Write ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyProUsers#this> ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/MaxUsers#this> ;
+  oplacl:hasRealm oplacl:DefaultRealm ;
+  oplacl:hasScope oplacl:Query .
+
 ## Turtle End ##

@@ -8,6 +8,7 @@
 @prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
 @prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
 @prefix oplres:    <http://www.openlinksw.com/ontology/restrictions#> .
+@prefix acl:       <http://www.w3.org/ns/auth/acl#> .
 @prefix oplacl:    <http://www.openlinksw.com/ontology/acl#> .
 @prefix foaf:      <http://xmlns.com/foaf/0.1/> .
 @prefix gr:        <http://purl.org/goodrelations/v1#> .
@@ -539,3 +540,29 @@ oplres:api-max-enable-keys a oplres:Restriction ;
     oplres:hasRealm oplacl:DefaultRealm ;
     oplres:hasRestrictedValue "1"^^xsd:string ;
     oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> .
+
+## Chat access rule
+
+oplacl:chat-access-api-offers a acl:Authorization ;
+    schema:name "Rule to allow access to /chat when an offer is purchased" ;
+    acl:accessTo <urn:oai:chat> ;
+    oplacl:hasAccessMode oplacl:Read, oplacl:Write ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> ;
+    oplacl:hasRealm oplacl:DefaultRealm ;
+    oplacl:hasScope oplacl:Query .
+
+## Rule to access /oauth/clients.vsp
+
+oplacl:oauth-apps-access-api-offers a acl:Authorization ;
+    schema:name "Rule to allow access to oauth apps when an API offer is purchased" ;
+    acl:accessTo <urn:virtuoso:access:oauth:apps> ;
+    oplacl:hasAccessMode oplacl:Read, oplacl:Write ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessEntryUsers#this> ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> ;
+    acl:agent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> ;
+    oplacl:hasRealm oplacl:DefaultRealm ;
+    oplacl:hasScope oplacl:OAuth .
