@@ -94,7 +94,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Demo Graph Access" ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -126,7 +126,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferOds-qa%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -157,7 +157,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
