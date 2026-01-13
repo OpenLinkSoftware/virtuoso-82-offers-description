@@ -93,7 +93,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Data Twingler Specific Access - Entry Level" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -115,8 +115,8 @@ source: a schema:CreativeWork ;
 # -- Data Twingler Entry Level Offer Description --
 <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleEntryLevelOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DataTwinglerSpecificModuleEntryLevelOffer ;
     oplofr:offerNumber "OPAL-DATATWINGLER-EL-UB-001"^^xsd:string ;
-    schema:name "OPAL Data Twingler Module - Entry Level" ;
-    skos:prefLabel "OPAL Data Twingler Module - Entry Level" ;
+    schema:name "OPAL Data Twingler Module on Uriburner - Entry Level" ;
+    skos:prefLabel "OPAL Data Twingler Module on Uriburner - Entry Level" ;
     schema:comment "This offer allows use of the OPAL Data Twingler Entry Level Module using your own key." ;
     schema:description "Access to the OPAL Data Twingler Entry Level Module on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -125,7 +125,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DataTwinglerSpecificModuleEntryLevelPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModuleEntryLevelOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -137,7 +137,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schemvad-licgen/vad-licgen_data-islands.sqla:name "Data Twingler Specific Access - Plus" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -159,8 +159,8 @@ source: a schema:CreativeWork ;
 # -- Data Twingler Plus Offer Description --
 <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModulePlusOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DataTwinglerSpecificModulePlusOffer ;
     oplofr:offerNumber "OPAL-DATATWINGLER-PLUS-UB-001"^^xsd:string ;
-    schema:name "OPAL Data Twingler Module - Plus" ;
-    skos:prefLabel "OPAL Data Twingler Module - Plus" ;
+    schema:name "OPAL Data Twingler Module on Uriburner - Plus" ;
+    skos:prefLabel "OPAL Data Twingler Module on Uriburner - Plus" ;
     schema:comment "This offer allows use of the OPAL Data Twingler Plus Module using your own key." ;
     schema:description "Access to the OPAL Data Twingler Module Plus on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -169,7 +169,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DataTwinglerSpecificModulePlusPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModulePlusOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -181,7 +181,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Data Twingler Specific Access - Pro" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -203,8 +203,8 @@ source: a schema:CreativeWork ;
 # -- Data Twingler Pro Offer Description --
 <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleProOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DataTwinglerSpecificModuleProOffer ;
     oplofr:offerNumber "OPAL-DATATWINGLER-PRO-UB-001"^^xsd:string ;
-    schema:name "OPAL Data Twingler Module - Pro" ;
-    skos:prefLabel "OPAL Data Twingler Module - Pro" ;
+    schema:name "OPAL Data Twingler Module on Uriburner - Pro" ;
+    skos:prefLabel "OPAL Data Twingler Module on Uriburner - Pro" ;
     schema:comment "This offer allows use of the OPAL Data Twingler Module using your own key." ;
     schema:description "Access to the OPAL Data Twingler Module on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -213,7 +213,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DataTwinglerSpecificModuleProPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModuleProOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -225,7 +225,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Data Twingler Specific Access" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -247,8 +247,8 @@ source: a schema:CreativeWork ;
 # -- Data Twingler Max Offer Description --
 <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleMaxOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DataTwinglerSpecificModuleMaxOffer ;
     oplofr:offerNumber "OPAL-DATATWINGLER-MAX-UB-001"^^xsd:string ;
-    schema:name "OPAL Data Twingler Module - Max" ;
-    skos:prefLabel "OPAL Data Twingler Module - Max" ;
+    schema:name "OPAL Data Twingler Module on Uriburner - Max" ;
+    skos:prefLabel "OPAL Data Twingler Module on Uriburner - Max" ;
     schema:comment "This offer allows use of the OPAL Data Twingler Module using the system wide key." ;
     schema:description "Access to the OPAL Data Twingler Module on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -257,7 +257,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DataTwinglerSpecificModuleMaxPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModuleMaxOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -271,7 +271,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Support Assistant Specific Access - Entry Level" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -293,8 +293,8 @@ source: a schema:CreativeWork ;
 # -- Support Assistant Access Entry Level Offer Description --
 <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleEntryLevelOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:SupportAssistantSpecificModuleEntryLevelOffer ;
     oplofr:offerNumber "OPAL-SUPPORTASSISTANT-EL-UB-001"^^xsd:string ;
-    schema:name "OPAL Support Assistant Module - Entry Level" ;
-    skos:prefLabel "OPAL Support Assistant Module - Entry Level" ;
+    schema:name "OPAL Support Assistant Module on Uriburner - Entry Level" ;
+    skos:prefLabel "OPAL Support Assistant Module on Uriburner - Entry Level" ;
     schema:comment "This offer allows use of the OPAL Support Assistant Entry Level Module using your own key." ;
     schema:description "Access to the OPAL Support Assistant Entry Level Module on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -303,7 +303,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/SupportAssistantSpecificModuleEntryLevelPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModuleEntryLevelOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -315,7 +315,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Support Assistant Specific Access - Plus" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -337,8 +337,8 @@ source: a schema:CreativeWork ;
 # -- Support Assistant Access Plus Offer Description --
 <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModulePlusOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:SupportAssistantSpecificModulePlusOffer ;
     oplofr:offerNumber "OPAL-SUPPORTASSISTANT-PLUS-UB-001"^^xsd:string ;
-    schema:name "OPAL Support Assistant Module - Plus" ;
-    skos:prefLabel "OPAL Support Assistant Module - Plus" ;
+    schema:name "OPAL Support Assistant Module on Uriburner - Plus" ;
+    skos:prefLabel "OPAL Support Assistant Module on Uriburner - Plus" ;
     schema:comment "This offer allows use of the OPAL Support Assistant Plus Module using your own key." ;
     schema:description "Access to the OPAL Support Assistant Module Plus on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -347,7 +347,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/SupportAssistantSpecificModulePlusPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModulePlusOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -359,7 +359,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Support Assistant Specific Access - Pro" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -381,8 +381,8 @@ source: a schema:CreativeWork ;
 # -- Support Assistant Access Pro Offer Description --
 <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleProOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:SupportAssistantSpecificModuleProOffer ;
     oplofr:offerNumber "OPAL-SUPPORTASSISTANT-PRO-UB-001"^^xsd:string ;
-    schema:name "OPAL Support Assistant Module - Pro" ;
-    skos:prefLabel "OPAL Support Assistant Module - Pro" ;
+    schema:name "OPAL Support Assistant Module on Uriburner - Pro" ;
+    skos:prefLabel "OPAL Support Assistant Module on Uriburner - Pro" ;
     schema:comment "This offer allows use of the OPAL Support Assistant Module using your own key." ;
     schema:description "Access to the OPAL Support Assistant Module on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -391,7 +391,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/SupportAssistantSpecificModuleProPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModuleProOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -402,7 +402,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Support Assistant Access" ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -424,8 +424,8 @@ source: a schema:CreativeWork ;
 # -- Support Assistant Max Offer Description --
 <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleMaxOfferub-server#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:SupportAssistantSpecificModuleMaxOffer ;
     oplofr:offerNumber "OPAL-SUPPORTASSISTANT-MAX-UB-001"^^xsd:string ;
-    schema:name "OPAL Support Assistant - Max" ;
-    skos:prefLabel "OPAL Support Assistant - Max" ;
+    schema:name "OPAL Support Assistant on Uriburner - Max" ;
+    skos:prefLabel "OPAL Support Assistant on Uriburner - Max" ;
     schema:comment "This offer allows use of the OPAL Support Assistant using the system wide key." ;
     schema:description "Access to the OPAL Support Assistant on URIBurner (UB) server." ;
     wdrs:describedby source: ;
@@ -434,7 +434,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/SupportAssistantSpecificModuleMaxPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModuleMaxOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -447,7 +447,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Bring Your Own Key Entry Level - Free" ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     wdrs:describedby source: .
 
 # -- Entry Level License Description (ub-server server)--
@@ -477,7 +477,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/BringYourOwnKeyEntryLevelPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FBringYourOwnKeyEntryLevelOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -488,7 +488,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Bring Your Own Key Plus" ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -520,7 +520,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/BringYourOwnKeyPlusPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FBringYourOwnKeyPlusOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -531,7 +531,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Bring Your Own Key Pro" ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -563,7 +563,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/BringYourOwnKeyProPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FBringYourOwnKeyProOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -574,7 +574,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Max" ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -606,7 +606,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/MaxPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupChatService#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2025-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FMaxOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
