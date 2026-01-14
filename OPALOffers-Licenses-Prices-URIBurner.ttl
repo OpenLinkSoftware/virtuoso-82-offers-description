@@ -24,7 +24,7 @@
 # --- Document Metadata (Simplified Stub) ---
 
 source: a schema:CreativeWork ;
-    schema:name "OPAL Chat Service Offers and Restrictions Definitions" ;
+    schema:name "OPAL Chat Service Offers, License and Price Definitions" ;
     schema:comment "This document describes sample offers for an OPAL Chat Service, referencing predefined OPAL restrictions." ;
     schema:author <http://www.openlinksw.com/#this> ; # Placeholder
     cc:attributionName "OpenLink Software Example" ;
