@@ -18,7 +18,8 @@ source: a schema:CreativeWork ;
     schema:comment "This document describes sample offers for an OPAL Chat Service, referencing predefined OPAL restrictions." ;
     schema:author <http://www.openlinksw.com/#this> ; # Placeholder
     cc:attributionName "OpenLink Software Example" ;
-    schema:datePublished "2025-05-29T00:00:00Z"^^xsd:dateTime .
+    schema:datePublished "2025-05-29T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-02-13T00:00:00Z"^^xsd:dateTime .
 
 # --- Licensed Product / Service  ---
 
@@ -601,7 +602,7 @@ source: a schema:CreativeWork ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
 # --- Link provider to offers ---
-<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
     <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleEntryLevelOfferOds-qa#this>,
     <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModulePlusOfferOds-qa#this>,
     <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleProOfferOds-qa#this>,

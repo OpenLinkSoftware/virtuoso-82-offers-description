@@ -10,7 +10,7 @@
 @prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
 
 # --- Link provider to offers ---
-<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
     <http://data.openlinksw.com/oplweb/offer/ApiAccessEntryLevelOfferub-server#this> ,
     <http://data.openlinksw.com/oplweb/offer/ApiAccessMediumLevelOfferub-server#this> ,
     <http://data.openlinksw.com/oplweb/offer/ApiAccessAdvancedLevelOfferub-server#this> ,
