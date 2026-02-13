@@ -8,6 +8,16 @@
 @prefix gr:        <http://purl.org/goodrelations/v1#> .
 @prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
 @prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/OPALOffers-License-Prices-ODS-QA-API.ttl> .
+
+# --- Document Metadata ---
+source: a schema:CreativeWork ;
+    schema:name "OPAL Chat API Offers, License and Price Definitions" ;
+    schema:comment "This document describes sample offers for an OPAL Chat API Service, referencing predefined OPAL restrictions." ;
+    schema:author <http://www.openlinksw.com/#this> ; # Placeholder
+    cc:attributionName "OpenLink Software Example" ;
+    schema:datePublished "2026-02-13T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-02-13T00:00:00Z"^^xsd:dateTime .
 
 # --- Link provider to offers ---
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
