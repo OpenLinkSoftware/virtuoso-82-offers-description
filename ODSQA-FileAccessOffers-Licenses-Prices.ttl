@@ -1,0 +1,101 @@
+## Turtle Start ##
+@prefix schema:    <http://schema.org/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/FileAccessOffers-License-Prices.ttl> .
+@prefix :          <#> . # Base URI for this document's entities
+
+# --- Document Metadata (Simplified Stub) ---
+
+source: a schema:CreativeWork ;
+    schema:name "XYZ Knowledge Graph File Access Offers Definitions" ;
+    schema:comment "This document describes sample offers for access to specific files." ;
+    schema:author <http://www.openlinksw.com/#this> ; # Placeholder
+    cc:attributionName "OpenLink Software Example" ;
+    schema:datePublished "2026-01-19T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-03-10T00:00:00Z"^^xsd:dateTime .
+
+# --- Licensed Product / Service  ---
+
+# File access
+<http://data.openlinksw.com/oplweb/ods-qaFA#this> a schema:WebAPI ;
+    schema:name "XYZ Knowledge Graph File access via ods-qa"@en ;
+    schema:applicationCategory "File Access"@en ;
+    schema:applicationSubCategory "ACL controlled file access"@en ;
+    schema:description """Attribute-based, access control constrained access to a File hosted by ods-qa.openlinksw.com."""@en ;
+# -- OPAL server needed to create the ACLs
+    skos:related <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
+    schema:provider [
+        a schema:Organization ;
+        schema:name "OpenLink Software"@en ;
+        schema:url <https://www.openlinksw.com/> ;
+    ] ;
+    schema:url <https://ods-qa.openlinksw.com/> ;
+    schema:hasPart
+        [
+            a schema:WebAPI ;
+            schema:name "WebDAV Service Endpoint"@en ;
+            schema:description """WebDAV Endpoint for file interactions."""@en ;
+            schema:serviceType "WebDAV Service"@en ;
+            schema:url <https://ods-qa.openlinksw.com/DAV>
+        ] .
+
+
+# --- File Access Offers ---
+# -- Price Specification --
+<http://data.openlinksw.com/oplweb/offer-unitprice/XYZFileAccessPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "9.99"^^xsd:decimal ;
+    schema:unitCode "C62"^^xsd:string ; # Piece
+    schema:name "Demo File Access" ;
+    schema:validFrom "2026-01-19T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-07-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    oplofr:interval "month"^^xsd:string ;
+    oplofr:intervalCount "1"^^xsd:integer ;
+    wdrs:describedby source: .
+
+# -- License Description (ods-qa server)--
+<http://data.openlinksw.com/oplweb/license/XYZFileAccessLicenseOds-qa#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
+    schema:name "License for accessing XYZ file hosted on ods-qa" ;
+    skos:prefLabel "XYZ file access License for ods-qa" ;
+    skos:altLabel "License for accessing XYZ file, a Knowledge Graph container, hosted on ods-qa" ;
+    schema:description "This license grants access to file (https://ods-qa.openlinksw.com/DAV/home/JacquelineHand/TestFile/) on a read-only basis." ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaFA#this> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/XYZFileAccessOfferOds-qa#this> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:uriParameter <https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl> ;
+    wdrs:describedby source: .
+
+# -- Offer Description --
+<http://data.openlinksw.com/oplweb/offer/XYZFileAccessOfferOds-qa#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:XYZFileAccessOffer ;
+    oplofr:offerNumber "XYZFILEACCESS-ODSQA-001"^^xsd:string ;
+    schema:name "XYZ File Access on ods-qa" ;
+    skos:prefLabel "XYZ File Access on ods-qa" ;
+    schema:comment "Purchase of this offer grants you to access the file, https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl, on a read-only basis." ;
+    schema:description "Demo file access allowing read-only access to Purchase of this offer grants you to access the file, https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl, on a read-only basis." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/XYZFileAccessLicenseOds-qa#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/XYZFileAccessPriceSpecification#this> ;
+    oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupFileAccess#this> ;
+    schema:validFrom "2026-01-19T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FXYZFileAccessOfferOds-qa%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+
+# --- Link provider to offers ---
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
+    <http://data.openlinksw.com/oplweb/offer/XYZFileAccessOfferOds-qa#this> .
+
+## Turtle End ##
