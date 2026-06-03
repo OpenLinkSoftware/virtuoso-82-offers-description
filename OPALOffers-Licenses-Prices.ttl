@@ -573,7 +573,7 @@ source: a schema:CreativeWork ;
 # -- Max License Description (ods-qa server)--
 <http://data.openlinksw.com/oplweb/license/MaxLicenseOds-qa#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
-    oplsof:hasDatabopl_shop_stripe.sqlaseFamily oplsof:WorldWideWeb ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
     schema:name "Max License for ods-qa" ;
     skos:prefLabel "Max License for ods-qa" ;

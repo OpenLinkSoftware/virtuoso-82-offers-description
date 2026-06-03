@@ -17,7 +17,7 @@ source: a schema:CreativeWork ;
     schema:author <http://www.openlinksw.com/#this> ; # Placeholder
     cc:attributionName "OpenLink Software Example" ;
     schema:datePublished "2026-02-13T00:00:00Z"^^xsd:dateTime ;
-    schema:dateModified "2026-02-13T00:00:00Z"^^xsd:dateTime .
+    schema:dateModified "2026-06-01T00:00:00Z"^^xsd:dateTime .
 
 # --- Link provider to offers ---
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
@@ -45,7 +45,7 @@ source: a schema:CreativeWork ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessEntryLevelLicenseub-server#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessEntryLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessEntryLevelOfferub-server%23this> ;
     schema:url <https://linkeddata.uriburner.com/chat/api> .
@@ -63,7 +63,7 @@ source: a schema:CreativeWork ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseub-server#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMediumLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMediumLevelOfferub-server%23this> ;
     schema:url <https://linkeddata.uriburner.com/chat/api> .
@@ -81,7 +81,7 @@ source: a schema:CreativeWork ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseub-server#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessAdvancedLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessAdvancedLevelOfferub-server%23this> ;
     schema:url <https://linkeddata.uriburner.com/chat/api> .
@@ -99,7 +99,7 @@ source: a schema:CreativeWork ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseub-server#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMaxPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMaxOfferub-server%23this> ;
     schema:url <https://linkeddata.uriburner.com/chat/api> .
@@ -174,7 +174,7 @@ source: a schema:CreativeWork ;
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "0.00"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:prefLabel "API Access Entry Level (Free)" .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMediumLevelPriceSpecification#this>
@@ -182,7 +182,7 @@ source: a schema:CreativeWork ;
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "9.99"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     skos:prefLabel "API Access Medium Level" .
@@ -192,7 +192,7 @@ source: a schema:CreativeWork ;
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "19.99"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     skos:prefLabel "API Access Advanced" .
@@ -202,7 +202,7 @@ source: a schema:CreativeWork ;
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "49.99"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     skos:prefLabel "API Access Max (System-Wide)" .

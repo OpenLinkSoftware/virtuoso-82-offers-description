@@ -2,10 +2,10 @@
 @prefix schema:    <http://schema.org/> .
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
 @prefix foaf:      <http://xmlns.com/foaf/0.1/> .
 @prefix acl:       <http://www.w3.org/ns/auth/acl#> .
+@prefix filter:    <http://www.openlinksw.com/schemas/acl/filter#> .
 @prefix oplacl:    <http://www.openlinksw.com/ontology/acl#> .
 @prefix oplres:    <http://www.openlinksw.com/ontology/restrictions#> .
 @prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
@@ -14,7 +14,7 @@
 # --- Document Metadata ---
 
 source: a schema:CreativeWork ;
-    schema:name "OPAL and Graph Access Authorization, Groups and Restrictions Definitions" ;
+    schema:name "OPAL, Graph, and File Access Authorization, Groups and Restrictions Definitions" ;
     schema:comment "This document describes the rules, groups and restrictions required for the OPAL and graph access offers." ;
     schema:author <http://www.openlinksw.com/#this> ;
     schema:datePublished "2026-01-14T00:00:00Z"^^xsd:dateTime .
@@ -33,6 +33,10 @@ source: a schema:CreativeWork ;
 <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> a oplofr:OfferGroup ;
     schema:name "Specific Knowledge Graph Access Offers" ;
     rdfs:label "Specific Knowledge Graph Access Offers" .
+
+<http://data.openlinksw.com/oplweb/OfferGroupFileAccess#this> a oplofr:OfferGroup ;
+    schema:name "Specific Knowledge File Access Offers" ;
+    rdfs:label "Specific Knowledge File Access Offers" .
 
 ## --- Opal Chat Access ---
 # ==============================================================================
@@ -470,7 +474,6 @@ oplacl:chat-access-offers a acl:Authorization ;
   schema:name "Rule to allow access to /chat when an offer is purchased" ;
   acl:accessTo <urn:oai:chat> ;
   oplacl:hasAccessMode oplacl:Read, oplacl:Write ;
-  acl:agent <http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsers#this> ;
   acl:agent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
   acl:agent <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> ;
   acl:agent <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> ;
@@ -731,7 +734,6 @@ oplres:api-medium-modules a oplres:Restriction ;
     oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> .
 
 # --- Advanced Level Features ---
-
 # Adds: Agent Configs (Implied by Module Access, effectively Same tools as Medium + Config permission)
 
 oplres:api-advanced-tools a oplres:Restriction ;
@@ -784,7 +786,6 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
     oplacl:hasRealm oplacl:DefaultRealm ;
     oplacl:hasScope oplacl:OAuth .
 
-
 ## --- Graph Access ---
 # ==============================================================================
 # Conditonal Group Definitions for each offer type
@@ -816,6 +817,66 @@ oplacl:demo-graph-access a acl:Authorization ;
   oplacl:hasRealm oplacl:DefaultRealm ;
   oplacl:hasScope oplacl:PrivateGraphs ;
   acl:agent <http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsers#this> ;
+  wdrs:describedby <#source> .
+
+
+## --- File Access ---
+# ==============================================================================
+# ACL Filter conditions for each offer type
+# ==============================================================================
+
+<https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl/criteria_1_1> a filter:Criteria ;
+  filter:statement "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{webid}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{webid}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:XYZFileAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{webid}^, ?license) > 0) .}"
+     .
+
+<https://ods-qa.openlinksw.com/DAV/data/TestFile.txt/criteria_1_1> a filter:Criteria ;
+  filter:statement "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{webid}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{webid}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:TestFileAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{webid}^, ?license) > 0) .}" 
+     .
+
+<https://ods-qa.openlinksw.com/DAV/data/TestFile2.txt/criteria_1_1> a filter:Criteria ;
+  filter:statement "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{webid}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{webid}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:TestFile2AccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{webid}^, ?license) > 0) .}" 
+     .
+
+# ==============================================================================
+# Restrictions
+# ==============================================================================
+
+# --- Limits ---
+
+# ==============================================================================
+# Rules
+# ==============================================================================
+
+# --- File access rule ---
+
+<https://ods-qa.openlinksw.com/DAV/data/TestFile.txt/aci_1> a acl:Authorization ;
+  schema:name "Rule to allow access to the Test file" ;
+  acl:accessTo <https://ods-qa.openlinksw.com/DAV/data/TestFile.txt> ;
+  acl:mode acl:Read ;
+  wdrs:describedby <#source> .
+
+<https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl/aci_1> a acl:Authorization ;
+  schema:name "Rule to allow access to the TTL Test file" ;
+  acl:accessTo <https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl> ;
+  acl:mode acl:Read ;
+  wdrs:describedby <#source> .
+
+<https://ods-qa.openlinksw.com/DAV/data/TestFile2.txt/aci_1> a acl:Authorization ;
+  schema:name "Rule to allow access to the Test file" ;
+  acl:accessTo <https://ods-qa.openlinksw.com/DAV/data/TestFile2.txt> ;
+  acl:mode acl:Read ;
+  wdrs:describedby <#source> .
+
+# -- TTL file also needs rule to allow the file access users to use /sparql to describe ttl files using the faceted browser?
+# -- I have not been able to make this work
+
+oplacl:fct-access a acl:Authorization ;
+  schema:name "Rule to allow access to /sparql for user who purchase file access" ;
+  acl:accessTo <urn:virtuoso:access:sparql> ;
+  oplacl:hasAccessMode oplacl:Read ;
+  oplacl:hasRealm oplacl:DefaultRealm ;
+  oplacl:hasScope oplacl:Query ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/XYZFileAccessUsers#this> ;
   wdrs:describedby <#source> .
 
 ## Turtle End ##
