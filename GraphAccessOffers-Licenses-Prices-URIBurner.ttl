@@ -1,0 +1,102 @@
+## Turtle Start ##
+@prefix schema:    <http://schema.org/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/GraphAccessOffers-License-Prices.ttl> .
+@prefix :          <#> . # Base URI for this document's entities
+
+# --- Document Metadata (Simplified Stub) ---
+
+source: a schema:CreativeWork ;
+    schema:name "Knowledge Graph Access Offers Definitions" ;
+    schema:comment "This document describes offers for access to specific knowledge graphs hosted on URIBurner." ;
+    schema:author <http://www.openlinksw.com/#this> ; # Placeholder
+    cc:attributionName "OpenLink Software Example" ;
+    schema:datePublished "2026-06-09T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-06-09T00:00:00Z"^^xsd:dateTime .
+
+# --- Licensed Product / Service  ---
+
+# Knowledge graph access
+<http://data.openlinksw.com/oplweb/URIBurnerDA#this> a schema:WebAPI ;
+    a schema:Service ;
+    schema:name "Knowledge graph access via URIBurner"@en ;
+    schema:applicationCategory "Data Access"@en ;
+    schema:applicationSubCategory "ACL controlled knowledge graph access"@en ;
+    schema:description """Knowledge graph hosted by URIBurner, can be explored via the /sparql endpoint."""@en ;
+    schema:softwareVersion "1.0"@en ;
+# -- OPAL server needed to create the ACLs
+    skos:related <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
+    schema:provider [
+        a schema:Organization ;
+        schema:name "OpenLink Software"@en ;
+        schema:url <https://www.openlinksw.com/> ;
+    ] ;
+    schema:url <https://linkeddata.uriburner.com/> ;
+    schema:hasPart
+        [
+            a schema:WebAPI ;
+            schema:name "SPARQL Query Service Endpoint"@en ;
+            schema:description """HTTP SPARQL Query Service Endpoint."""@en ;
+            schema:serviceType "SPARQL Query Service"@en ;
+            schema:url <https://linkeddata.uriburner.com/sparql> .
+        ] .
+
+# --- Specific Knowledge Graph Access Offers ---
+# -- Price Specification --
+<http://data.openlinksw.com/oplweb/offer-unitprice/GraphAccessPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "2.99"^^xsd:decimal ;
+    schema:unitCode "C62"^^xsd:string ; # Piece
+    schema:name "Demo Graph Access" ;
+    schema:validFrom "2026-06-09T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    oplofr:interval "month"^^xsd:string ;
+    oplofr:intervalCount "1"^^xsd:integer ;
+    wdrs:describedby source: .
+
+# -- License Description --
+<http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseURIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
+    schema:name "Graph Access License for URIBurner" ;
+    skos:prefLabel "Graph Access License for URIBurner" ;
+    skos:altLabel "Graph Access License for URIBurner" ;
+    schema:description "License to access the <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> knowledge graph on a read-only basis." ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerDA#this> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferURIBurner#this> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:graphParameter <urn:schemaorg:data:abox> ;
+    wdrs:describedby source: .
+
+# -- Offer Description --
+<http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferURIBurner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DemoGraphAccessOfferWorldCupMeshup ;
+    oplofr:offerNumber "DEMOKGACCESS-UB-001"^^xsd:string ;
+    schema:name "Demo Knowledge Graph Access on URIBurner" ;
+    skos:prefLabel "Sample Knowledge Graph Access on URIBurner" ;
+    schema:comment "This allows you to explore the <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> knowledge graph on a read-only basis." ;
+    schema:description "Knowledge graph access on URIBurner allowing read-only access to the <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> knowledge graph." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoGraphAccessLicenseURIBurner#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/GraphAccessPriceSpecification#this> ;
+    oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
+    schema:validFrom "2026-06-09T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferURIBurner%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+
+# --- Link provider to offers ---
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
+    <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferURIBurner#this> .
+
+## Turtle End ##

@@ -798,6 +798,13 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
     oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
      ] .
 
+<http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsersWorldCupMeshup#this> a oplacl:ConditionalGroup ;
+  foaf:name "Users identified using a NetID based Identifier who have purchased the demo graph access offer and whose license is in date" ;
+  oplacl:hasCondition [
+    a oplacl:GroupCondition, oplacl:QueryCondition ;
+    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessOfferWorldCupMeshup ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+     ] .
+
 # ==============================================================================
 # Restrictions
 # ==============================================================================
@@ -819,24 +826,17 @@ oplacl:demo-graph-access a acl:Authorization ;
   acl:agent <http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsers#this> ;
   wdrs:describedby <#source> .
 
+oplacl:demo-graph-access-world-cup-meshup a acl:Authorization ;
+  schema:name "Rule to allow access to the <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> graph" ;
+  acl:accessTo <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> ;
+  oplacl:hasAccessMode oplacl:Read ;
+  oplacl:hasRealm oplacl:DefaultRealm ;
+  oplacl:hasScope oplacl:PrivateGraphs ;
+  acl:agent <http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsersWorldCupMeshup#this> ;
+  wdrs:describedby <#source> .
+
 
 ## --- File Access ---
-# ==============================================================================
-# ACL Filter conditions for each offer type
-# ==============================================================================
-
-<https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl/criteria_1_1> a filter:Criteria ;
-  filter:statement "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{webid}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{webid}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:XYZFileAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{webid}^, ?license) > 0) .}"
-     .
-
-<https://ods-qa.openlinksw.com/DAV/data/TestFile.txt/criteria_1_1> a filter:Criteria ;
-  filter:statement "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{webid}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{webid}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:TestFileAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{webid}^, ?license) > 0) .}" 
-     .
-
-<https://ods-qa.openlinksw.com/DAV/data/TestFile2.txt/criteria_1_1> a filter:Criteria ;
-  filter:statement "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{webid}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{webid}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:TestFile2AccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{webid}^, ?license) > 0) .}" 
-     .
-
 # ==============================================================================
 # Restrictions
 # ==============================================================================
@@ -849,24 +849,6 @@ oplacl:demo-graph-access a acl:Authorization ;
 
 # --- File access rule ---
 
-<https://ods-qa.openlinksw.com/DAV/data/TestFile.txt/aci_1> a acl:Authorization ;
-  schema:name "Rule to allow access to the Test file" ;
-  acl:accessTo <https://ods-qa.openlinksw.com/DAV/data/TestFile.txt> ;
-  acl:mode acl:Read ;
-  wdrs:describedby <#source> .
-
-<https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl/aci_1> a acl:Authorization ;
-  schema:name "Rule to allow access to the TTL Test file" ;
-  acl:accessTo <https://ods-qa.openlinksw.com/DAV/knowledge_graphs/ODSQA-FileAccessOffers-Licenses-Prices.ttl> ;
-  acl:mode acl:Read ;
-  wdrs:describedby <#source> .
-
-<https://ods-qa.openlinksw.com/DAV/data/TestFile2.txt/aci_1> a acl:Authorization ;
-  schema:name "Rule to allow access to the Test file" ;
-  acl:accessTo <https://ods-qa.openlinksw.com/DAV/data/TestFile2.txt> ;
-  acl:mode acl:Read ;
-  wdrs:describedby <#source> .
-
 # -- TTL file also needs rule to allow the file access users to use /sparql to describe ttl files using the faceted browser?
 # -- I have not been able to make this work
 
@@ -878,5 +860,6 @@ oplacl:fct-access a acl:Authorization ;
   oplacl:hasScope oplacl:Query ;
   acl:agent <http://data.openlinksw.com/oplweb/group/XYZFileAccessUsers#this> ;
   wdrs:describedby <#source> .
+
 
 ## Turtle End ##
