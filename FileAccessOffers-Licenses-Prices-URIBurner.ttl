@@ -1,0 +1,134 @@
+## Turtle Start ##
+@prefix schema:    <http://schema.org/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/FileAccessOffers-License-Prices.ttl> .
+@prefix :          <#> . # Base URI for this document's entities
+
+# --- Document Metadata (Simplified Stub) ---
+
+source: a schema:CreativeWork ;
+    schema:name "Demo File Access Offers Definitions" ;
+    schema:comment "This document describes offers for access to specific files hosted on URIBurner." ;
+    schema:author <http://www.openlinksw.com/#this> ; # Placeholder
+    cc:attributionName "OpenLink Software Example" ;
+    schema:datePublished "2026-06-09T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-06-09T00:00:00Z"^^xsd:dateTime .
+
+# --- Licensed Product / Service  ---
+
+# File access
+<http://data.openlinksw.com/oplweb/URIBurnerFA#this> a schema:WebAPI ;
+    schema:name "File access via URIBurner"@en ;
+    schema:applicationCategory "File Access"@en ;
+    schema:applicationSubCategory "ACL controlled file access"@en ;
+    schema:description """Attribute-based, access control constrained access to a File hosted by URIBurner."""@en ;
+# -- OPAL server needed to create the ACLs
+    skos:related <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
+    schema:provider [
+        a schema:Organization ;
+        schema:name "OpenLink Software"@en ;
+        schema:url <https://www.openlinksw.com/> ;
+    ] ;
+    schema:url <https://linkeddata.uriburner.com/> ;
+    schema:hasPart
+        [
+            a schema:WebAPI ;
+            schema:name "WebDAV Service Endpoint"@en ;
+            schema:description """WebDAV Endpoint for file interactions."""@en ;
+            schema:serviceType "WebDAV Service"@en ;
+            schema:url <https://linkeddata.uriburner.com/DAV> .
+        ] .
+
+# --- File Access Offers ---
+# -- Price Specification --
+<http://data.openlinksw.com/oplweb/offer-unitprice/FileAccessPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "2.99"^^xsd:decimal ;
+    schema:unitCode "C62"^^xsd:string ; # Piece
+    schema:name "File Access" ;
+    schema:validFrom "2026-06-09T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    oplofr:interval "month"^^xsd:string ;
+    oplofr:intervalCount "1"^^xsd:integer ;
+    wdrs:describedby source: .
+
+# -- License Description --
+<http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense1URIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
+    schema:name "License for accessing world-cup-2026-meshup-kg-1.html hosted on URIBurner" ;
+    skos:prefLabel "HTML file access License for URIBurner" ;
+    skos:altLabel "License for accessing world-cup-2026-meshup-kg-1.html, an HTML file, hosted on URIBurner" ;
+    schema:description "This license grants access to file (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html) on a read-only basis." ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerFA#this> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer1URIBurner#this> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:uriParameter <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html> ;
+    wdrs:describedby source: .
+
+# -- Offer Description --
+<http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer1URIBurner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DAVOffer, oplofr:DemoFileAccessOffer ;
+    oplofr:offerNumber "DEMOFILEACCESS-UB-001"^^xsd:string ;
+    schema:name "Demo File Access on URIBurner" ;
+    skos:prefLabel "Demo File Access on UriBurner" ;
+    schema:comment "Purchase of this offer grants you to access the file, https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html, on a read-only basis." ;
+    schema:description "File access offer allowing read-only access to https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html, on a read-only basis." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense1URIBurner#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/FileAccessPriceSpecification#this> ;
+    oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupFileAccess#this> ;
+    schema:validFrom "2026-06-09T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:potentialAction <https://shop.openlinksw.com/shop/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoFileAccessOffer1URIBurner%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+
+# -- License Description --
+<http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense2URIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+    oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
+    schema:name "License for accessing world-cup-2026-meshup-kg-1.ttl hosted on URIBurner" ;
+    skos:prefLabel "TTL file access License for URIBurner" ;
+    skos:altLabel "License for accessing world-cup-2026-meshup-kg-1.ttl, a TTL file, hosted on URIBurner" ;
+    schema:description "This license grants access to file (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl) on a read-only basis." ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerFA#this> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer2URIBurner#this> ;
+    opllic:hasDuration <http://linkeddata.uriburner.com/oplweb/license/License-Duration#annual> ;
+    opllic:uriParameter <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl> ;
+    wdrs:describedby source: .
+
+# -- Offer Description --
+<http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer2URIBurner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DAVOffer, oplofr:DemoFileAccessOffer ;
+    oplofr:offerNumber "DEMOFILEACCESS-UB-002"^^xsd:string ;
+    schema:name "TTL File Access on URIBurner" ;
+    skos:prefLabel "TTL File Access on URIBurner" ;
+    schema:comment "Purchase of this offer grants you to access the file, https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl, on a read-only basis." ;
+    schema:description "File access offer allowing read-only access to https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl, on a read-only basis." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense2URIBurner#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/FileAccessPriceSpecification#this> ;
+    oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupFileAccess#this> ;
+    schema:validFrom "2026-06-09T00:00:00Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:potentialAction <https://shop.openlinksw.com/shop/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoFileAccessOffer2URIBurner%23this> ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+
+
+# --- Link provider to offers ---
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
+    <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer1URIBurner#this> ,
+    <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer2URIBurner#this> .
+
+## Turtle End ##

@@ -8,9 +8,19 @@
 @prefix gr:        <http://purl.org/goodrelations/v1#> .
 @prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
 @prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/OPALOffers-License-Prices-ODS-QA-API.ttl> .
+
+# --- Document Metadata ---
+source: a schema:CreativeWork ;
+    schema:name "OPAL Chat API Offers, License and Price Definitions" ;
+    schema:comment "This document describes sample offers for an OPAL Chat API Service, referencing predefined OPAL restrictions." ;
+    schema:author <http://www.openlinksw.com/#this> ; # Placeholder
+    cc:attributionName "OpenLink Software Example" ;
+    schema:datePublished "2026-02-13T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-06-01T00:00:00Z"^^xsd:dateTime .
 
 # --- Link provider to offers ---
-<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
     <http://data.openlinksw.com/oplweb/offer/ApiAccessEntryLevelOfferOds-qa#this> ,
     <http://data.openlinksw.com/oplweb/offer/ApiAccessMediumLevelOfferOds-qa#this> ,
     <http://data.openlinksw.com/oplweb/offer/ApiAccessAdvancedLevelOfferOds-qa#this> ,
@@ -35,7 +45,7 @@
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessEntryLevelLicenseOds-qa#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessEntryLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessEntryLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
@@ -53,7 +63,7 @@
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseOds-qa#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMediumLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMediumLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
@@ -71,7 +81,7 @@
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseOds-qa#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessAdvancedLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessAdvancedLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
@@ -89,7 +99,7 @@
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseOds-qa#this> ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMaxPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMaxOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
@@ -164,7 +174,7 @@
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "0.00"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     skos:prefLabel "API Access Entry Level (Free)" .
 
 <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMediumLevelPriceSpecification#this>
@@ -172,7 +182,7 @@
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "9.99"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     skos:prefLabel "API Access Medium Level" .
@@ -182,7 +192,7 @@
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "19.99"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     skos:prefLabel "API Access Advanced" .
@@ -192,7 +202,7 @@
     schema:priceCurrency "USD"^^xsd:string ;
     schema:price "49.99"^^xsd:decimal ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     skos:prefLabel "API Access Max (System-Wide)" .
@@ -206,6 +216,7 @@
 <http://data.openlinksw.com/oplweb/ods-qaOPAL-API#this> a schema:WebAPI ;
     schema:name "OPAL Chat API via ods-qa"@en ;
     schema:description "API endpoint for interacting with OPAL on ODS-QA, enabling programmatic Machine-Centric Programming (MCP) chat sessions."@en ;
+    schema:serviceType "MCP-compliant AI Chat Agent API"@en ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> ;
     skos:related <http://data.openlinksw.com/oplweb/ods-qaOPAL#this> ;
     schema:provider [

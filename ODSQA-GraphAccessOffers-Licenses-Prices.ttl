@@ -19,7 +19,8 @@ source: a schema:CreativeWork ;
     schema:comment "This document describes sample offers for access to specific knowledge graphs." ;
     schema:author <http://www.openlinksw.com/#this> ; # Placeholder
     cc:attributionName "OpenLink Software Example" ;
-    schema:datePublished "2025-10-30T00:00:00Z"^^xsd:dateTime .
+    schema:datePublished "2025-10-30T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-06-01T00:00:00Z"^^xsd:dateTime .
 
 # --- Licensed Product / Service  ---
 
@@ -78,7 +79,7 @@ source: a schema:CreativeWork ;
     schema:unitCode "C62"^^xsd:string ; # Piece
     schema:name "Demo Graph Access" ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     oplofr:interval "month"^^xsd:string ;
     oplofr:intervalCount "1"^^xsd:integer ;
     wdrs:describedby source: .
@@ -95,6 +96,7 @@ source: a schema:CreativeWork ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/ods-qaDA#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferOds-qa#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:graphParameter <urn:demo:graph> ;
     wdrs:describedby source: .
 
 # -- Offer Description --
@@ -110,7 +112,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferOds-qa%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
@@ -141,13 +143,13 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/DemoGraphAccessPriceSpecification#this> ;
     oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
-    schema:validThrough "2026-03-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoGraphAccessOfferub-server%23this> ;
     skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
 
 
 # --- Link provider to offers ---
-<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:makesOffer
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
     <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferOds-qa#this> ,
     <http://data.openlinksw.com/oplweb/offer/DemoGraphAccessOfferub-server#this> .
 
