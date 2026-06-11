@@ -20,7 +20,7 @@ source: a schema:CreativeWork ;
     schema:author <http://www.openlinksw.com/#this> ; # Placeholder
     cc:attributionName "OpenLink Software Example" ;
     schema:datePublished "2026-06-09T00:00:00Z"^^xsd:dateTime ;
-    schema:dateModified "2026-06-09T00:00:00Z"^^xsd:dateTime .
+    schema:dateModified "2026-06-11T00:00:00Z"^^xsd:dateTime .
 
 # --- Licensed Product / Service  ---
 
@@ -64,24 +64,24 @@ source: a schema:CreativeWork ;
 <http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense1URIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
-    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
-    schema:name "License for accessing world-cup-2026-meshup-kg-1.html hosted on URIBurner" ;
-    skos:prefLabel "HTML file access License for URIBurner" ;
-    skos:altLabel "License for accessing world-cup-2026-meshup-kg-1.html, an HTML file, hosted on URIBurner" ;
-    schema:description "This license grants access to file (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html) on a read-only basis." ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/world-cup-2026-file-access.jpg> ;
+    schema:name "License for accessing the 2026 FIFA World Cup Country & Player Guide Meshup Infographic (HTML) on URIBurner" ;
+    skos:prefLabel "2026 World Cup Country & Player Guide Infographic License (HTML)" ;
+    skos:altLabel "Read-only access license for the 2026 FIFA World Cup Country & Player Guide Meshup HTML infographic, hosted on URIBurner" ;
+    schema:description "This license grants read-only access to the 2026 FIFA World Cup Country & Player Guide Meshup HTML infographic (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.html) — a GPT-5 Chat-generated interactive page meshing country qualification data with The Guardian's complete player guide." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerFA#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer1URIBurner#this> ;
     opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
-    opllic:uriParameter <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html> ;
+    opllic:uriParameter <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.html> ;
     wdrs:describedby source: .
 
 # -- Offer Description --
 <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer1URIBurner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DAVOffer, oplofr:DemoFileAccessOffer ;
-    oplofr:offerNumber "DEMOFILEACCESS-UB-001"^^xsd:string ;
-    schema:name "Demo File Access on URIBurner" ;
-    skos:prefLabel "Demo File Access on UriBurner" ;
-    schema:comment "Purchase of this offer grants you to access the file, https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html, on a read-only basis." ;
-    schema:description "File access offer allowing read-only access to https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.html, on a read-only basis." ;
+    oplofr:offerNumber "KG-HTML-FILE-ACCESS-UB-WORLDCUP-GUIDE"^^xsd:string ;
+    schema:name "2026 FIFA World Cup Country & Player Guide Meshup Infographic (HTML) — File Access on URIBurner" ;
+    skos:prefLabel "2026 World Cup Country & Player Guide HTML Infographic Access" ;
+    schema:comment "Purchasing this offer grants read-only access to the 2026 FIFA World Cup Country & Player Guide Meshup HTML infographic (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.html) — a GPT-5 Chat-generated interactive infographic combining country qualification and player guide data." ;
+    schema:description "File access offer providing read-only access to the GPT-5 Chat-generated 2026 FIFA World Cup Country & Player Guide Meshup HTML infographic at https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.html, hosted on URIBurner." ;
     wdrs:describedby source: ;
     schema:businessFunction gr:Sell ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense1URIBurner#this> ;
@@ -97,24 +97,24 @@ source: a schema:CreativeWork ;
 <http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense2URIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
-    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/controlled-access-to-data-assets.jpg> ;
-    schema:name "License for accessing world-cup-2026-meshup-kg-1.ttl hosted on URIBurner" ;
-    skos:prefLabel "TTL file access License for URIBurner" ;
-    skos:altLabel "License for accessing world-cup-2026-meshup-kg-1.ttl, a TTL file, hosted on URIBurner" ;
-    schema:description "This license grants access to file (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl) on a read-only basis." ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/world-cup-2026-file-access.jpg> ;
+    schema:name "License for accessing the 2026 FIFA World Cup Country & Player Guide Knowledge Graph (RDF-Turtle) on URIBurner" ;
+    skos:prefLabel "2026 World Cup Country & Player Guide Knowledge Graph License (RDF-Turtle)" ;
+    skos:altLabel "Read-only access license for the 2026 FIFA World Cup Country & Player Guide Meshup RDF-Turtle knowledge graph, hosted on URIBurner" ;
+    schema:description "This license grants read-only access to the 2026 FIFA World Cup Country & Player Guide Meshup RDF-Turtle knowledge graph (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl) — a GPT-5 Chat-generated knowledge graph meshing country qualification data with The Guardian's complete player guide." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerFA#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer2URIBurner#this> ;
-    opllic:hasDuration <http://linkeddata.uriburner.com/oplweb/license/License-Duration#annual> ;
-    opllic:uriParameter <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:uriParameter <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl> ;
     wdrs:describedby source: .
 
 # -- Offer Description --
 <http://data.openlinksw.com/oplweb/offer/DemoFileAccessOffer2URIBurner#this> a schema:Offer, oplofr:SubscriptionOffer, oplofr:DAVOffer, oplofr:DemoFileAccessOffer ;
-    oplofr:offerNumber "DEMOFILEACCESS-UB-002"^^xsd:string ;
-    schema:name "TTL File Access on URIBurner" ;
-    skos:prefLabel "TTL File Access on URIBurner" ;
-    schema:comment "Purchase of this offer grants you to access the file, https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl, on a read-only basis." ;
-    schema:description "File access offer allowing read-only access to https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-meshup-kg-1.ttl, on a read-only basis." ;
+    oplofr:offerNumber "KG-TTL-FILE-ACCESS-UB-WORLDCUP-GUIDE"^^xsd:string ;
+    schema:name "2026 FIFA World Cup Country & Player Guide Knowledge Graph (RDF-Turtle) — File Access on URIBurner" ;
+    skos:prefLabel "2026 World Cup Country & Player Guide RDF-Turtle Knowledge Graph Access" ;
+    schema:comment "Purchasing this offer grants read-only access to the 2026 FIFA World Cup Country & Player Guide Meshup RDF-Turtle knowledge graph (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl) — a GPT-5 Chat-generated knowledge graph combining country qualification and player guide data." ;
+    schema:description "File access offer providing read-only access to the GPT-5 Chat-generated 2026 FIFA World Cup Country & Player Guide Meshup RDF-Turtle knowledge graph at https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl, hosted on URIBurner." ;
     wdrs:describedby source: ;
     schema:businessFunction gr:Sell ;
     schema:itemOffered <http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense2URIBurner#this> ;

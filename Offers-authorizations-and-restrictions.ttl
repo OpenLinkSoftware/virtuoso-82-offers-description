@@ -827,8 +827,8 @@ oplacl:demo-graph-access a acl:Authorization ;
   wdrs:describedby <#source> .
 
 oplacl:demo-graph-access-world-cup-meshup a acl:Authorization ;
-  schema:name "Rule to allow access to the <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> graph" ;
-  acl:accessTo <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> ;
+  schema:name "Rule to allow access to the <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl> graph" ;
+  acl:accessTo <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl> ;
   oplacl:hasAccessMode oplacl:Read ;
   oplacl:hasRealm oplacl:DefaultRealm ;
   oplacl:hasScope oplacl:PrivateGraphs ;
