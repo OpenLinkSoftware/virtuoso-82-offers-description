@@ -216,6 +216,7 @@ source: a schema:CreativeWork ;
 <http://data.openlinksw.com/oplweb/URIBurnerOPAL-API#this> a schema:WebAPI ;
     schema:name "OPAL Chat API via Uriburner" ;
     schema:description "API endpoint for interacting with OPAL on URIBurner, enabling programmatic Machine-Centric Programming (MCP) chat sessions." ;
+    schema:serviceType "MCP-compliant AI Chat Agent API"@en ;
     schema:url <https://linkeddata.uriburner.com/chat/api> ;
     skos:related <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     schema:provider [
