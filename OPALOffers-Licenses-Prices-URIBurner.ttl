@@ -118,7 +118,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModuleEntryLevelOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Data Twingler Plus Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/DataTwinglerSpecificModulePlusPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification,  oplofr:SubscriptionPriceSpecification ;
@@ -162,7 +162,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModulePlusOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Data Twingler Pro Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/DataTwinglerSpecificModuleProPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification,  oplofr:SubscriptionPriceSpecification ;
@@ -206,7 +206,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModuleProOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Data Twingler Max Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/DataTwinglerSpecificModuleMaxPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification,  oplofr:SubscriptionPriceSpecification ;
@@ -250,7 +250,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDataTwinglerSpecificModuleMaxOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 
 # --- Virtuoso Support Agent Offers ---
@@ -296,7 +296,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModuleEntryLevelOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Support Assistant Access Plus Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/SupportAssistantSpecificModulePlusPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification,  oplofr:SubscriptionPriceSpecification ;
@@ -340,7 +340,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModulePlusOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Support Assistant Access Pro Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/SupportAssistantSpecificModuleProPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification,  oplofr:SubscriptionPriceSpecification ;
@@ -384,7 +384,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModuleProOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Support Assistant Max Price Specification
 <http://data.openlinksw.com/oplweb/offer-unitprice/SupportAssistantSpecificModuleMaxPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification, oplofr:SubscriptionPriceSpecification ;
@@ -427,7 +427,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-01-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FSupportAssistantSpecificModuleMaxOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 
 # --- Generic Chat Offers ---
@@ -470,7 +470,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FBringYourOwnKeyEntryLevelOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Plus Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/BringYourOwnKeyPlusPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
@@ -513,7 +513,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FBringYourOwnKeyPlusOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Pro Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/BringYourOwnKeyProPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
@@ -556,7 +556,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FBringYourOwnKeyProOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 # -- Max Price Specification --
 <http://data.openlinksw.com/oplweb/offer-unitprice/MaxPriceSpecification#this> a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
@@ -599,7 +599,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2025-10-01T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FMaxOfferub-server%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 
 
