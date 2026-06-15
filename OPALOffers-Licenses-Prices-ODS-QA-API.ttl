@@ -46,7 +46,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessEntryLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessEntryLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 
@@ -64,7 +64,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMediumLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMediumLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 
@@ -82,7 +82,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessAdvancedLevelPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessAdvancedLevelOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 
@@ -100,7 +100,7 @@ source: a schema:CreativeWork ;
     schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/ApiAccessMaxPriceSpecification#this> ;
     schema:validFrom "2025-12-01T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-05-31T23:59:59Z"^^xsd:dateTime ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] ;
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FApiAccessMaxOfferOds-qa%23this> ;
     schema:url <https://ods-qa.openlinksw.com/chat/api> .
 

@@ -90,7 +90,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2026-06-09T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/shop/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoFileAccessOffer1URIBurner%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 
 # -- License Description --
@@ -123,7 +123,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2026-06-09T00:00:00Z"^^xsd:dateTime ; # Placeholder
     schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ; # Placeholder
     schema:potentialAction <https://shop.openlinksw.com/shop/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FDemoFileAccessOffer2URIBurner%23this> ;
-    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/virtuoso#this> ] .
+    skos:related [oplpro:hasFamily    <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
 
 
 # --- Link provider to offers ---
