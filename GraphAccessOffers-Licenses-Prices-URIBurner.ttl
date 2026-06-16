@@ -73,7 +73,7 @@ source: a schema:CreativeWork ;
     schema:description "This license grants read-only SPARQL access to the 2026 FIFA World Cup Country & Player Guide Meshup Named Graph (https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl) — a GPT-5 Chat-generated knowledge graph meshing country qualification data with The Guardian's complete player guide." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerDA#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/WorldCup2026GuideNamedGraphOfferURIBurner#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     opllic:graphParameter <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl> ;
     wdrs:describedby source: .
 
@@ -98,5 +98,13 @@ source: a schema:CreativeWork ;
 # --- Link provider to offers ---
 <http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
     <http://data.openlinksw.com/oplweb/offer/WorldCup2026GuideNamedGraphOfferURIBurner#this> .
+
+## License Duration for Licenses to be associated with offers in this doc
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription>
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/WorldCup2026GuideNamedGraphLicenseURIBurner#this> .
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> a opllic:Duration ; 
+    schema:name "License Duration — Ongoing subscription" .
 
 ## Turtle End ##

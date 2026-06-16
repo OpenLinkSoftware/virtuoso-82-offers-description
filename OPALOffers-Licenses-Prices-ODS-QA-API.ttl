@@ -120,7 +120,7 @@ source: a schema:CreativeWork ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     # Credentials obtained via OAuth
     skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
 
@@ -134,7 +134,7 @@ source: a schema:CreativeWork ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseOds-qa#this>
@@ -147,7 +147,7 @@ source: a schema:CreativeWork ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseOds-qa#this>
@@ -160,7 +160,7 @@ source: a schema:CreativeWork ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
 
 # ==============================================================================
@@ -252,4 +252,15 @@ source: a schema:CreativeWork ;
         ]
     ] .
 
+
+## License Duration for Licenses to be associated with offers in this doc
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription>
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/ApiAccessEntryLevelLicenseOds-qa#this> ,
+                       <http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseOds-qa#this> ,
+                       <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseOds-qa#this> ,
+                       <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseOds-qa#this> .
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> a opllic:Duration ; 
+    schema:name "License Duration — Ongoing subscription" .
 

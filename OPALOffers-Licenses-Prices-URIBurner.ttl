@@ -100,7 +100,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Data Twingler Module on a BYOK basis." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleEntryLevelOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Data Twingler Entry Level Offer Description --
@@ -144,7 +144,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Data Twingler Module on a BYOK basis." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModulePlusOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Data Twingler Plus Offer Description --
@@ -188,7 +188,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Data Twingler Module Pro on a BYOK basis." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleProOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Data Twingler Pro Offer Description --
@@ -232,7 +232,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Data Twingler Module using the system wide API key." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/DataTwinglerSpecificModuleMaxOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Data Twingler Max Offer Description --
@@ -278,7 +278,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Support Assistant Module on a BYOK basis." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleEntryLevelOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Support Assistant Access Entry Level Offer Description --
@@ -322,7 +322,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Support Assistant Module on a BYOK basis." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModulePlusOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Support Assistant Access Plus Offer Description --
@@ -366,7 +366,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Support Assistant Module Pro on a BYOK basis." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleProOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Support Assistant Access Pro Offer Description --
@@ -409,7 +409,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OpenLink Support Assistant using the system wide API key." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/SupportAssistantSpecificModuleMaxOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Support Assistant Max Offer Description --
@@ -452,7 +452,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using your own API key." ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyEntryLevelOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Entry Level Offer Description --
@@ -495,7 +495,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using your own API key.  Includes all the features of the Entry Level Offer plus RDF Sponge, Facet Search and Web Fetch" ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyPlusOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Plus Offer Description --
@@ -538,7 +538,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using your own API key.  Includes all the features of the Plus Offer plus use of available Agent Configs" ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyProOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Pro Offer Description --
@@ -581,7 +581,7 @@ source: a schema:CreativeWork ;
     schema:description "License for interactive use of the OPAL Chat Service on URIBurner (UB) server using the system wide key.  Includes all available features: - BYOK capabilities - Assistants - Agent Configs - System-wide integrations and services" ;
     opllic:productLicenseOf <http://data.openlinksw.com/oplweb/URIBurnerOPAL#this> ;
     opllic:partOf <http://data.openlinksw.com/oplweb/offer/MaxOfferub-server#this> ;
-    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#annual> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
     wdrs:describedby source: .
 
 # -- Max Offer Description --
@@ -618,4 +618,22 @@ source: a schema:CreativeWork ;
     <http://data.openlinksw.com/oplweb/offer/BringYourOwnKeyProOfferub-server#this> ,
     <http://data.openlinksw.com/oplweb/offer/MaxOfferub-server#this> .
 
+
+## License Duration for Licenses to be associated with offers in this doc
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription>
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleEntryLevelLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModulePlusLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleProLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleMaxLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleEntryLevelLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModulePlusLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleProLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleMaxLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/BringYourOwnKeyEntryLevelLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/BringYourOwnKeyPlusLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/BringYourOwnKeyProLicenseub-server#this> ,
+                       <http://data.openlinksw.com/oplweb/license/MaxLicenseub-server#this> .
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> a opllic:Duration ; 
 ## Turtle End ##
