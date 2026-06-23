@@ -233,6 +233,11 @@ source: a schema:CreativeWork ;
         schema:httpMethod "POST" ;
         schema:contentType "application/json" ;
         schema:actionPlatform <http://schema.org/OnlinePlatform>
+    ],
+    [
+       a schema:WebAPI ;
+       schema:serviceType "MCP Server (Streamable HTTP)"@en ;
+       schema:url <https://linkeddata.uriburner.com/chat/mcp/messages>
     ] ;
     schema:potentialAction [
         a schema:CommunicateAction ;
