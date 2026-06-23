@@ -47,88 +47,361 @@ source: a schema:CreativeWork ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModuleEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:DataTwinglerSpecificModuleEntryLevelOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/DataTwinglerPlusSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModulePlusOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:DataTwinglerSpecificModulePlusOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/DataTwinglerProSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModuleProOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:DataTwinglerSpecificModuleProOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/DataTwinglerMaxSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DataTwinglerSpecificModuleMaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:DataTwinglerSpecificModuleMaxOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModuleEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . }"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:SupportAssistantSpecificModuleEntryLevelOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/SupportAssistantPlusSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModulePlusOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:SupportAssistantSpecificModulePlusOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/SupportAssistantProSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Data Twingler Assistant offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModuleProOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:SupportAssistantSpecificModuleProOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/SupportAssistantMaxSpecificChatUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased access to the Support Assistant chat offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:SupportAssistantSpecificModuleMaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:SupportAssistantSpecificModuleMaxOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyEntryLevelUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Entry level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:BringYourOwnKeyEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:BringYourOwnKeyEntryLevelOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyPlusUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Plus level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:BringYourOwnKeyPlusOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:BringYourOwnKeyPlusOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/BringYourOwnKeyProUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Pro level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:BringYourOwnKeyProOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:BringYourOwnKeyProOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/MaxUsers#this> a oplacl:ConditionalGroup ;
   foaf:name "OPAL Users identified using a NetID based Identifier who have purchased the Max level offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:MaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:MaxOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 # ==============================================================================
-# Restrictions
+# Restrictions
 # ==============================================================================
 
 # ------------------------------------------------------------------------------
@@ -376,7 +649,7 @@ oplres:use-data-twingler a oplres:Restriction ;
   schema:name "Session Scoped to Data Twingler module" ;
   schema:description "OPAL Sessions that use the Data Twingler module" ;
   oplres:hasRestrictedResource <urn:oai:chat> ;
-  oplres:hasRestrictedParameter <urn:oai:chat:module> ;  
+  oplres:hasRestrictedParameter <urn:oai:chat:module> ;
   oplres:hasRealm oplacl:DefaultRealm ;
   oplres:hasRestrictedValue "data-twingler-config"^^xsd:string ;
   oplres:hasAgent <http://data.openlinksw.com/oplweb/group/DataTwinglerEntryLevelSpecificChatUsers#this> ;
@@ -389,7 +662,7 @@ oplres:use-support-assistant a oplres:Restriction ;
   schema:name "Session Scoped to the Support Assistant" ;
   schema:description "OPAL Sessions that use the Support Assistant" ;
   oplres:hasRestrictedResource <urn:oai:chat> ;
-  oplres:hasRestrictedParameter <urn:oai:chat:module> ;  
+  oplres:hasRestrictedParameter <urn:oai:chat:module> ;
   oplres:hasRealm oplacl:DefaultRealm ;
   oplres:hasRestrictedValue "virtuoso-support-assistant-config"^^xsd:string ;
   oplres:hasAgent <http://data.openlinksw.com/oplweb/group/SupportAssistantEntryLevelSpecificChatUsers#this> ;
@@ -465,10 +738,10 @@ oplres:restrict-enable-api-keys a oplres:Restriction ;
 
 
 # ==============================================================================
-# Rules
+# Rules
 # ==============================================================================
 
-# --- Chat access rule ---
+# --- Chat access rule ---
 
 oplacl:chat-access-offers a acl:Authorization ;
   schema:name "Rule to allow access to /chat when an offer is purchased" ;
@@ -499,28 +772,119 @@ oplacl:chat-access-offers a acl:Authorization ;
     foaf:name "Users with API Access Entry Level License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
-      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessEntryLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .}"
+      oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+        prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+        prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+        prefix schema:   <http://schema.org/>
+        prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+        prefix owl:      <http://www.w3.org/2002/07/owl#>
+        ask where {
+          { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+          union
+          { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+          graph ?cg {
+            { ^{uri}^ oplprchs:madePurchase ?purchase . }
+            union
+            { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+            ?purchase oplprchs:contains ?offer ;
+                      oplprchs:purchaseDate ?purchaseDate .
+            ?offer a oplofr:ApiAccessEntryLevelOffer ;
+                   schema:itemOffered ?license .
+            ?license opllic:hasDuration ?duration .
+            ?duration opllic:durationYears ?years .
+            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          }
+        }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/ApiAccessMediumUsers#this> a oplacl:ConditionalGroup ;
     foaf:name "Users with API Access Medium Level License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
-      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessMediumLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+      oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+        prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+        prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+        prefix schema:   <http://schema.org/>
+        prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+        prefix owl:      <http://www.w3.org/2002/07/owl#>
+        ask where {
+          { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+          union
+          { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+          graph ?cg {
+            { ^{uri}^ oplprchs:madePurchase ?purchase . }
+            union
+            { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+            ?purchase oplprchs:contains ?offer ;
+                      oplprchs:purchaseDate ?purchaseDate .
+            ?offer a oplofr:ApiAccessMediumLevelOffer ;
+                   schema:itemOffered ?license .
+            ?license opllic:hasDuration ?duration .
+            ?duration opllic:durationYears ?years .
+            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          }
+          filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/ApiAccessAdvancedUsers#this> a oplacl:ConditionalGroup ;
     foaf:name "Users with API Access Advanced Level License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
-      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessAdvancedLevelOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+      oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+        prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+        prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+        prefix schema:   <http://schema.org/>
+        prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+        prefix owl:      <http://www.w3.org/2002/07/owl#>
+        ask where {
+          { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+          union
+          { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+          graph ?cg {
+            { ^{uri}^ oplprchs:madePurchase ?purchase . }
+            union
+            { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+            ?purchase oplprchs:contains ?offer ;
+                      oplprchs:purchaseDate ?purchaseDate .
+            ?offer a oplofr:ApiAccessAdvancedLevelOffer ;
+                   schema:itemOffered ?license .
+            ?license opllic:hasDuration ?duration .
+            ?duration opllic:durationYears ?years .
+            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          }
+          filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> a oplacl:ConditionalGroup ;
     foaf:name "Users with API Access Max License" ;
     oplacl:hasCondition [
       a oplacl:GroupCondition, oplacl:QueryCondition ;
-      oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:ApiAccessMaxOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .  filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+      oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+        prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+        prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+        prefix schema:   <http://schema.org/>
+        prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+        prefix owl:      <http://www.w3.org/2002/07/owl#>
+        ask where {
+          { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+          union
+          { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+          graph ?cg {
+            { ^{uri}^ oplprchs:madePurchase ?purchase . }
+            union
+            { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+            ?purchase oplprchs:contains ?offer ;
+                      oplprchs:purchaseDate ?purchaseDate .
+            ?offer a oplofr:ApiAccessMaxOffer ;
+                   schema:itemOffered ?license .
+            ?license opllic:hasDuration ?duration .
+            ?duration opllic:durationYears ?years .
+            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          }
+          filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        }"""
      ] .
 
 # ==============================================================================
@@ -533,7 +897,7 @@ oplacl:chat-access-offers a acl:Authorization ;
 
 # --- Entry Level Limits ---
 
-# Max Prompt per session: 20
+# Max Prompts per session: 20
 # Max Input Tokens per prompt: 2,000
 # Max Total Tokens per session: 4,000
 # Rate limit per hour: 1500 (25 per minute)
@@ -757,10 +1121,10 @@ oplres:api-max-enable-keys a oplres:Restriction ;
     oplres:hasAgent <http://data.openlinksw.com/oplweb/group/ApiAccessMaxUsers#this> .
 
 # ==============================================================================
-# Rules
+# Rules
 # ==============================================================================
 
-# --- Chat access rule ---
+# --- Chat access rule ---
 
 oplacl:chat-access-api-offers a acl:Authorization ;
     schema:name "Rule to allow access to /chat when an offer is purchased" ;
@@ -773,7 +1137,7 @@ oplacl:chat-access-api-offers a acl:Authorization ;
     oplacl:hasRealm oplacl:DefaultRealm ;
     oplacl:hasScope oplacl:Query .
 
-# --- Rule to access /oauth/clients.vsp ---
+# --- Rule to access /oauth/clients.vsp ---
 
 oplacl:oauth-apps-access-api-offers a acl:Authorization ;
     schema:name "Rule to allow access to oauth apps when an API offer is purchased" ;
@@ -795,27 +1159,73 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
   foaf:name "Users identified using a NetID based Identifier who have purchased the demo graph access offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessOffer ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:DemoGraphAccessOffer ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 <http://data.openlinksw.com/oplweb/group/DemoGraphAccessUsersWorldCupMeshup#this> a oplacl:ConditionalGroup ;
   foaf:name "Users identified using a NetID based Identifier who have purchased the demo graph access offer and whose license is in date" ;
   oplacl:hasCondition [
     a oplacl:GroupCondition, oplacl:QueryCondition ;
-    oplacl:hasQuery "prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>prefix oplofr:    <http://www.openlinksw.com/ontology/offers#>prefix schema:    <http://schema.org/> ask from <urn:openlinksw.com:shop:purchases:cache> where {{select ?purchase where {^{uri}^ oplprchs:madePurchase ?purchase .}} union {select ?purchase where {?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase .}} ?purchase oplprchs:contains ?offer ;   oplprchs:purchaseDate ?purchaseDate . ?offer a oplofr:DemoGraphAccessOfferWorldCupMeshup ; schema:itemOffered ?license .  ?license opllic:hasDuration ?duration .  ?duration opllic:durationYears ?years .  filter (bif:dateadd (\'day\', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) . filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .}"
+    oplacl:hasQuery """prefix oplprchs:  <http://www.openlinksw.com/ontology/purchases#>
+      prefix opllic:   <http://www.openlinksw.com/ontology/licenses#>
+      prefix oplofr:   <http://www.openlinksw.com/ontology/offers#>
+      prefix schema:   <http://schema.org/>
+      prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
+      prefix owl:      <http://www.w3.org/2002/07/owl#>
+      ask where {
+        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+        union
+        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+        graph ?cg {
+          { ^{uri}^ oplprchs:madePurchase ?purchase . }
+          union
+          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+          ?purchase oplprchs:contains ?offer ;
+                    oplprchs:purchaseDate ?purchaseDate .
+          ?offer a oplofr:DemoGraphAccessOfferWorldCupMeshup ;
+                 schema:itemOffered ?license .
+          ?license opllic:hasDuration ?duration .
+          ?duration opllic:durationYears ?years .
+          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        }
+        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+      }"""
      ] .
 
 # ==============================================================================
-# Restrictions
+# Restrictions
 # ==============================================================================
 
 # --- Limits ---
 
 # ==============================================================================
-# Rules
+# Rules
 # ==============================================================================
 
-# --- Graph access rule ---
+# --- Graph access rule ---
 
 oplacl:demo-graph-access a acl:Authorization ;
   schema:name "Rule to allow access to the demo graph" ;
@@ -829,6 +1239,7 @@ oplacl:demo-graph-access a acl:Authorization ;
 oplacl:demo-graph-access-world-cup-meshup a acl:Authorization ;
   schema:name "Rule to allow access to the <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl> graph" ;
   acl:accessTo <https://linkeddata.uriburner.com/DAV/demos/daas_paid/world-cup-2026-country-player-guide-meshup-gpt5-chat-1.ttl> ;
+  acl:accessTo <https://linkeddata.uriburner.com/DAV/demos/daas/world-cup-2026-meshup-kg-1.ttl> ;
   oplacl:hasAccessMode oplacl:Read ;
   oplacl:hasRealm oplacl:DefaultRealm ;
   oplacl:hasScope oplacl:PrivateGraphs ;
@@ -838,16 +1249,16 @@ oplacl:demo-graph-access-world-cup-meshup a acl:Authorization ;
 
 ## --- File Access ---
 # ==============================================================================
-# Restrictions
+# Restrictions
 # ==============================================================================
 
 # --- Limits ---
 
 # ==============================================================================
-# Rules
+# Rules
 # ==============================================================================
 
-# --- File access rule ---
+# --- File access rule ---
 
 # -- TTL file also needs rule to allow the file access users to use /sparql to describe ttl files using the faceted browser?
 # -- I have not been able to make this work
