@@ -83,22 +83,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:DataTwinglerSpecificModulePlusOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:DataTwinglerSpecificModulePlusOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -113,22 +117,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:DataTwinglerSpecificModuleProOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:DataTwinglerSpecificModuleProOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -143,22 +151,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:DataTwinglerSpecificModuleMaxOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:DataTwinglerSpecificModuleMaxOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -202,22 +214,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:SupportAssistantSpecificModulePlusOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:SupportAssistantSpecificModulePlusOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -232,22 +248,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:SupportAssistantSpecificModuleProOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:SupportAssistantSpecificModuleProOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -262,22 +282,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:SupportAssistantSpecificModuleMaxOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:SupportAssistantSpecificModuleMaxOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -321,22 +345,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:BringYourOwnKeyPlusOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:BringYourOwnKeyPlusOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -351,22 +379,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:BringYourOwnKeyProOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:BringYourOwnKeyProOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -381,22 +413,26 @@ source: a schema:CreativeWork ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:MaxOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:MaxOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -808,22 +844,26 @@ oplacl:chat-access-offers a acl:Authorization ;
         prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
         prefix owl:      <http://www.w3.org/2002/07/owl#>
         ask where {
-          { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-          union
-          { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-          graph ?cg {
-            { ^{uri}^ oplprchs:madePurchase ?purchase . }
-            union
-            { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-            ?purchase oplprchs:contains ?offer ;
-                      oplprchs:purchaseDate ?purchaseDate .
-            ?offer a oplofr:ApiAccessMediumLevelOffer ;
-                   schema:itemOffered ?license .
-            ?license opllic:hasDuration ?duration .
-            ?duration opllic:durationYears ?years .
-            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          {
+            select ?license where {
+              { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+              union
+              { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+              graph ?cg {
+                { ^{uri}^ oplprchs:madePurchase ?purchase . }
+                union
+                { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+                ?purchase oplprchs:contains ?offer ;
+                          oplprchs:purchaseDate ?purchaseDate .
+                ?offer a oplofr:ApiAccessMediumLevelOffer ;
+                       schema:itemOffered ?license .
+                ?license opllic:hasDuration ?duration .
+                ?duration opllic:durationYears ?years .
+                filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              }
+            } limit 1
           }
-          filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+          filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
         }"""
      ] .
 
@@ -838,22 +878,26 @@ oplacl:chat-access-offers a acl:Authorization ;
         prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
         prefix owl:      <http://www.w3.org/2002/07/owl#>
         ask where {
-          { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-          union
-          { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-          graph ?cg {
-            { ^{uri}^ oplprchs:madePurchase ?purchase . }
-            union
-            { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-            ?purchase oplprchs:contains ?offer ;
-                      oplprchs:purchaseDate ?purchaseDate .
-            ?offer a oplofr:ApiAccessAdvancedLevelOffer ;
-                   schema:itemOffered ?license .
-            ?license opllic:hasDuration ?duration .
-            ?duration opllic:durationYears ?years .
-            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          {
+            select ?license where {
+              { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+              union
+              { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+              graph ?cg {
+                { ^{uri}^ oplprchs:madePurchase ?purchase . }
+                union
+                { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+                ?purchase oplprchs:contains ?offer ;
+                          oplprchs:purchaseDate ?purchaseDate .
+                ?offer a oplofr:ApiAccessAdvancedLevelOffer ;
+                       schema:itemOffered ?license .
+                ?license opllic:hasDuration ?duration .
+                ?duration opllic:durationYears ?years .
+                filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              }
+            } limit 1
           }
-          filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+          filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
         }"""
      ] .
 
@@ -868,22 +912,26 @@ oplacl:chat-access-offers a acl:Authorization ;
         prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
         prefix owl:      <http://www.w3.org/2002/07/owl#>
         ask where {
-          { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-          union
-          { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-          graph ?cg {
-            { ^{uri}^ oplprchs:madePurchase ?purchase . }
-            union
-            { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-            ?purchase oplprchs:contains ?offer ;
-                      oplprchs:purchaseDate ?purchaseDate .
-            ?offer a oplofr:ApiAccessMaxOffer ;
-                   schema:itemOffered ?license .
-            ?license opllic:hasDuration ?duration .
-            ?duration opllic:durationYears ?years .
-            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          {
+            select ?license where {
+              { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+              union
+              { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+              graph ?cg {
+                { ^{uri}^ oplprchs:madePurchase ?purchase . }
+                union
+                { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+                ?purchase oplprchs:contains ?offer ;
+                          oplprchs:purchaseDate ?purchaseDate .
+                ?offer a oplofr:ApiAccessMaxOffer ;
+                       schema:itemOffered ?license .
+                ?license opllic:hasDuration ?duration .
+                ?duration opllic:durationYears ?years .
+                filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              }
+            } limit 1
           }
-          filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+          filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
         }"""
      ] .
 
@@ -1166,22 +1214,26 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:DemoGraphAccessOffer ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:DemoGraphAccessOffer ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
@@ -1196,22 +1248,26 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
       prefix oplshop:  <http://www.openlinksw.com/ontology/shop#>
       prefix owl:      <http://www.w3.org/2002/07/owl#>
       ask where {
-        { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
-        union
-        { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
-        graph ?cg {
-          { ^{uri}^ oplprchs:madePurchase ?purchase . }
-          union
-          { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
-          ?purchase oplprchs:contains ?offer ;
-                    oplprchs:purchaseDate ?purchaseDate .
-          ?offer a oplofr:DemoGraphAccessOfferWorldCupMeshup ;
-                 schema:itemOffered ?license .
-          ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+        {
+          select ?license where {
+            { graph <urn:openlinksw.com.shop:registry> { ?shop oplshop:hasPurchaseCache ?cg } }
+            union
+            { bind(<urn:openlinksw.com:shop:purchases:cache> as ?cg) }
+            graph ?cg {
+              { ^{uri}^ oplprchs:madePurchase ?purchase . }
+              union
+              { ?o owl:sameAs ^{uri}^ ; oplprchs:madePurchase ?purchase . }
+              ?purchase oplprchs:contains ?offer ;
+                        oplprchs:purchaseDate ?purchaseDate .
+              ?offer a oplofr:DemoGraphAccessOfferWorldCupMeshup ;
+                     schema:itemOffered ?license .
+              ?license opllic:hasDuration ?duration .
+              ?duration opllic:durationYears ?years .
+              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            }
+          } limit 1
         }
-        filter (sql:stripe_customer_has_active_product_subscription (^{uri}^, ?license) > 0) .
+        filter (sql:stripe_customer_has_active_product_subscription (str(^{uri}^), ?license) > 0) .
       }"""
      ] .
 
