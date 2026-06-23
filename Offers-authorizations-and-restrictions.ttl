@@ -67,7 +67,7 @@ source: a schema:CreativeWork ;
                  schema:itemOffered ?license .
           ?license opllic:hasDuration ?duration .
           ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
         }
       }"""
      ] .
@@ -98,7 +98,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -132,7 +132,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -166,7 +166,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -198,7 +198,7 @@ source: a schema:CreativeWork ;
                  schema:itemOffered ?license .
           ?license opllic:hasDuration ?duration .
           ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
         }
       }"""
      ] .
@@ -229,7 +229,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -263,7 +263,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -297,7 +297,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -329,7 +329,7 @@ source: a schema:CreativeWork ;
                  schema:itemOffered ?license .
           ?license opllic:hasDuration ?duration .
           ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+          filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
         }
       }"""
      ] .
@@ -360,7 +360,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -394,7 +394,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -428,7 +428,7 @@ source: a schema:CreativeWork ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -828,7 +828,7 @@ oplacl:chat-access-offers a acl:Authorization ;
                    schema:itemOffered ?license .
             ?license opllic:hasDuration ?duration .
             ?duration opllic:durationYears ?years .
-            filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+            filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
           }
         }"""
      ] .
@@ -859,7 +859,7 @@ oplacl:chat-access-offers a acl:Authorization ;
                        schema:itemOffered ?license .
                 ?license opllic:hasDuration ?duration .
                 ?duration opllic:durationYears ?years .
-                filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+                filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
               }
             } limit 1
           }
@@ -893,7 +893,7 @@ oplacl:chat-access-offers a acl:Authorization ;
                        schema:itemOffered ?license .
                 ?license opllic:hasDuration ?duration .
                 ?duration opllic:durationYears ?years .
-                filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+                filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
               }
             } limit 1
           }
@@ -927,7 +927,7 @@ oplacl:chat-access-offers a acl:Authorization ;
                        schema:itemOffered ?license .
                 ?license opllic:hasDuration ?duration .
                 ?duration opllic:durationYears ?years .
-                filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+                filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
               }
             } limit 1
           }
@@ -1229,7 +1229,7 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
@@ -1263,7 +1263,7 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
               ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', bif:atoi(?years) * 365, ?purchaseDate) > bif:now()) .
+              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
             }
           } limit 1
         }
