@@ -1,0 +1,108 @@
+## Turtle Start ##
+@prefix schema:    <http://schema.org/> .
+@prefix cc:        <http://creativecommons.org/ns#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+@prefix opllic:    <http://www.openlinksw.com/ontology/licenses#> .
+@prefix oplsof:    <http://www.openlinksw.com/ontology/software#> .
+@prefix oplpro:    <http://www.openlinksw.com/ontology/products#> .
+@prefix wdrs:      <http://www.w3.org/2007/05/powder-s#> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix oplofr:    <http://www.openlinksw.com/ontology/offers#> .
+@prefix gr:        <http://purl.org/goodrelations/v1#> .
+@prefix source:    <http://virtuoso.openlinksw.com/data/turtle/OPALOffers-Licenses-Prices-IdehenNet-SPARQL-API.ttl> .
+@prefix :          <#> .
+
+source: a schema:CreativeWork ;
+    schema:name "Idehen.NET SPARQL Endpoint — Graph Access Offer Definitions" ;
+    schema:description "This document describes offers for access to the Idehen.NET SPARQL endpoint knowledge graph service." ;
+    schema:author <http://www.openlinksw.com/#this> ;
+    cc:attributionName "OpenLink Software" ;
+    schema:datePublished "2026-07-10T00:00:00Z"^^xsd:dateTime ;
+    schema:dateModified "2026-07-10T00:00:00Z"^^xsd:dateTime .
+
+# ── Licensed Product / Service ──
+
+<http://data.openlinksw.com/oplweb/IdehenNetDA#this> a schema:WebAPI, schema:Service ;
+    schema:name "Knowledge graph access via Idehen.NET"@en ;
+    schema:applicationCategory "Data Access"@en ;
+    schema:applicationSubCategory "ACL controlled knowledge graph access"@en ;
+    schema:description "Knowledge graph hosted by Idehen.NET, explorable via the /sparql endpoint, providing access to Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the LOD Cloud."@en ;
+    skos:related <http://data.openlinksw.com/oplweb/IdehenNetOPAL#this> ;
+    schema:provider [
+        a schema:Organization ;
+        schema:name "OpenLink Software"@en ;
+        schema:url <https://www.openlinksw.com/>
+    ] ;
+    schema:url <https://kingsley.idehen.net/> ;
+    schema:hasPart [
+        a schema:WebAPI ;
+        schema:name "SPARQL Query Service Endpoint"@en ;
+        schema:description "HTTP SPARQL Query Service Endpoint providing access to Knowledge Graphs, a resolver, and Linked Data URI generation."@en ;
+        schema:serviceType "SPARQL Query Service"@en ;
+        schema:url <https://kingsley.idehen.net/sparql>
+    ] .
+
+# ── Price Specification ──
+
+<http://data.openlinksw.com/oplweb/offer-unitprice/IdehenNetSparqlEndpointGraphAccessPriceSpecification#this>
+    a schema:UnitPriceSpecification, oplofr:RetailUnitPriceSpecification ;
+    schema:priceCurrency "USD"^^xsd:string ;
+    schema:price "99.99"^^xsd:decimal ;
+    schema:unitCode "C62"^^xsd:string ;
+    schema:name "Idehen.NET SPARQL Endpoint Access" ;
+    schema:validFrom "2026-07-10T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
+    oplofr:interval "month"^^xsd:string ;
+    oplofr:intervalCount "1"^^xsd:integer ;
+    wdrs:describedby source: .
+
+# ── License Description ──
+
+<http://data.openlinksw.com/oplweb/license/IdehenNetSparqlEndpointNamedGraphLicenseIdehenNet#this>
+    a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    oplsof:hasOperatingSystemFamily oplsof:OSFamilyAny ;
+    oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
+    schema:image <https://www.openlinksw.com/DAV/oplweb3/images/graph-access.jpg> ;
+    schema:name "License for accessing the Idehen.NET SPARQL Endpoint Knowledge Graph Service" ;
+    skos:prefLabel "Idehen.NET SPARQL Endpoint Access" ;
+    skos:altLabel "Read-only SPARQL access license for the Idehen.NET SPARQL endpoint, providing access to Knowledge Graph collections, a resolver, Linked Data URI generation, and bridge to the Linked Open Data Cloud" ;
+    schema:description "This license grants read-only SPARQL access to the Idehen.NET SPARQL endpoint at https://kingsley.idehen.net/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
+    opllic:productLicenseOf <http://data.openlinksw.com/oplweb/IdehenNetDA#this> ;
+    opllic:partOf <http://data.openlinksw.com/oplweb/offer/IdehenNetSparqlEndpointNamedGraphOfferIdehenNet#this> ;
+    opllic:hasDuration <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ;
+    opllic:graphParameter <https://kingsley.idehen.net/sparql> ;
+    opllic:uriParameter <https://kingsley.idehen.net/sparql/?default-graph-uri=&query=SELECT+DISTINCT+%3Fs+AS+%3FsampleEntity+%28COUNT%28*%29+AS+%3FentityCount%29+%3Fo+AS+%3FEntityType+WHERE+%7B%3Fs+a+%3Fo%7D+ORDER+BY+DESC%28%3FentityCount%29+LIMIT+50&format=text%2Fx-html%2Btr&timeout=30000> ;
+    wdrs:describedby source: .
+
+# ── Offer Description ──
+
+<http://data.openlinksw.com/oplweb/offer/IdehenNetSparqlEndpointNamedGraphOfferIdehenNet#this>
+    a schema:Offer, oplofr:SubscriptionOffer, oplofr:DemoGraphAccessOffer ;
+    oplofr:offerNumber "GRAPH-ACCESS-IdehenNet-SPARQL-ENDPOINT-001"^^xsd:string ;
+    schema:name "Idehen.NET SPARQL Endpoint Access — Graph Access on Idehen.NET" ;
+    skos:prefLabel "Idehen.NET SPARQL Access" ;
+    schema:description "Knowledge graph access offer providing read-only SPARQL access to the Idehen.NET SPARQL endpoint at https://kingsley.idehen.net/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
+    wdrs:describedby source: ;
+    schema:businessFunction gr:Sell ;
+    schema:itemOffered <http://data.openlinksw.com/oplweb/license/IdehenNetSparqlEndpointNamedGraphLicenseIdehenNet#this> ;
+    schema:priceSpecification <http://data.openlinksw.com/oplweb/offer-unitprice/IdehenNetSparqlEndpointGraphAccessPriceSpecification#this> ;
+    oplofr:isMemberOf <http://data.openlinksw.com/oplweb/OfferGroupGraphAccess#this> ;
+    schema:validFrom "2026-07-10T00:00:00Z"^^xsd:dateTime ;
+    schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
+    schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2FIdehenNetSparqlEndpointNamedGraphOfferIdehenNet%23this> ;
+    skos:related [ oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
+
+# ── Provider to Offers Link ──
+
+<http://www.openlinksw.com/dataspace/organization/openlink#this> schema:offers
+    <http://data.openlinksw.com/oplweb/offer/IdehenNetSparqlEndpointNamedGraphOfferIdehenNet#this> .
+
+# ── License Duration ──
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription>
+    opllic:isDurationOf <http://data.openlinksw.com/oplweb/license/IdehenNetSparqlEndpointNamedGraphLicenseIdehenNet#this> .
+
+<http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> a opllic:Duration ;
+    schema:name "License Duration — Ongoing subscription" .
+
+## Turtle End ##
