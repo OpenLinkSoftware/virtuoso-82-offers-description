@@ -61,7 +61,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- License Description --
-<http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense1URIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+<http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense1URIBurner#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/world-cup-2026-file-access.jpg> ;
@@ -94,7 +94,7 @@ source: a schema:CreativeWork ;
 
 
 # -- License Description --
-<http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense2URIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+<http://data.openlinksw.com/oplweb/license/DemoFileAccessLicense2URIBurner#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/world-cup-2026-file-access.jpg> ;

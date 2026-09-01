@@ -63,7 +63,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- License Description --
-<http://data.openlinksw.com/oplweb/license/WorldCup2026GuideNamedGraphLicenseURIBurner#this> a opllic:ProductLicense, opllic:ExpiringLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+<http://data.openlinksw.com/oplweb/license/WorldCup2026GuideNamedGraphLicenseURIBurner#this> a opllic:ProductLicense, opllic:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/world-cup-2026-file-access.jpg> ;

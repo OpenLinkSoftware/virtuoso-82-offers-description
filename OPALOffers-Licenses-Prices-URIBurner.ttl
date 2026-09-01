@@ -90,7 +90,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Data Twingler Entry Level License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleEntryLevelLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleEntryLevelLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -134,7 +134,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Data Twingler Plus License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModulePlusLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModulePlusLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -178,7 +178,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Data Twingler Pro License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleProLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleProLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -222,7 +222,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Data Twingler Max License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleMaxLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/DataTwinglerSpecificModuleMaxLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -268,7 +268,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Support Assistant Access Entry Level License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleEntryLevelLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleEntryLevelLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -312,7 +312,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Support Assistant Access Plus License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModulePlusLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModulePlusLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -356,7 +356,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Support Assistant Access Pro License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleProLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleProLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -399,7 +399,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Support Assistant Max License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleMaxLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/SupportAssistantSpecificModuleMaxLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -442,7 +442,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Entry Level License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/BringYourOwnKeyEntryLevelLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly ;
+<http://data.openlinksw.com/oplweb/license/BringYourOwnKeyEntryLevelLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -485,7 +485,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Plus License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/BringYourOwnKeyPlusLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+<http://data.openlinksw.com/oplweb/license/BringYourOwnKeyPlusLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -528,7 +528,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Pro License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/BringYourOwnKeyProLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly , opllic:SubscriptionLicense ;
+<http://data.openlinksw.com/oplweb/license/BringYourOwnKeyProLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly , opllic:SubscriptionLicense ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -571,7 +571,7 @@ source: a schema:CreativeWork ;
     wdrs:describedby source: .
 
 # -- Max License Description (ub-server server)--
-<http://data.openlinksw.com/oplweb/license/MaxLicenseub-server#this> a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
+<http://data.openlinksw.com/oplweb/license/MaxLicenseub-server#this> a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense  ;
     oplsof:hasOperatingSystemFamily   oplsof:OSFamilyAny ;
     oplsof:hasDatabaseFamily oplsof:WorldWideWeb ;
     schema:image <https://www.openlinksw.com/DAV/oplweb3/images/opal-license.png> ;
@@ -636,4 +636,6 @@ source: a schema:CreativeWork ;
                        <http://data.openlinksw.com/oplweb/license/MaxLicenseub-server#this> .
 
 <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> a opllic:Duration ; 
+    schema:name "License Duration — Ongoing subscription" .
+
 ## Turtle End ##
