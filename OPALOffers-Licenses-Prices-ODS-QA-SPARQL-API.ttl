@@ -81,6 +81,7 @@ source: a schema:CreativeWork ;
     oplofr:offerNumber "GRAPH-ACCESS-ods-qa-SPARQL-ENDPOINT-001"^^xsd:string ;
     schema:name "ODS-QA SPARQL Endpoint Access — Graph Access on ODS-QA" ;
     skos:prefLabel "ODS-QA SPARQL Access" ;
+    schema:comment "Purchasing this offer grants read-only SPARQL access to the ODS-QA SPARQL endpoint at https://ods-qa.openlinksw.com/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
     schema:description "Knowledge graph access offer providing read-only SPARQL access to the ODS-QA SPARQL endpoint at https://ods-qa.openlinksw.com/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
     wdrs:describedby source: ;
     schema:businessFunction gr:Sell ;

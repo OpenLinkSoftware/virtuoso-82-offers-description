@@ -81,6 +81,7 @@ source: a schema:CreativeWork ;
     oplofr:offerNumber "GRAPH-ACCESS-UB-SPARQL-ENDPOINT-001"^^xsd:string ;
     schema:name "URIBurner SPARQL Endpoint Access — Graph Access on URIBurner" ;
     skos:prefLabel "URIBurner SPARQL Access" ;
+    schema:comment "Purchasing this offer grants read-only SPARQL access to the URIBurner SPARQL endpoint at https://linkeddata.uriburner.com/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
     schema:description "Knowledge graph access offer providing read-only SPARQL access to the URIBurner SPARQL endpoint at https://linkeddata.uriburner.com/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
     wdrs:describedby source: ;
     schema:businessFunction gr:Sell ;
