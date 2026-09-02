@@ -111,7 +111,7 @@ source: a schema:CreativeWork ;
 # ==============================================================================
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessEntryLevelLicenseOds-qa#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly ;
+    a opllic:ProductLicense, schema:Product, opllic:ACLOnly ;
     skos:altLabel "OPAL API Access Entry Level License" ;
     schema:name "OPAL API Access Entry Level License" ;
     schema:description "License for Entry Level API access via /chat/api using BYOK." ;
@@ -125,7 +125,7 @@ source: a schema:CreativeWork ;
     skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessMediumLevelLicenseOds-qa#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Medium Level License" ;
     schema:name "OPAL API Access Medium Level License" ;
     schema:description "License for Medium Level API access via /chat/api using BYOK." ;
@@ -138,7 +138,7 @@ source: a schema:CreativeWork ;
     skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessAdvancedLevelLicenseOds-qa#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Advanced License" ;
     schema:name "OPAL API Access Advanced License" ;
     schema:description "License for Advanced Level API access via /chat/api using BYOK." ;
@@ -151,7 +151,7 @@ source: a schema:CreativeWork ;
     skos:related <https://ods-qa.openlinksw.com/oauth/applications.vsp> .
 
 <http://data.openlinksw.com/oplweb/license/ApiAccessMaxLicenseOds-qa#this>
-    a opllic:ProductLicense, opllic:ExpiringLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
+    a opllic:ProductLicense, schema:Product, opllic:ACLOnly, opllic:SubscriptionLicense ;
     skos:altLabel "OPAL API Access Max License" ;
     schema:name "OPAL API Access Max License" ;
     schema:description "License for Max Level API access via /chat/api using System-Wide keys." ;

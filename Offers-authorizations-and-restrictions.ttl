@@ -66,8 +66,9 @@ source: a schema:CreativeWork ;
           ?offer a oplofr:DataTwinglerSpecificModuleEntryLevelOffer ;
                  schema:itemOffered ?license .
           ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+          optional {?duration opllic:durationYears ?years .}
+          filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                  (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
         }
       }"""
      ] .
@@ -97,8 +98,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:DataTwinglerSpecificModulePlusOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -131,8 +133,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:DataTwinglerSpecificModuleProOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -165,8 +168,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:DataTwinglerSpecificModuleMaxOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -197,8 +201,9 @@ source: a schema:CreativeWork ;
           ?offer a oplofr:SupportAssistantSpecificModuleEntryLevelOffer ;
                  schema:itemOffered ?license .
           ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+          optional {?duration opllic:durationYears ?years .}
+          filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                  (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
         }
       }"""
      ] .
@@ -228,8 +233,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:SupportAssistantSpecificModulePlusOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -262,8 +268,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:SupportAssistantSpecificModuleProOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -296,8 +303,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:SupportAssistantSpecificModuleMaxOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -328,8 +336,9 @@ source: a schema:CreativeWork ;
           ?offer a oplofr:BringYourOwnKeyEntryLevelOffer ;
                  schema:itemOffered ?license .
           ?license opllic:hasDuration ?duration .
-          ?duration opllic:durationYears ?years .
-          filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+          optional {?duration opllic:durationYears ?years .}
+          filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                  (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
         }
       }"""
      ] .
@@ -359,8 +368,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:BringYourOwnKeyPlusOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -393,8 +403,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:BringYourOwnKeyProOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -427,8 +438,9 @@ source: a schema:CreativeWork ;
               ?offer a oplofr:MaxOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -827,8 +839,9 @@ oplacl:chat-access-offers a acl:Authorization ;
             ?offer a oplofr:ApiAccessEntryLevelOffer ;
                    schema:itemOffered ?license .
             ?license opllic:hasDuration ?duration .
-            ?duration opllic:durationYears ?years .
-            filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
           }
         }"""
      ] .
@@ -858,8 +871,9 @@ oplacl:chat-access-offers a acl:Authorization ;
                 ?offer a oplofr:ApiAccessMediumLevelOffer ;
                        schema:itemOffered ?license .
                 ?license opllic:hasDuration ?duration .
-                ?duration opllic:durationYears ?years .
-                filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+                optional {?duration opllic:durationYears ?years .}
+                filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                        (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
               }
             } limit 1
           }
@@ -892,8 +906,9 @@ oplacl:chat-access-offers a acl:Authorization ;
                 ?offer a oplofr:ApiAccessAdvancedLevelOffer ;
                        schema:itemOffered ?license .
                 ?license opllic:hasDuration ?duration .
-                ?duration opllic:durationYears ?years .
-                filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+                optional {?duration opllic:durationYears ?years .}
+                filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                        (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
               }
             } limit 1
           }
@@ -926,8 +941,9 @@ oplacl:chat-access-offers a acl:Authorization ;
                 ?offer a oplofr:ApiAccessMaxOffer ;
                        schema:itemOffered ?license .
                 ?license opllic:hasDuration ?duration .
-                ?duration opllic:durationYears ?years .
-                filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+                optional {?duration opllic:durationYears ?years .}
+                filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                        (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
               }
             } limit 1
           }
@@ -1228,8 +1244,9 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
               ?offer a oplofr:DemoGraphAccessOffer ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }
@@ -1262,8 +1279,9 @@ oplacl:oauth-apps-access-api-offers a acl:Authorization ;
               ?offer a oplofr:DemoGraphAccessOfferWorldCupMeshup ;
                      schema:itemOffered ?license .
               ?license opllic:hasDuration ?duration .
-              ?duration opllic:durationYears ?years .
-              filter (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) .
+              optional {?duration opllic:durationYears ?years .}
+              filter ((?duration like <http://data.openlinksw.com/oplweb/license/License-Duration#ongoing-subscription> ) or 
+                      (bif:dateadd ('day', xsd:integer(?years) * 365, ?purchaseDate) > bif:now()) ) .       
             }
           } limit 1
         }

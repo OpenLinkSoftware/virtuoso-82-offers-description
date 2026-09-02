@@ -81,6 +81,7 @@ source: a schema:CreativeWork ;
     oplofr:offerNumber "GRAPH-ACCESS-ods-qa-SPARQL-ENDPOINT-001"^^xsd:string ;
     schema:name "ODS-QA SPARQL Endpoint Access — Graph Access on ODS-QA" ;
     skos:prefLabel "ODS-QA SPARQL Access" ;
+    schema:comment "Purchasing this offer grants read-only SPARQL access to the ODS-QA SPARQL endpoint at https://ods-qa.openlinksw.com/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
     schema:description "Knowledge graph access offer providing read-only SPARQL access to the ODS-QA SPARQL endpoint at https://ods-qa.openlinksw.com/sparql — a service providing access to a massive collection of Knowledge Graphs, a resolver, Linked Data URI generation, and a bridge to the Linked Open Data Cloud." ;
     wdrs:describedby source: ;
     schema:businessFunction gr:Sell ;
@@ -90,7 +91,7 @@ source: a schema:CreativeWork ;
     schema:validFrom "2026-07-10T00:00:00Z"^^xsd:dateTime ;
     schema:validThrough "2026-12-31T23:59:59Z"^^xsd:dateTime ;
     schema:potentialAction <https://shop.openlinksw.com/cart.vsp?command=add&item=http%3A%2F%2Fdata.openlinksw.com%2Foplweb%2Foffer%2Fods-qaSparqlEndpointNamedGraphOfferods-qa%23this> ;
-    skos:related [ oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/opal#this> ] .
+    skos:related [ oplpro:hasFamily <http://data.openlinksw.com/oplweb/product_family/loac#this> ] .
 
 # ── Provider to Offers Link ──
 
