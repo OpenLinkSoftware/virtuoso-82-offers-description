@@ -29,7 +29,7 @@
    schema:name                         """Price specification for Virtuoso Enterprise -- Custom Annual (365 days) License -- Unit Price: negotiable"""^^xsd:string ;
    schema:comment                      """The price of the Annual (365 days) Enterprise License for Virtuoso is negotiable depending on required features."""^^xsd:string ;
    schema:validFrom                    "2024-11-27T23:59:59Z"^^xsd:dateTime ;
-   schema:validThrough                 "2024-12-31T23:59:59Z"^^xsd:dateTime .
+   schema:validThrough                 "2026-03-31T23:59:59Z"^^xsd:dateTime .
    
 
 ## Enterprise Offer
@@ -41,7 +41,7 @@
                                        offers:EnterpriseOffer ;
    schema:url                          <http://data.openlinksw.com/oplweb/offer/Offer-virtuoso-8-Enterprise-WKSSVR-ANY>;
    schema:validFrom                    "2024-11-27T23:59:59Z"^^xsd:dateTime ;
-   schema:validThrough                 "2024-12-31T23:59:59Z"^^xsd:dateTime ;
+   schema:validThrough                 "2026-03-31T23:59:59Z"^^xsd:dateTime ;
    schema:priceSpecification           <http://data.openlinksw.com/oplweb/offer-unitprice/UnitPriceSpecification-Virtuoso-enterprise#this>;
    schema:itemOffered                  <http://data.openlinksw.com/oplweb/license/License-virtuoso-8-Enterprise-WKSSVR-ANY#this> ;
    schema:category                     "enterprise"^^xsd:string ;
