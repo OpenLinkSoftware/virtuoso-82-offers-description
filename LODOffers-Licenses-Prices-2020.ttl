@@ -354,9 +354,9 @@ oplres:uriburner-server
   wdrs:describedby source: ;
   schema:comment "URIBurner server instance " ;
   opllic:hasDomain "linkeddata.uriburner.com"^^xsd:string ;
-  opllic:hasACLRulesEndpoint <https://linkeddata.uriburner.com/acl/rules> ;
-  opllic:hasACLRestrictionsEndpoint <https://linkeddata.uriburner.com/acl/restrictions> ;
-  opllic:hasCertGeneratorEndpoint <https://linkeddata.uriburner.com/certgen/> .
+  opllic:hasACLRulesEndpoint <https://linkeddata.uriburner.com:5443/acl/rules> ;
+  opllic:hasACLRestrictionsEndpoint <https://linkeddata.uriburner.com:5443/acl/restrictions> ;
+  opllic:hasCertGeneratorEndpoint <https://linkeddata.uriburner.com:5443/certgen/> .
 
 
 ## Basic client connection scope ODBC-LOD-Cloud
